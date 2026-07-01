@@ -1,0 +1,59 @@
+name: Build update manifest
+
+# Runs automatically whenever plugin files change on main.
+# Regenerates manifest.json (versions + SHA-256 + download URLs) and commits it.
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'manifest.json'
+  workflow_dispatch:   # lets you also run it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  manifest:
+    runs-on: windows-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Generate manifest.json
+        shell: pwsh
+        run: |
+          $owner   = "${{ github.repository_owner }}"
+          $repo    = "${{ github.event.repository.name }}"
+          $branch  = "${{ github.ref_name }}"
+          $rawBase = "https://raw.githubusercontent.com/$owner/$repo/$branch"
+          $inclExt = @(".dll", ".addin", ".config")
+          $root    = (Get-Location).Path.TrimEnd('\')
+
+          $plugins = @()
+          Get-ChildItem -Path $root -Recurse -File | Where-Object {
+              $inclExt -contains $_.Extension.ToLower() -and $_.FullName -notmatch '\\\.git\\'
+          } | ForEach-Object {
+              $rel = $_.FullName.Substring($root.Length + 1).Replace('\','/')
+              $ver = $_.VersionInfo.FileVersion
+              if ([string]::IsNullOrWhiteSpace($ver)) { $ver = "0.0.0" }
+              $sha = (Get-FileHash -Path $_.FullName -Algorithm SHA256).Hash.ToLower()
+              $urlPath = ($rel -split '/' | ForEach-Object { [Uri]::EscapeDataString($_) }) -join '/'
+              $plugins += [ordered]@{ relativePath = $rel; version = $ver; url = "$rawBase/$urlPath"; sha256 = $sha }
+          }
+
+          $manifest = [ordered]@{ manifestVersion = 1; plugins = $plugins }
+          $manifest | ConvertTo-Json -Depth 5 | Out-File -FilePath (Join-Path $root "manifest.json") -Encoding utf8
+          Write-Host "Wrote $($plugins.Count) entries to manifest.json"
+
+      - name: Commit manifest if it changed
+        shell: pwsh
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add manifest.json
+          if (git status --porcelain manifest.json) {
+              git commit -m "Auto-update manifest [skip ci]"
+              git push
+          } else {
+              Write-Host "manifest.json already up to date."
+          }
