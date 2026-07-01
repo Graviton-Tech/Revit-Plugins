@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Name>Warnings</Name>
+		<Assembly>Warning.dll</Assembly>
+		<FullClassName>Warning.WarningCommand</FullClassName>
+		<Text>Show Warnings</Text>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<AddInId>8D83E555-30A8-4F9C-B6F3-1D5A1A57B9B6</AddInId>
+		<VendorId>BIM Space</VendorId>
+		<VendorDescription>Islam Heakal, Structural BIM Engineer, Revit Developer</VendorDescription>
+	</AddIn>
+
+</RevitAddIns>
