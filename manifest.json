@@ -1,359 +1,359 @@
-﻿{
-    "manifestVersion":  1,
-    "plugins":  [
-                    {
-                        "relativePath":  "Coordination/ClashNavigator/ClashNavigator.dll",
-                        "version":  "26.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/ClashNavigator.dll",
-                        "sha256":  "0ef25650e46e22a15e66ea45aca8485faf5ea350293a6445569576d0e613fff4"
-                    },
-                    {
-                        "relativePath":  "Coordination/ClashNavigator/HtmlAgilityPack.dll",
-                        "version":  "1.11.46",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/HtmlAgilityPack.dll",
-                        "sha256":  "37e643b9ef95d1fb21de79ad0b19825fc15aaaf43232c15e030e4c3bdba07714"
-                    },
-                    {
-                        "relativePath":  "Coordination/ClashNavigator/Lumora.dll",
-                        "version":  "1.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/Lumora.dll",
-                        "sha256":  "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
-                    },
-                    {
-                        "relativePath":  "Coordination/ClashNavigator/Manifest.addin",
-                        "version":  "0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/Manifest.addin",
-                        "sha256":  "1918099efcf29b1914bc3197b8827469642b215bb4023edac2be98a66a8cdcda"
-                    },
-                    {
-                        "relativePath":  "Coordination/ClashNavigator/RevitAPIHelper.dll",
-                        "version":  "1.0.8311.24201",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/RevitAPIHelper.dll",
-                        "sha256":  "2b27f48fda862edbadc56330c264cca875277d85dfb256d66893fd4bb6808fe4"
-                    },
-                    {
-                        "relativePath":  "Coordination/RunInterfernceCheck/EPPlus.dll",
-                        "version":  "5.8.14.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/EPPlus.dll",
-                        "sha256":  "6045a92c039c066eb67daee44597e1d7f09ba6f5199504174814c4c4628718a5"
-                    },
-                    {
-                        "relativePath":  "Coordination/RunInterfernceCheck/Lumora.dll",
-                        "version":  "1.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/Lumora.dll",
-                        "sha256":  "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
-                    },
-                    {
-                        "relativePath":  "Coordination/RunInterfernceCheck/Manifest.addin",
-                        "version":  "0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/Manifest.addin",
-                        "sha256":  "84f200e08a8ae736048cbe55e497003f3dd3cddde2d38e452777e7f59e9eee41"
-                    },
-                    {
-                        "relativePath":  "Coordination/RunInterfernceCheck/Microsoft.IO.RecyclableMemoryStream.dll",
-                        "version":  "3.0.1.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/Microsoft.IO.RecyclableMemoryStream.dll",
-                        "sha256":  "3fc6805c48111ba6f6ddf103325d863fe4cbca3802bbc38c51261110e3977e67"
-                    },
-                    {
-                        "relativePath":  "Coordination/RunInterfernceCheck/RunInterfernceCheck.dll",
-                        "version":  "26.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/RunInterfernceCheck.dll",
-                        "sha256":  "784f58b42299358da0730de0e39284332bd1a23772154a2bda3da260b4ba99d7"
-                    },
-                    {
-                        "relativePath":  "Coordination/RunInterfernceCheck/RunInterfernceCheck.dll.config",
-                        "version":  "0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/RunInterfernceCheck.dll.config",
-                        "sha256":  "64405d9c132d112d8e03579d830d7d74cf0b7af4c8cdc5db0dbfe18cb1c189bf"
-                    },
-                    {
-                        "relativePath":  "Coordination/RunInterfernceCheck/System.Buffers.dll",
-                        "version":  "4.600.125.16908",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/System.Buffers.dll",
-                        "sha256":  "2d78d770c9cb997199154ae8c018b9f1d1efbc86729f7264dde6dbad2a12cac3"
-                    },
-                    {
-                        "relativePath":  "Coordination/RunInterfernceCheck/System.Memory.dll",
-                        "version":  "4.600.325.20307",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/System.Memory.dll",
-                        "sha256":  "d5e8e4866f9cfa66f7765660f84b210198893e55335487afe5ebda342c0e913d"
-                    },
-                    {
-                        "relativePath":  "Coordination/RunInterfernceCheck/System.Numerics.Vectors.dll",
-                        "version":  "4.600.125.16908",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/System.Numerics.Vectors.dll",
-                        "sha256":  "20c2fa81b8c70d651099d762954f285fd4f942e63b2d7217c145dab8d4b2f4c9"
-                    },
-                    {
-                        "relativePath":  "Coordination/RunInterfernceCheck/System.Runtime.CompilerServices.Unsafe.dll",
-                        "version":  "6.100.225.20307",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/System.Runtime.CompilerServices.Unsafe.dll",
-                        "sha256":  "08cbd7278b66f1e68425a82d4b97181a4130d93e3dd91831407aba7212ccdacf"
-                    },
-                    {
-                        "relativePath":  "Manage/Autojoin/AutoJoin.dll",
-                        "version":  "26.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Autojoin/AutoJoin.dll",
-                        "sha256":  "e83b3423f1ec6212f49fee346d785e4da75e237286bbe9c1deb653277a61784a"
-                    },
-                    {
-                        "relativePath":  "Manage/Autojoin/Lumora.dll",
-                        "version":  "1.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Autojoin/Lumora.dll",
-                        "sha256":  "7509bb7fa2bd72a38dbd671b6ff7f7540c846ca60ff36f193ac5441e77a87a45"
-                    },
-                    {
-                        "relativePath":  "Manage/DataLink/DataLink.dll",
-                        "version":  "26.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/DataLink/DataLink.dll",
-                        "sha256":  "de4981287f4bf8305b7afb37214e713e610d469b4bb845c9857d52574de5164c"
-                    },
-                    {
-                        "relativePath":  "Manage/DataLink/Lumora.dll",
-                        "version":  "1.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/DataLink/Lumora.dll",
-                        "sha256":  "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
-                    },
-                    {
-                        "relativePath":  "Manage/Warning Review/Lumora.dll",
-                        "version":  "1.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Warning%20Review/Lumora.dll",
-                        "sha256":  "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
-                    },
-                    {
-                        "relativePath":  "Manage/Warning Review/Manifest.addin",
-                        "version":  "0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Warning%20Review/Manifest.addin",
-                        "sha256":  "b550c0ce2b69997f5337d4a8e69194cda216aa2b1a5004fb7f7b4312e1bdb62b"
-                    },
-                    {
-                        "relativePath":  "Manage/Warning Review/RevitAPIHelper.dll",
-                        "version":  "1.0.8311.24201",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Warning%20Review/RevitAPIHelper.dll",
-                        "sha256":  "2b27f48fda862edbadc56330c264cca875277d85dfb256d66893fd4bb6808fe4"
-                    },
-                    {
-                        "relativePath":  "Manage/Warning Review/Warning.dll",
-                        "version":  "26.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Warning%20Review/Warning.dll",
-                        "sha256":  "08c3d5379483b72a597d032e4498f41a388c78e0a6c2f7048fd9f86ad4f711d6"
-                    },
-                    {
-                        "relativePath":  "Modify/CopyCompare/CopyCompare.dll",
-                        "version":  "1.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CopyCompare/CopyCompare.dll",
-                        "sha256":  "b6723c4908479054fd8cd1701190245a4535b3afacdb75c50ef66c5d44f4c76e"
-                    },
-                    {
-                        "relativePath":  "Modify/CopyCompare/CopyCompareManifest.addin",
-                        "version":  "0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CopyCompare/CopyCompareManifest.addin",
-                        "sha256":  "62985f1bb5fe29fa6f5effa656452b36dfb10117f8ab5be8e8d705a099a67909"
-                    },
-                    {
-                        "relativePath":  "Modify/CopyCompare/RevitAPIHelper.dll",
-                        "version":  "1.0.8669.20233",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CopyCompare/RevitAPIHelper.dll",
-                        "sha256":  "6e504f0b1fedac5a475fa2c83be5a158256329931ce491ed2b1aa71c36c4f414"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/DiRoots.One.CommonsPS.dll",
-                        "version":  "1.3.2.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/DiRoots.One.CommonsPS.dll",
-                        "sha256":  "e62d80fea2d0de95a1b46af94a6a93f12da323adadb0edb5c8e3382f699c58bb"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/DiRoots.One.NLog.dll",
-                        "version":  "5.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/DiRoots.One.NLog.dll",
-                        "sha256":  "6e3a827ed804b6011392347ddfc2e87707fea79d841959373ec7b6d919067132"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/DiRoots.ProSheets.dll",
-                        "version":  "1.3.2.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/DiRoots.ProSheets.dll",
-                        "sha256":  "87773aeed2050a879f5d62750c37c3ec4f7ee47a4b70c784088a1ce2ab01319e"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/DiRoots.TrackerPS.dll",
-                        "version":  "1.3.2.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/DiRoots.TrackerPS.dll",
-                        "sha256":  "b9961b0e4e59c3176af21553bf45d1cca937e9e35108f37c7f6da3deb57798a4"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/Microsoft.Xaml.Behaviors.dll",
-                        "version":  "1.1.39.4716",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Microsoft.Xaml.Behaviors.dll",
-                        "sha256":  "b864da9d88414877cea9b1a016146265a5fb9d0e12f4dbb1dccc0cc998119a54"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/Newtonsoft.Json.dll",
-                        "version":  "12.0.2.23222",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Newtonsoft.Json.dll",
-                        "sha256":  "3598cccad5b535fea6f93662107a4183bfd6167bf1d0f80260436093edc2e3af"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/PdfSharp.Charting.dll",
-                        "version":  "1.50.5147.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/PdfSharp.Charting.dll",
-                        "sha256":  "899f362ae7c1ed52f8be29183c73a4e1ea4d72e43305ad30a9426d69e23a79c8"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/PdfSharp.dll",
-                        "version":  "1.50.5147.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/PdfSharp.dll",
-                        "sha256":  "2fa0893c6a1a8e64342e65e5464fad417376bd2cc984e53575f5829b07e6a067"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/RestSharp.dll",
-                        "version":  "106.15.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/RestSharp.dll",
-                        "sha256":  "37bf2a8815e1833153ff92d0bec3a1405f5c5f146884d0563a96bacd1b0074f9"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/Syncfusion.Compression.Base.dll",
-                        "version":  "18.4450.0.39",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Syncfusion.Compression.Base.dll",
-                        "sha256":  "5538c45a8a7bf35bad8530014775366fef2b0933cb42023473098ba9b1c94650"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/Syncfusion.XlsIO.Base.dll",
-                        "version":  "18.4450.0.39",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Syncfusion.XlsIO.Base.dll",
-                        "sha256":  "b77b63643b40aba2bb7e1ee982f3b4f1ea601de5dd688b18779970a55e02d48e"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/System.Net.Http.Formatting.dll",
-                        "version":  "4.0.21112.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/System.Net.Http.Formatting.dll",
-                        "sha256":  "1d36070eb6e3624a578bc3b99da4dd0829fd8ec78875b3000fad12bbcce9c795"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
-                        "version":  "3.4.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
-                        "sha256":  "a1c16250a3ccb9676b3cddccc693fa819656f1bf90e1bb2d940f4c8a33032bf4"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
-                        "version":  "3.4.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
-                        "sha256":  "86f59f36ff74dc3c49b68ee69ee6747262cde1c144cbcd76a9c1d105cc325253"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
-                        "version":  "3.4.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
-                        "sha256":  "c0f50d36384f79252d2984dcafda9ccbf4da972edc2c09f2cb88dc0afc87af4f"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.dll",
-                        "version":  "3.4.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.dll",
-                        "sha256":  "86768c9ac80b74bc99f45b2ec4bc45dcef066681b53fb2d725e83145b189c344"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.DataGrid.dll",
-                        "version":  "3.4.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.DataGrid.dll",
-                        "sha256":  "30d9b0a4dd8a54b14feaa150b1f7317bac5c491a3eac5fee9cfce4709729d64a"
-                    },
-                    {
-                        "relativePath":  "Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.Toolkit.dll",
-                        "version":  "3.4.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.Toolkit.dll",
-                        "sha256":  "711001125ff67ce9c8041beedaac3fa6441d64f3b202db53e34010cd42e16ed0"
-                    },
-                    {
-                        "relativePath":  "Modify/Split/Manifest.addin",
-                        "version":  "0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/Split/Manifest.addin",
-                        "sha256":  "a82c9069643f5e87a65cfec06a07d3205019383b8e7e08a9fd61a2398bc19715"
-                    },
-                    {
-                        "relativePath":  "Modify/Split/RevitAPIHelper.dll",
-                        "version":  "1.0.8311.24201",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/Split/RevitAPIHelper.dll",
-                        "sha256":  "2b27f48fda862edbadc56330c264cca875277d85dfb256d66893fd4bb6808fe4"
-                    },
-                    {
-                        "relativePath":  "Modify/Split/Split.dll",
-                        "version":  "1.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/Split/Split.dll",
-                        "sha256":  "b3af797aead1d96d61bc8ffbdeaa25f9fb36e774a46797bc245808b82225bf04"
-                    },
-                    {
-                        "relativePath":  "Modify/ZAutoJoin/AutoJoin.dll",
-                        "version":  "1.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/ZAutoJoin/AutoJoin.dll",
-                        "sha256":  "aa36154224f8751b0fa5884897194817a24c39d4c16fd3f1ccaf9f586b875f17"
-                    },
-                    {
-                        "relativePath":  "Structure/Loading Plan/LoadingPlan.dll",
-                        "version":  "26.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Loading%20Plan/LoadingPlan.dll",
-                        "sha256":  "8df70b7e3f17239f3c680d816f26324befbd5571891354ac39836464fb760c36"
-                    },
-                    {
-                        "relativePath":  "Structure/Loading Plan/Lumora.dll",
-                        "version":  "1.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Loading%20Plan/Lumora.dll",
-                        "sha256":  "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
-                    },
-                    {
-                        "relativePath":  "Structure/RampToFloor/Manifest.addin",
-                        "version":  "0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/RampToFloor/Manifest.addin",
-                        "sha256":  "9c86e4361b80c40493e1191eb259f49c11f71dd43c4f4ac7400a179a01cc0899"
-                    },
-                    {
-                        "relativePath":  "Structure/RampToFloor/RampToFloor.dll",
-                        "version":  "1.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/RampToFloor/RampToFloor.dll",
-                        "sha256":  "0aa55ba5a505fc2965fc425cf600b79b47edf42a77c5e13b414767d331a3eaf1"
-                    },
-                    {
-                        "relativePath":  "Structure/RampToFloor/RevitAPIHelper.dll",
-                        "version":  "1.0.8311.24201",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/RampToFloor/RevitAPIHelper.dll",
-                        "sha256":  "2b27f48fda862edbadc56330c264cca875277d85dfb256d66893fd4bb6808fe4"
-                    },
-                    {
-                        "relativePath":  "Structure/Split/Lumora.dll",
-                        "version":  "1.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Split/Lumora.dll",
-                        "sha256":  "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
-                    },
-                    {
-                        "relativePath":  "Structure/Split/Manifest.addin",
-                        "version":  "0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Split/Manifest.addin",
-                        "sha256":  "a82c9069643f5e87a65cfec06a07d3205019383b8e7e08a9fd61a2398bc19715"
-                    },
-                    {
-                        "relativePath":  "Structure/Split/RevitAPIHelper.dll",
-                        "version":  "1.0.8311.24201",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Split/RevitAPIHelper.dll",
-                        "sha256":  "2b27f48fda862edbadc56330c264cca875277d85dfb256d66893fd4bb6808fe4"
-                    },
-                    {
-                        "relativePath":  "Structure/Split/Split.dll",
-                        "version":  "26.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Split/Split.dll",
-                        "sha256":  "6f71260735b614d5f28ead98f6b1407ca3088657f192db06b858197f100db156"
-                    },
-                    {
-                        "relativePath":  "TransferData/DataLink/DataLink.dll",
-                        "version":  "1.0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/TransferData/DataLink/DataLink.dll",
-                        "sha256":  "deb70e6b17703e4405ae948663649215015ca8009b4417b70b72515dc320c832"
-                    },
-                    {
-                        "relativePath":  "TransferData/DataLink/Manifest.addin",
-                        "version":  "0.0.0",
-                        "url":  "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/TransferData/DataLink/Manifest.addin",
-                        "sha256":  "8020f8e6de2c76fa42145a08f0a0cdc410364c88a5eb533a89fc5cfd7b0c72f3"
-                    }
-                ]
+{
+  "manifestVersion": 1,
+  "plugins": [
+    {
+      "relativePath": "Coordination/ClashNavigator/ClashNavigator.dll",
+      "version": "26.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/ClashNavigator.dll",
+      "sha256": "0ef25650e46e22a15e66ea45aca8485faf5ea350293a6445569576d0e613fff4"
+    },
+    {
+      "relativePath": "Coordination/ClashNavigator/HtmlAgilityPack.dll",
+      "version": "1.11.46",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/HtmlAgilityPack.dll",
+      "sha256": "37e643b9ef95d1fb21de79ad0b19825fc15aaaf43232c15e030e4c3bdba07714"
+    },
+    {
+      "relativePath": "Coordination/ClashNavigator/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/Lumora.dll",
+      "sha256": "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
+    },
+    {
+      "relativePath": "Coordination/ClashNavigator/Manifest.addin",
+      "version": "0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/Manifest.addin",
+      "sha256": "1bab093dafaec61c3fb7cda813f6a4a56d9537bdc737a039e92f30029e26791c"
+    },
+    {
+      "relativePath": "Coordination/ClashNavigator/RevitAPIHelper.dll",
+      "version": "1.0.8311.24201",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/RevitAPIHelper.dll",
+      "sha256": "2b27f48fda862edbadc56330c264cca875277d85dfb256d66893fd4bb6808fe4"
+    },
+    {
+      "relativePath": "Coordination/RunInterfernceCheck/EPPlus.dll",
+      "version": "5.8.14.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/EPPlus.dll",
+      "sha256": "6045a92c039c066eb67daee44597e1d7f09ba6f5199504174814c4c4628718a5"
+    },
+    {
+      "relativePath": "Coordination/RunInterfernceCheck/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/Lumora.dll",
+      "sha256": "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
+    },
+    {
+      "relativePath": "Coordination/RunInterfernceCheck/Manifest.addin",
+      "version": "0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/Manifest.addin",
+      "sha256": "c1696ee588e3571cf0b63f36c947f57b3f29837076bf1991cc3e78c8e8019c70"
+    },
+    {
+      "relativePath": "Coordination/RunInterfernceCheck/Microsoft.IO.RecyclableMemoryStream.dll",
+      "version": "3.0.1.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/Microsoft.IO.RecyclableMemoryStream.dll",
+      "sha256": "3fc6805c48111ba6f6ddf103325d863fe4cbca3802bbc38c51261110e3977e67"
+    },
+    {
+      "relativePath": "Coordination/RunInterfernceCheck/RunInterfernceCheck.dll",
+      "version": "26.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/RunInterfernceCheck.dll",
+      "sha256": "784f58b42299358da0730de0e39284332bd1a23772154a2bda3da260b4ba99d7"
+    },
+    {
+      "relativePath": "Coordination/RunInterfernceCheck/RunInterfernceCheck.dll.config",
+      "version": "0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/RunInterfernceCheck.dll.config",
+      "sha256": "ea097cfa9632d0149a440edc0929b16bdb30d09fb33cff2413fe018d2da91fdf"
+    },
+    {
+      "relativePath": "Coordination/RunInterfernceCheck/System.Buffers.dll",
+      "version": "4.600.125.16908",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/System.Buffers.dll",
+      "sha256": "2d78d770c9cb997199154ae8c018b9f1d1efbc86729f7264dde6dbad2a12cac3"
+    },
+    {
+      "relativePath": "Coordination/RunInterfernceCheck/System.Memory.dll",
+      "version": "4.600.325.20307",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/System.Memory.dll",
+      "sha256": "d5e8e4866f9cfa66f7765660f84b210198893e55335487afe5ebda342c0e913d"
+    },
+    {
+      "relativePath": "Coordination/RunInterfernceCheck/System.Numerics.Vectors.dll",
+      "version": "4.600.125.16908",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/System.Numerics.Vectors.dll",
+      "sha256": "20c2fa81b8c70d651099d762954f285fd4f942e63b2d7217c145dab8d4b2f4c9"
+    },
+    {
+      "relativePath": "Coordination/RunInterfernceCheck/System.Runtime.CompilerServices.Unsafe.dll",
+      "version": "6.100.225.20307",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/System.Runtime.CompilerServices.Unsafe.dll",
+      "sha256": "08cbd7278b66f1e68425a82d4b97181a4130d93e3dd91831407aba7212ccdacf"
+    },
+    {
+      "relativePath": "Manage/Autojoin/AutoJoin.dll",
+      "version": "26.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Autojoin/AutoJoin.dll",
+      "sha256": "e83b3423f1ec6212f49fee346d785e4da75e237286bbe9c1deb653277a61784a"
+    },
+    {
+      "relativePath": "Manage/Autojoin/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Autojoin/Lumora.dll",
+      "sha256": "7509bb7fa2bd72a38dbd671b6ff7f7540c846ca60ff36f193ac5441e77a87a45"
+    },
+    {
+      "relativePath": "Manage/DataLink/DataLink.dll",
+      "version": "26.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/DataLink/DataLink.dll",
+      "sha256": "de4981287f4bf8305b7afb37214e713e610d469b4bb845c9857d52574de5164c"
+    },
+    {
+      "relativePath": "Manage/DataLink/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/DataLink/Lumora.dll",
+      "sha256": "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
+    },
+    {
+      "relativePath": "Manage/Warning Review/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Warning%20Review/Lumora.dll",
+      "sha256": "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
+    },
+    {
+      "relativePath": "Manage/Warning Review/Manifest.addin",
+      "version": "0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Warning%20Review/Manifest.addin",
+      "sha256": "a0a2be5b465c2fb1a3f8ad4560a51e853a7ae3fd8a20a02918fbfccd3e4bb41d"
+    },
+    {
+      "relativePath": "Manage/Warning Review/RevitAPIHelper.dll",
+      "version": "1.0.8311.24201",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Warning%20Review/RevitAPIHelper.dll",
+      "sha256": "2b27f48fda862edbadc56330c264cca875277d85dfb256d66893fd4bb6808fe4"
+    },
+    {
+      "relativePath": "Manage/Warning Review/Warning.dll",
+      "version": "26.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Warning%20Review/Warning.dll",
+      "sha256": "08c3d5379483b72a597d032e4498f41a388c78e0a6c2f7048fd9f86ad4f711d6"
+    },
+    {
+      "relativePath": "Modify/CopyCompare/CopyCompare.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CopyCompare/CopyCompare.dll",
+      "sha256": "b6723c4908479054fd8cd1701190245a4535b3afacdb75c50ef66c5d44f4c76e"
+    },
+    {
+      "relativePath": "Modify/CopyCompare/CopyCompareManifest.addin",
+      "version": "0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CopyCompare/CopyCompareManifest.addin",
+      "sha256": "c2caa40ee18cdca6c3fa7e3d518027b00036b8c2a1ffb4287f3c4b3e4c21efcb"
+    },
+    {
+      "relativePath": "Modify/CopyCompare/RevitAPIHelper.dll",
+      "version": "1.0.8669.20233",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CopyCompare/RevitAPIHelper.dll",
+      "sha256": "6e504f0b1fedac5a475fa2c83be5a158256329931ce491ed2b1aa71c36c4f414"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/DiRoots.One.CommonsPS.dll",
+      "version": "1.3.2.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/DiRoots.One.CommonsPS.dll",
+      "sha256": "e62d80fea2d0de95a1b46af94a6a93f12da323adadb0edb5c8e3382f699c58bb"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/DiRoots.One.NLog.dll",
+      "version": "5.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/DiRoots.One.NLog.dll",
+      "sha256": "6e3a827ed804b6011392347ddfc2e87707fea79d841959373ec7b6d919067132"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/DiRoots.ProSheets.dll",
+      "version": "1.3.2.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/DiRoots.ProSheets.dll",
+      "sha256": "87773aeed2050a879f5d62750c37c3ec4f7ee47a4b70c784088a1ce2ab01319e"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/DiRoots.TrackerPS.dll",
+      "version": "1.3.2.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/DiRoots.TrackerPS.dll",
+      "sha256": "b9961b0e4e59c3176af21553bf45d1cca937e9e35108f37c7f6da3deb57798a4"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/Microsoft.Xaml.Behaviors.dll",
+      "version": "1.1.39.4716",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Microsoft.Xaml.Behaviors.dll",
+      "sha256": "b864da9d88414877cea9b1a016146265a5fb9d0e12f4dbb1dccc0cc998119a54"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/Newtonsoft.Json.dll",
+      "version": "12.0.2.23222",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Newtonsoft.Json.dll",
+      "sha256": "3598cccad5b535fea6f93662107a4183bfd6167bf1d0f80260436093edc2e3af"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/PdfSharp.Charting.dll",
+      "version": "1.50.5147.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/PdfSharp.Charting.dll",
+      "sha256": "899f362ae7c1ed52f8be29183c73a4e1ea4d72e43305ad30a9426d69e23a79c8"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/PdfSharp.dll",
+      "version": "1.50.5147.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/PdfSharp.dll",
+      "sha256": "2fa0893c6a1a8e64342e65e5464fad417376bd2cc984e53575f5829b07e6a067"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/RestSharp.dll",
+      "version": "106.15.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/RestSharp.dll",
+      "sha256": "37bf2a8815e1833153ff92d0bec3a1405f5c5f146884d0563a96bacd1b0074f9"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/Syncfusion.Compression.Base.dll",
+      "version": "18.4450.0.39",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Syncfusion.Compression.Base.dll",
+      "sha256": "5538c45a8a7bf35bad8530014775366fef2b0933cb42023473098ba9b1c94650"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/Syncfusion.XlsIO.Base.dll",
+      "version": "18.4450.0.39",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Syncfusion.XlsIO.Base.dll",
+      "sha256": "b77b63643b40aba2bb7e1ee982f3b4f1ea601de5dd688b18779970a55e02d48e"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/System.Net.Http.Formatting.dll",
+      "version": "4.0.21112.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/System.Net.Http.Formatting.dll",
+      "sha256": "1d36070eb6e3624a578bc3b99da4dd0829fd8ec78875b3000fad12bbcce9c795"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.dll",
+      "version": "3.4.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.dll",
+      "sha256": "86768c9ac80b74bc99f45b2ec4bc45dcef066681b53fb2d725e83145b189c344"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+      "version": "3.4.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+      "sha256": "a1c16250a3ccb9676b3cddccc693fa819656f1bf90e1bb2d940f4c8a33032bf4"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+      "version": "3.4.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+      "sha256": "86f59f36ff74dc3c49b68ee69ee6747262cde1c144cbcd76a9c1d105cc325253"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+      "version": "3.4.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+      "sha256": "c0f50d36384f79252d2984dcafda9ccbf4da972edc2c09f2cb88dc0afc87af4f"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.DataGrid.dll",
+      "version": "3.4.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.DataGrid.dll",
+      "sha256": "30d9b0a4dd8a54b14feaa150b1f7317bac5c491a3eac5fee9cfce4709729d64a"
+    },
+    {
+      "relativePath": "Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.Toolkit.dll",
+      "version": "3.4.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/DiRoots.ProSheets1.3.2.0/Xceed.Wpf.Toolkit.dll",
+      "sha256": "711001125ff67ce9c8041beedaac3fa6441d64f3b202db53e34010cd42e16ed0"
+    },
+    {
+      "relativePath": "Modify/Split/Manifest.addin",
+      "version": "0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/Split/Manifest.addin",
+      "sha256": "dfaba6d469e9e4a92311a3bdd7e2e1ea827f3519cb4c6cdecbb6783f9359b457"
+    },
+    {
+      "relativePath": "Modify/Split/RevitAPIHelper.dll",
+      "version": "1.0.8311.24201",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/Split/RevitAPIHelper.dll",
+      "sha256": "2b27f48fda862edbadc56330c264cca875277d85dfb256d66893fd4bb6808fe4"
+    },
+    {
+      "relativePath": "Modify/Split/Split.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/Split/Split.dll",
+      "sha256": "b3af797aead1d96d61bc8ffbdeaa25f9fb36e774a46797bc245808b82225bf04"
+    },
+    {
+      "relativePath": "Modify/ZAutoJoin/AutoJoin.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/ZAutoJoin/AutoJoin.dll",
+      "sha256": "aa36154224f8751b0fa5884897194817a24c39d4c16fd3f1ccaf9f586b875f17"
+    },
+    {
+      "relativePath": "Structure/Loading Plan/LoadingPlan.dll",
+      "version": "26.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Loading%20Plan/LoadingPlan.dll",
+      "sha256": "8df70b7e3f17239f3c680d816f26324befbd5571891354ac39836464fb760c36"
+    },
+    {
+      "relativePath": "Structure/Loading Plan/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Loading%20Plan/Lumora.dll",
+      "sha256": "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
+    },
+    {
+      "relativePath": "Structure/RampToFloor/Manifest.addin",
+      "version": "0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/RampToFloor/Manifest.addin",
+      "sha256": "108057f1e0a1e897749e23c8261b21df87930c62cd333a8f6b5c70cd3bb3a046"
+    },
+    {
+      "relativePath": "Structure/RampToFloor/RampToFloor.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/RampToFloor/RampToFloor.dll",
+      "sha256": "0aa55ba5a505fc2965fc425cf600b79b47edf42a77c5e13b414767d331a3eaf1"
+    },
+    {
+      "relativePath": "Structure/RampToFloor/RevitAPIHelper.dll",
+      "version": "1.0.8311.24201",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/RampToFloor/RevitAPIHelper.dll",
+      "sha256": "2b27f48fda862edbadc56330c264cca875277d85dfb256d66893fd4bb6808fe4"
+    },
+    {
+      "relativePath": "Structure/Split/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Split/Lumora.dll",
+      "sha256": "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
+    },
+    {
+      "relativePath": "Structure/Split/Manifest.addin",
+      "version": "0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Split/Manifest.addin",
+      "sha256": "dfaba6d469e9e4a92311a3bdd7e2e1ea827f3519cb4c6cdecbb6783f9359b457"
+    },
+    {
+      "relativePath": "Structure/Split/RevitAPIHelper.dll",
+      "version": "1.0.8311.24201",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Split/RevitAPIHelper.dll",
+      "sha256": "2b27f48fda862edbadc56330c264cca875277d85dfb256d66893fd4bb6808fe4"
+    },
+    {
+      "relativePath": "Structure/Split/Split.dll",
+      "version": "26.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Split/Split.dll",
+      "sha256": "6f71260735b614d5f28ead98f6b1407ca3088657f192db06b858197f100db156"
+    },
+    {
+      "relativePath": "TransferData/DataLink/DataLink.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/TransferData/DataLink/DataLink.dll",
+      "sha256": "deb70e6b17703e4405ae948663649215015ca8009b4417b70b72515dc320c832"
+    },
+    {
+      "relativePath": "TransferData/DataLink/Manifest.addin",
+      "version": "0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/TransferData/DataLink/Manifest.addin",
+      "sha256": "68af85b2ab432be2b3889400fab14c0fd870637347be0f98e05dfd498934420b"
+    }
+  ]
 }
