@@ -290,220 +290,16 @@
       "sha256": "aa36154224f8751b0fa5884897194817a24c39d4c16fd3f1ccaf9f586b875f17"
     },
     {
-      "relativePath": "Structure/Columns Dim/AddInManager.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/AddInManager.dll",
-      "sha256": "a9972742921129cb15f60bbfec9ac01772e81cf8ad7b9bd72e7226be5a031b16"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/AdpSDKCSharpWrapper.dll",
-      "version": "4.5.1.0",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/AdpSDKCSharpWrapper.dll",
-      "sha256": "eb8460f1142e02bb5ca58b60d36b3079db5a63715783fdf11224fd247b4b2e3b"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/AdskRcManaged.dll",
-      "version": "23.0.7.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/AdskRcManaged.dll",
-      "sha256": "050bbccfde75181797f20484bffbcbf46b8e1afb1561be0606bf36de4d1b4ffb"
-    },
-    {
       "relativePath": "Structure/Columns Dim/AdvancedDataGridView.dll",
       "version": "0.1.0.10",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/AdvancedDataGridView.dll",
       "sha256": "7f350fa2d030e04a31800176f53205d37e86e83edc588a5574184234da5c3d45"
     },
     {
-      "relativePath": "Structure/Columns Dim/AdWindows.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/AdWindows.dll",
-      "sha256": "6dbe919fe7b10beae2f7d1307527fe4d5b3a98a903d56f20ead3bcbce615b8a9"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/AnalysisAppsDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/AnalysisAppsDBAPI.dll",
-      "sha256": "3a33f5aba55b762da570e9e296e842221d16b1bb2635821115eda7fc49d36498"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/APIDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/APIDBAPI.dll",
-      "sha256": "0b85d89c43d75e623f19a67fd697270c62c91c37b4bfe5cd6d9013f9d330647c"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/APIInterop.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/APIInterop.dll",
-      "sha256": "aa27c23d535d0b99a7811897e57d049cd47758bb89b0e23419fcb021814200c8"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/APIUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/APIUIAPI.dll",
-      "sha256": "4b8f60bce0a1229e9e13f5b5ccf2fcc9b8572c2b8342d6ef73121aa764a5c08d"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/ArrayElemsDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/ArrayElemsDBAPI.dll",
-      "sha256": "0cf18f4c72efa8538fa2941989ab415949a0be9d0d1bd70f765ec12b40ca98ac"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/AssemblyDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/AssemblyDBAPI.dll",
-      "sha256": "26bf3482b6835f81d2a5975ea0b20292aee74c72dc2b3d63a764ba409631af75"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/ATFRevitCoreAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/ATFRevitCoreAPI.dll",
-      "sha256": "2ce211e271ccd7aec1d3dd03402276a0057777e17959211eabfa72ed014fe72c"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/Autodesk.UI.Themes.dll",
-      "version": "3.0.9",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/Autodesk.UI.Themes.dll",
-      "sha256": "e8ec019bc0c43c1b16cec6e4f298bbbf27a73c59a9e89ca40e68d1070c1ef17f"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/Autodesk.UI.Windows.dll",
-      "version": "3.0.11",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/Autodesk.UI.Windows.dll",
-      "sha256": "79e514f1832ed4d7264b1456fb99be5ed8c488b975afcb293c2cb3270972b978"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/BuildingSystemsDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/BuildingSystemsDBAPI.dll",
-      "sha256": "9be4a7bc9acfb0ac4c387059c5ed0b0bc58fa7f8cbc945223fae38b505432a71"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/BuildingSystemsUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/BuildingSystemsUIAPI.dll",
-      "sha256": "a49ecba005a682aa285fca23f3718a21c662d3af767a75710d6e368a8be23fd2"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/CompositionServices.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/CompositionServices.dll",
-      "sha256": "bd0612e68de543983f5a5495eecd8607857478e9216dd74e0c8e6461ac6aca10"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/CurtainGridFamilyDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/CurtainGridFamilyDBAPI.dll",
-      "sha256": "402aec09b8912dc2cad656915d08bcbc346a01d1844de0d70eab2c760eadf67c"
-    },
-    {
       "relativePath": "Structure/Columns Dim/DataGridViewGrouper.dll",
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/DataGridViewGrouper.dll",
       "sha256": "e84b5a35bcbb412c4a1b4891b1e3f2d283ac8f94bf7bee8a227e579c9b96dd01"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/DBManagedServices.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/DBManagedServices.dll",
-      "sha256": "79e6defdfa8471f22c268676737f897cfcb68250288d67b9eafc463a8eb1687d"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/DesktopMFCAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/DesktopMFCAPI.dll",
-      "sha256": "4807985264719f7a7c615f62f6732e59ca2c017c7252dcbc5f07d117a381c272"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/DetailDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/DetailDBAPI.dll",
-      "sha256": "8b2af8cf46cbd40ad84e3a329e1031bcab001804b6030e54f205d289ac0b5b5b"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/DetailUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/DetailUIAPI.dll",
-      "sha256": "40be9538f54d28de8b6be2a6e748fe6e2dd673128561225c103e542421ed1f8e"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/DPartDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/DPartDBAPI.dll",
-      "sha256": "ada5add0d73ab46cf9b0c019d31b703caeacd5432cf8b44ea041c9bf7fda3cca"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/ElementGroupDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/ElementGroupDBAPI.dll",
-      "sha256": "f0251e3cc76c2684123b7aba370abc6c689e2274977608636914728f05ccde5f"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/EnergyAnalysisDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/EnergyAnalysisDBAPI.dll",
-      "sha256": "d710f932e3f04197475cfef5556072afd229ea5f0ac99f43c72df0114290046a"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/EssentialsDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/EssentialsDBAPI.dll",
-      "sha256": "7997e326c63e10cdad084cf29ed0e1c5fd77e5f22ed2c1f5caf6d47d1f016bfe"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/EssentialsUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/EssentialsUIAPI.dll",
-      "sha256": "4fe8fba3d56af9cdfc24c2fbb3b4ad8248130bbc1251cbec7bf39ecd2720c1fa"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/FamilyDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/FamilyDBAPI.dll",
-      "sha256": "d1ee544e7924a61f289f2fcb56f590f2bab651d9d94c79ebc4b230710dec1fb6"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/GeomUtilAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/GeomUtilAPI.dll",
-      "sha256": "a6c460e12a037243a65feeb6bd9d6de9adec0f969baf0d413cf507bd652783a6"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/GraphicsAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/GraphicsAPI.dll",
-      "sha256": "f380ff36eaaeb2a16724e1084dc6236a66781b38a2b6b16f079766cb3be0528e"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/HostObjDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/HostObjDBAPI.dll",
-      "sha256": "5177791fc6552cd67fd1c530bdac5348043761cad9bb79b90a685cb8496fdb06"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/InfrastructureDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/InfrastructureDBAPI.dll",
-      "sha256": "b5c5a2cfd2febcc5f5cededc520f2de0db09a78e18ac931a6d08076d4c26cd7b"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/InterfaceAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/InterfaceAPI.dll",
-      "sha256": "646f80f2c18da2492a57ec1a7b994fe732e563edaa0a978e5ef529ab99fa19cf"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/InterfaceUtilAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/InterfaceUtilAPI.dll",
-      "sha256": "93dcee85be16bc940693cfdc634df09280d9cb4567e97d5cf90d8207ef2095e8"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/IntfATFAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/IntfATFAPI.dll",
-      "sha256": "5ac38ca416dd6e9970939b3bef733350dd8d7bac54ea6ee68d57d814c6f65a44"
     },
     {
       "relativePath": "Structure/Columns Dim/LiteDB.dll",
@@ -518,40 +314,10 @@
       "sha256": "0b9e3cc3ea2b4632d693bfde558af8b0e5c8388c7fa58a1ad52150cce58037ea"
     },
     {
-      "relativePath": "Structure/Columns Dim/MassingDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/MassingDBAPI.dll",
-      "sha256": "cd7977c8a0b16159d79875426d38139a112700c4bda9547d96639a960270bcf5"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/MaterialDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/MaterialDBAPI.dll",
-      "sha256": "9f7d7efcd25b774a602a2d2e9d03e543836d78597d2e3d4b7811ff264b26e18d"
-    },
-    {
       "relativePath": "Structure/Columns Dim/Newtonsoft.Json.dll",
       "version": "13.0.3.27908",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/Newtonsoft.Json.dll",
       "sha256": "e1e27af7b07eeedf5ce71a9255f0422816a6fc5849a483c6714e1b472044fa9d"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/NumberingDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/NumberingDBAPI.dll",
-      "sha256": "7147112918bce07bcdfcdc00d99b942b9e30bd99688f6420ae592e3a9ca0c579"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/PersistenceDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/PersistenceDBAPI.dll",
-      "sha256": "7f0249f072216c23666623f701e30889225405e71326248dddfe9d0d0639b8f4"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/PointCloudAccessAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/PointCloudAccessAPI.dll",
-      "sha256": "180a3465cea13ad9af4eb4dd0f5e5022a3ce70f711a16f143253746454b6b3a8"
     },
     {
       "relativePath": "Structure/Columns Dim/RCN.CreatingDimensionsWithAxes.dll",
@@ -560,124 +326,10 @@
       "sha256": "99a7576978a42107f023695a3ad4cf133bedd2f0aa9cd6dc6ba054aee1bc31eb"
     },
     {
-      "relativePath": "Structure/Columns Dim/RebarDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/RebarDBAPI.dll",
-      "sha256": "c6c7fcb4e31a78ce4cabceac51afaaba0e60b19daa5ddeb4fecc74c61250c7a7"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/RevitAddInUtility.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/RevitAddInUtility.dll",
-      "sha256": "18eec6641b371cb34c05cda03636800106403f6aa0e27ba85bed1244a93a6828"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/RevitAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/RevitAPI.dll",
-      "sha256": "82423eb2660f72d3708d135953ba9eb7923856477673ff7ee729bbfda6309fb1"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/RevitAPIFoundation.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/RevitAPIFoundation.dll",
-      "sha256": "bbe2bf21752e1e52a1b49c83d86e99b7a1cb6166ff7254f2e0a8a8fe20c04419"
-    },
-    {
       "relativePath": "Structure/Columns Dim/RevitAPIHelper.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/RevitAPIHelper.dll",
       "sha256": "70b071f7f8c5e3f5b310c616313f999d964f5978df686baf58adfdd97ca9fd5c"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/RevitAPIUI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/RevitAPIUI.dll",
-      "sha256": "1945ecf270ea35c72909daf5000efa5ac3a140781b040b3374e44a3e6915d97f"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/RevitDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/RevitDBAPI.dll",
-      "sha256": "6a7ad448e07103580091ca585ecd737968cf2fa59155e1779d6da0704c3be20e"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/RevitDBCoreAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/RevitDBCoreAPI.dll",
-      "sha256": "d6d72ba60e6d155fd2c1febd1de6c39bf4327f468dc05337595c40e8e2317aa4"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/RevitMFCAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/RevitMFCAPI.dll",
-      "sha256": "7cec1866a9ad854d629b39aaa08a18161e74a3e8eff42cbcc1c2dca9cb20803e"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/RevitUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/RevitUIAPI.dll",
-      "sha256": "3cd489bfe5a93368c01bffdbe4c370414f59dbb5bb28772dfe34416c1c3712d1"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/RoomAreaPlanDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/RoomAreaPlanDBAPI.dll",
-      "sha256": "533b5b91257d7c33111b4c0a29ee9fb720c98d147ff17990ec8cb49069079f0d"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/SculptingDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/SculptingDBAPI.dll",
-      "sha256": "cb7bd92f81c3afc3bd5b4f4ccb34d8b8bdba09c1a75108e6b1ea14fdc83e65b1"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/SiteDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/SiteDBAPI.dll",
-      "sha256": "64a7ad0db40f664f74712f8051158311366187e2dcd0e7019a8ed65f316c7509"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/StairRampDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/StairRampDBAPI.dll",
-      "sha256": "ed46ed76ccf230bbb72bc8ba35d9dbdebd502a13b6cc7deb517be7f64eb336f3"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/StructuralAnalysisDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/StructuralAnalysisDBAPI.dll",
-      "sha256": "848e01227c6c3449095abfbddc85c7c3c0564eb27742fff46729292b194fae1e"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/StructuralDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/StructuralDBAPI.dll",
-      "sha256": "487c8955edaa8e291a95fc652e55c8f634c59a435a29ecf02fd4c0f0603dd236"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/TextEngineAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/TextEngineAPI.dll",
-      "sha256": "dae6a58b73ad85c36c28bdfb1eb8b64174ecc56e0ba3f8a0cf07041095271546"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/UIFramework.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/UIFramework.dll",
-      "sha256": "e707bbc3a616da60f9e9a532e6e3c6c87d6965073b1113582a67c63cfaae48b2"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/UIFrameworkServices.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/UIFrameworkServices.dll",
-      "sha256": "856719bdb6d8f04cfcc11a3ba480433c1271cff01c579b2d359e6450ea8cecf7"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/UtilityAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/UtilityAPI.dll",
-      "sha256": "cbf5277f6a65a1ff1386b9f001a86ccf69269a8f6216081d57d967fd7b90995e"
     },
     {
       "relativePath": "Structure/Columns Dim/Xceed.Wpf.AvalonDock.dll",
@@ -686,76 +338,10 @@
       "sha256": "a06052d9b4852da1321fb72e993d8c26682f5724a8d30d5e23723388b3955646"
     },
     {
-      "relativePath": "Structure/Columns Dim/cs-CZ/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/cs-CZ/AdWindows.resources.dll",
-      "sha256": "3b6ca6536f7369d42336678ed7de290a0d2fbe120b5f1b1c4ef6776813261e00"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/de-DE/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/de-DE/AdWindows.resources.dll",
-      "sha256": "a5eed4a51da0b03f4d061d54956dba3d4e0fddca85d9f16c27b75b8cd1b8a578"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/en-GB/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/en-GB/AdWindows.resources.dll",
-      "sha256": "af23f0dc2b094f86192d58678ce6954fba3ba2d5bdb8ebce7daf5e7f7cf55165"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/en-US/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/en-US/AdWindows.resources.dll",
-      "sha256": "af23f0dc2b094f86192d58678ce6954fba3ba2d5bdb8ebce7daf5e7f7cf55165"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/es-ES/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/es-ES/AdWindows.resources.dll",
-      "sha256": "ef0f834898ed45a191f6cf910b4a368f1b8868a348467e16363a888f8ca46b48"
-    },
-    {
       "relativePath": "Structure/Columns Dim/fr/AdvancedDataGridView.resources.dll",
       "version": "0.1.0.10",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/fr/AdvancedDataGridView.resources.dll",
       "sha256": "7064aff6cde5488ed87636c165ea89ba44b309fe8e5f454de63cde37dde7d7b6"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/fr-FR/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/fr-FR/AdWindows.resources.dll",
-      "sha256": "feb3d76bc06248eb05b90429a7dd615ed39b4c53bb55945b7540e8b8401a7a12"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/it-IT/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/it-IT/AdWindows.resources.dll",
-      "sha256": "96e4b5417ce83eb53a69178c931b0d0649255683a1250b8b271e786ca54ce51b"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/ja-JP/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/ja-JP/AdWindows.resources.dll",
-      "sha256": "2ad00e3b30496a14d04cc5b166ff3368a32ab8e6fbbb13c4c9ac5125bedd2cb2"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/ko-KR/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/ko-KR/AdWindows.resources.dll",
-      "sha256": "b8d55657750a43fb3df4639870ba677d82d3f81a29d36370d79a85e8ac9d3ba9"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/pl-PL/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/pl-PL/AdWindows.resources.dll",
-      "sha256": "1f64c61803933945fef56e3d41905d409cbc1803cbedbc8cde1c1c3321ce53b5"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/pt-BR/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/pt-BR/AdWindows.resources.dll",
-      "sha256": "6f862c4745bb119b1cfdc0e6cbaccf6e047b609b2791289a4a2934e9e31cb35e"
     },
     {
       "relativePath": "Structure/Columns Dim/ru/AdvancedDataGridView.resources.dll",
@@ -764,238 +350,16 @@
       "sha256": "2c5e590e22da66857ee392c4d3a5d6c04c80c50901b1521d9f089d3b40466a63"
     },
     {
-      "relativePath": "Structure/Columns Dim/ru-RU/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/ru-RU/AdWindows.resources.dll",
-      "sha256": "d5cdc435a2eec7670a1cf496f5abd2c78f8c00401e5e928a44bdab43c459fd0e"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/zh-CN/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/zh-CN/AdWindows.resources.dll",
-      "sha256": "ab04b5be41b4fb6bd2692bda0d6a7c5472ea97900ee7862bddb62ed2a980c2e0"
-    },
-    {
-      "relativePath": "Structure/Columns Dim/zh-TW/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/zh-TW/AdWindows.resources.dll",
-      "sha256": "171177f10829d9d34075ee5320a13fd5e4cf0a242730f23ef8f81f74d43f01fe"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/AddInManager.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/AddInManager.dll",
-      "sha256": "a9972742921129cb15f60bbfec9ac01772e81cf8ad7b9bd72e7226be5a031b16"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/AdpSDKCSharpWrapper.dll",
-      "version": "4.5.1.0",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/AdpSDKCSharpWrapper.dll",
-      "sha256": "eb8460f1142e02bb5ca58b60d36b3079db5a63715783fdf11224fd247b4b2e3b"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/AdskRcManaged.dll",
-      "version": "23.0.7.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/AdskRcManaged.dll",
-      "sha256": "050bbccfde75181797f20484bffbcbf46b8e1afb1561be0606bf36de4d1b4ffb"
-    },
-    {
       "relativePath": "Structure/Columns Tag/AdvancedDataGridView.dll",
       "version": "0.1.0.10",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/AdvancedDataGridView.dll",
       "sha256": "7f350fa2d030e04a31800176f53205d37e86e83edc588a5574184234da5c3d45"
     },
     {
-      "relativePath": "Structure/Columns Tag/AdWindows.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/AdWindows.dll",
-      "sha256": "6dbe919fe7b10beae2f7d1307527fe4d5b3a98a903d56f20ead3bcbce615b8a9"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/AnalysisAppsDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/AnalysisAppsDBAPI.dll",
-      "sha256": "3a33f5aba55b762da570e9e296e842221d16b1bb2635821115eda7fc49d36498"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/APIDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/APIDBAPI.dll",
-      "sha256": "0b85d89c43d75e623f19a67fd697270c62c91c37b4bfe5cd6d9013f9d330647c"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/APIInterop.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/APIInterop.dll",
-      "sha256": "aa27c23d535d0b99a7811897e57d049cd47758bb89b0e23419fcb021814200c8"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/APIUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/APIUIAPI.dll",
-      "sha256": "4b8f60bce0a1229e9e13f5b5ccf2fcc9b8572c2b8342d6ef73121aa764a5c08d"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/ArrayElemsDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/ArrayElemsDBAPI.dll",
-      "sha256": "0cf18f4c72efa8538fa2941989ab415949a0be9d0d1bd70f765ec12b40ca98ac"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/AssemblyDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/AssemblyDBAPI.dll",
-      "sha256": "26bf3482b6835f81d2a5975ea0b20292aee74c72dc2b3d63a764ba409631af75"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/ATFRevitCoreAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/ATFRevitCoreAPI.dll",
-      "sha256": "2ce211e271ccd7aec1d3dd03402276a0057777e17959211eabfa72ed014fe72c"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/Autodesk.UI.Themes.dll",
-      "version": "3.0.9",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/Autodesk.UI.Themes.dll",
-      "sha256": "e8ec019bc0c43c1b16cec6e4f298bbbf27a73c59a9e89ca40e68d1070c1ef17f"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/Autodesk.UI.Windows.dll",
-      "version": "3.0.11",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/Autodesk.UI.Windows.dll",
-      "sha256": "79e514f1832ed4d7264b1456fb99be5ed8c488b975afcb293c2cb3270972b978"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/BuildingSystemsDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/BuildingSystemsDBAPI.dll",
-      "sha256": "9be4a7bc9acfb0ac4c387059c5ed0b0bc58fa7f8cbc945223fae38b505432a71"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/BuildingSystemsUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/BuildingSystemsUIAPI.dll",
-      "sha256": "a49ecba005a682aa285fca23f3718a21c662d3af767a75710d6e368a8be23fd2"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/CompositionServices.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/CompositionServices.dll",
-      "sha256": "bd0612e68de543983f5a5495eecd8607857478e9216dd74e0c8e6461ac6aca10"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/CurtainGridFamilyDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/CurtainGridFamilyDBAPI.dll",
-      "sha256": "402aec09b8912dc2cad656915d08bcbc346a01d1844de0d70eab2c760eadf67c"
-    },
-    {
       "relativePath": "Structure/Columns Tag/DataGridViewGrouper.dll",
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/DataGridViewGrouper.dll",
       "sha256": "e84b5a35bcbb412c4a1b4891b1e3f2d283ac8f94bf7bee8a227e579c9b96dd01"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/DBManagedServices.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/DBManagedServices.dll",
-      "sha256": "79e6defdfa8471f22c268676737f897cfcb68250288d67b9eafc463a8eb1687d"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/DesktopMFCAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/DesktopMFCAPI.dll",
-      "sha256": "4807985264719f7a7c615f62f6732e59ca2c017c7252dcbc5f07d117a381c272"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/DetailDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/DetailDBAPI.dll",
-      "sha256": "8b2af8cf46cbd40ad84e3a329e1031bcab001804b6030e54f205d289ac0b5b5b"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/DetailUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/DetailUIAPI.dll",
-      "sha256": "40be9538f54d28de8b6be2a6e748fe6e2dd673128561225c103e542421ed1f8e"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/DPartDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/DPartDBAPI.dll",
-      "sha256": "ada5add0d73ab46cf9b0c019d31b703caeacd5432cf8b44ea041c9bf7fda3cca"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/ElementGroupDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/ElementGroupDBAPI.dll",
-      "sha256": "f0251e3cc76c2684123b7aba370abc6c689e2274977608636914728f05ccde5f"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/EnergyAnalysisDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/EnergyAnalysisDBAPI.dll",
-      "sha256": "d710f932e3f04197475cfef5556072afd229ea5f0ac99f43c72df0114290046a"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/EssentialsDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/EssentialsDBAPI.dll",
-      "sha256": "7997e326c63e10cdad084cf29ed0e1c5fd77e5f22ed2c1f5caf6d47d1f016bfe"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/EssentialsUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/EssentialsUIAPI.dll",
-      "sha256": "4fe8fba3d56af9cdfc24c2fbb3b4ad8248130bbc1251cbec7bf39ecd2720c1fa"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/FamilyDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/FamilyDBAPI.dll",
-      "sha256": "d1ee544e7924a61f289f2fcb56f590f2bab651d9d94c79ebc4b230710dec1fb6"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/GeomUtilAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/GeomUtilAPI.dll",
-      "sha256": "a6c460e12a037243a65feeb6bd9d6de9adec0f969baf0d413cf507bd652783a6"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/GraphicsAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/GraphicsAPI.dll",
-      "sha256": "f380ff36eaaeb2a16724e1084dc6236a66781b38a2b6b16f079766cb3be0528e"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/HostObjDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/HostObjDBAPI.dll",
-      "sha256": "5177791fc6552cd67fd1c530bdac5348043761cad9bb79b90a685cb8496fdb06"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/InfrastructureDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/InfrastructureDBAPI.dll",
-      "sha256": "b5c5a2cfd2febcc5f5cededc520f2de0db09a78e18ac931a6d08076d4c26cd7b"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/InterfaceAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/InterfaceAPI.dll",
-      "sha256": "646f80f2c18da2492a57ec1a7b994fe732e563edaa0a978e5ef529ab99fa19cf"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/InterfaceUtilAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/InterfaceUtilAPI.dll",
-      "sha256": "93dcee85be16bc940693cfdc634df09280d9cb4567e97d5cf90d8207ef2095e8"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/IntfATFAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/IntfATFAPI.dll",
-      "sha256": "5ac38ca416dd6e9970939b3bef733350dd8d7bac54ea6ee68d57d814c6f65a44"
     },
     {
       "relativePath": "Structure/Columns Tag/LiteDB.dll",
@@ -1010,40 +374,10 @@
       "sha256": "0b9e3cc3ea2b4632d693bfde558af8b0e5c8388c7fa58a1ad52150cce58037ea"
     },
     {
-      "relativePath": "Structure/Columns Tag/MassingDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/MassingDBAPI.dll",
-      "sha256": "cd7977c8a0b16159d79875426d38139a112700c4bda9547d96639a960270bcf5"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/MaterialDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/MaterialDBAPI.dll",
-      "sha256": "9f7d7efcd25b774a602a2d2e9d03e543836d78597d2e3d4b7811ff264b26e18d"
-    },
-    {
       "relativePath": "Structure/Columns Tag/Newtonsoft.Json.dll",
       "version": "13.0.3.27908",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/Newtonsoft.Json.dll",
       "sha256": "e1e27af7b07eeedf5ce71a9255f0422816a6fc5849a483c6714e1b472044fa9d"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/NumberingDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/NumberingDBAPI.dll",
-      "sha256": "7147112918bce07bcdfcdc00d99b942b9e30bd99688f6420ae592e3a9ca0c579"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/PersistenceDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/PersistenceDBAPI.dll",
-      "sha256": "7f0249f072216c23666623f701e30889225405e71326248dddfe9d0d0639b8f4"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/PointCloudAccessAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/PointCloudAccessAPI.dll",
-      "sha256": "180a3465cea13ad9af4eb4dd0f5e5022a3ce70f711a16f143253746454b6b3a8"
     },
     {
       "relativePath": "Structure/Columns Tag/RCN.AnnotateColumns.dll",
@@ -1052,124 +386,10 @@
       "sha256": "dc66e89d31869b507bdbdeccca658312140e5b3345afb311bc023c5a761ee4b6"
     },
     {
-      "relativePath": "Structure/Columns Tag/RebarDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/RebarDBAPI.dll",
-      "sha256": "c6c7fcb4e31a78ce4cabceac51afaaba0e60b19daa5ddeb4fecc74c61250c7a7"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/RevitAddInUtility.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/RevitAddInUtility.dll",
-      "sha256": "18eec6641b371cb34c05cda03636800106403f6aa0e27ba85bed1244a93a6828"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/RevitAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/RevitAPI.dll",
-      "sha256": "82423eb2660f72d3708d135953ba9eb7923856477673ff7ee729bbfda6309fb1"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/RevitAPIFoundation.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/RevitAPIFoundation.dll",
-      "sha256": "bbe2bf21752e1e52a1b49c83d86e99b7a1cb6166ff7254f2e0a8a8fe20c04419"
-    },
-    {
       "relativePath": "Structure/Columns Tag/RevitAPIHelper.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/RevitAPIHelper.dll",
       "sha256": "70b071f7f8c5e3f5b310c616313f999d964f5978df686baf58adfdd97ca9fd5c"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/RevitAPIUI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/RevitAPIUI.dll",
-      "sha256": "1945ecf270ea35c72909daf5000efa5ac3a140781b040b3374e44a3e6915d97f"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/RevitDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/RevitDBAPI.dll",
-      "sha256": "6a7ad448e07103580091ca585ecd737968cf2fa59155e1779d6da0704c3be20e"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/RevitDBCoreAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/RevitDBCoreAPI.dll",
-      "sha256": "d6d72ba60e6d155fd2c1febd1de6c39bf4327f468dc05337595c40e8e2317aa4"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/RevitMFCAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/RevitMFCAPI.dll",
-      "sha256": "7cec1866a9ad854d629b39aaa08a18161e74a3e8eff42cbcc1c2dca9cb20803e"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/RevitUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/RevitUIAPI.dll",
-      "sha256": "3cd489bfe5a93368c01bffdbe4c370414f59dbb5bb28772dfe34416c1c3712d1"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/RoomAreaPlanDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/RoomAreaPlanDBAPI.dll",
-      "sha256": "533b5b91257d7c33111b4c0a29ee9fb720c98d147ff17990ec8cb49069079f0d"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/SculptingDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/SculptingDBAPI.dll",
-      "sha256": "cb7bd92f81c3afc3bd5b4f4ccb34d8b8bdba09c1a75108e6b1ea14fdc83e65b1"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/SiteDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/SiteDBAPI.dll",
-      "sha256": "64a7ad0db40f664f74712f8051158311366187e2dcd0e7019a8ed65f316c7509"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/StairRampDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/StairRampDBAPI.dll",
-      "sha256": "ed46ed76ccf230bbb72bc8ba35d9dbdebd502a13b6cc7deb517be7f64eb336f3"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/StructuralAnalysisDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/StructuralAnalysisDBAPI.dll",
-      "sha256": "848e01227c6c3449095abfbddc85c7c3c0564eb27742fff46729292b194fae1e"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/StructuralDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/StructuralDBAPI.dll",
-      "sha256": "487c8955edaa8e291a95fc652e55c8f634c59a435a29ecf02fd4c0f0603dd236"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/TextEngineAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/TextEngineAPI.dll",
-      "sha256": "dae6a58b73ad85c36c28bdfb1eb8b64174ecc56e0ba3f8a0cf07041095271546"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/UIFramework.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/UIFramework.dll",
-      "sha256": "e707bbc3a616da60f9e9a532e6e3c6c87d6965073b1113582a67c63cfaae48b2"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/UIFrameworkServices.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/UIFrameworkServices.dll",
-      "sha256": "856719bdb6d8f04cfcc11a3ba480433c1271cff01c579b2d359e6450ea8cecf7"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/UtilityAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/UtilityAPI.dll",
-      "sha256": "cbf5277f6a65a1ff1386b9f001a86ccf69269a8f6216081d57d967fd7b90995e"
     },
     {
       "relativePath": "Structure/Columns Tag/Xceed.Wpf.AvalonDock.dll",
@@ -1178,76 +398,10 @@
       "sha256": "a06052d9b4852da1321fb72e993d8c26682f5724a8d30d5e23723388b3955646"
     },
     {
-      "relativePath": "Structure/Columns Tag/cs-CZ/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/cs-CZ/AdWindows.resources.dll",
-      "sha256": "3b6ca6536f7369d42336678ed7de290a0d2fbe120b5f1b1c4ef6776813261e00"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/de-DE/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/de-DE/AdWindows.resources.dll",
-      "sha256": "a5eed4a51da0b03f4d061d54956dba3d4e0fddca85d9f16c27b75b8cd1b8a578"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/en-GB/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/en-GB/AdWindows.resources.dll",
-      "sha256": "af23f0dc2b094f86192d58678ce6954fba3ba2d5bdb8ebce7daf5e7f7cf55165"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/en-US/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/en-US/AdWindows.resources.dll",
-      "sha256": "af23f0dc2b094f86192d58678ce6954fba3ba2d5bdb8ebce7daf5e7f7cf55165"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/es-ES/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/es-ES/AdWindows.resources.dll",
-      "sha256": "ef0f834898ed45a191f6cf910b4a368f1b8868a348467e16363a888f8ca46b48"
-    },
-    {
       "relativePath": "Structure/Columns Tag/fr/AdvancedDataGridView.resources.dll",
       "version": "0.1.0.10",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/fr/AdvancedDataGridView.resources.dll",
       "sha256": "7064aff6cde5488ed87636c165ea89ba44b309fe8e5f454de63cde37dde7d7b6"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/fr-FR/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/fr-FR/AdWindows.resources.dll",
-      "sha256": "feb3d76bc06248eb05b90429a7dd615ed39b4c53bb55945b7540e8b8401a7a12"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/it-IT/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/it-IT/AdWindows.resources.dll",
-      "sha256": "96e4b5417ce83eb53a69178c931b0d0649255683a1250b8b271e786ca54ce51b"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/ja-JP/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/ja-JP/AdWindows.resources.dll",
-      "sha256": "2ad00e3b30496a14d04cc5b166ff3368a32ab8e6fbbb13c4c9ac5125bedd2cb2"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/ko-KR/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/ko-KR/AdWindows.resources.dll",
-      "sha256": "b8d55657750a43fb3df4639870ba677d82d3f81a29d36370d79a85e8ac9d3ba9"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/pl-PL/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/pl-PL/AdWindows.resources.dll",
-      "sha256": "1f64c61803933945fef56e3d41905d409cbc1803cbedbc8cde1c1c3321ce53b5"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/pt-BR/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/pt-BR/AdWindows.resources.dll",
-      "sha256": "6f862c4745bb119b1cfdc0e6cbaccf6e047b609b2791289a4a2934e9e31cb35e"
     },
     {
       "relativePath": "Structure/Columns Tag/ru/AdvancedDataGridView.resources.dll",
@@ -1256,238 +410,16 @@
       "sha256": "2c5e590e22da66857ee392c4d3a5d6c04c80c50901b1521d9f089d3b40466a63"
     },
     {
-      "relativePath": "Structure/Columns Tag/ru-RU/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/ru-RU/AdWindows.resources.dll",
-      "sha256": "d5cdc435a2eec7670a1cf496f5abd2c78f8c00401e5e928a44bdab43c459fd0e"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/zh-CN/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/zh-CN/AdWindows.resources.dll",
-      "sha256": "ab04b5be41b4fb6bd2692bda0d6a7c5472ea97900ee7862bddb62ed2a980c2e0"
-    },
-    {
-      "relativePath": "Structure/Columns Tag/zh-TW/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/zh-TW/AdWindows.resources.dll",
-      "sha256": "171177f10829d9d34075ee5320a13fd5e4cf0a242730f23ef8f81f74d43f01fe"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/AddInManager.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/AddInManager.dll",
-      "sha256": "a9972742921129cb15f60bbfec9ac01772e81cf8ad7b9bd72e7226be5a031b16"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/AdpSDKCSharpWrapper.dll",
-      "version": "4.5.1.0",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/AdpSDKCSharpWrapper.dll",
-      "sha256": "eb8460f1142e02bb5ca58b60d36b3079db5a63715783fdf11224fd247b4b2e3b"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/AdskRcManaged.dll",
-      "version": "23.0.7.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/AdskRcManaged.dll",
-      "sha256": "050bbccfde75181797f20484bffbcbf46b8e1afb1561be0606bf36de4d1b4ffb"
-    },
-    {
       "relativePath": "Structure/Grids Dim/AdvancedDataGridView.dll",
       "version": "0.1.0.10",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/AdvancedDataGridView.dll",
       "sha256": "7f350fa2d030e04a31800176f53205d37e86e83edc588a5574184234da5c3d45"
     },
     {
-      "relativePath": "Structure/Grids Dim/AdWindows.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/AdWindows.dll",
-      "sha256": "6dbe919fe7b10beae2f7d1307527fe4d5b3a98a903d56f20ead3bcbce615b8a9"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/AnalysisAppsDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/AnalysisAppsDBAPI.dll",
-      "sha256": "3a33f5aba55b762da570e9e296e842221d16b1bb2635821115eda7fc49d36498"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/APIDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/APIDBAPI.dll",
-      "sha256": "0b85d89c43d75e623f19a67fd697270c62c91c37b4bfe5cd6d9013f9d330647c"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/APIInterop.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/APIInterop.dll",
-      "sha256": "aa27c23d535d0b99a7811897e57d049cd47758bb89b0e23419fcb021814200c8"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/APIUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/APIUIAPI.dll",
-      "sha256": "4b8f60bce0a1229e9e13f5b5ccf2fcc9b8572c2b8342d6ef73121aa764a5c08d"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/ArrayElemsDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/ArrayElemsDBAPI.dll",
-      "sha256": "0cf18f4c72efa8538fa2941989ab415949a0be9d0d1bd70f765ec12b40ca98ac"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/AssemblyDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/AssemblyDBAPI.dll",
-      "sha256": "26bf3482b6835f81d2a5975ea0b20292aee74c72dc2b3d63a764ba409631af75"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/ATFRevitCoreAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/ATFRevitCoreAPI.dll",
-      "sha256": "2ce211e271ccd7aec1d3dd03402276a0057777e17959211eabfa72ed014fe72c"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/Autodesk.UI.Themes.dll",
-      "version": "3.0.9",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/Autodesk.UI.Themes.dll",
-      "sha256": "e8ec019bc0c43c1b16cec6e4f298bbbf27a73c59a9e89ca40e68d1070c1ef17f"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/Autodesk.UI.Windows.dll",
-      "version": "3.0.11",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/Autodesk.UI.Windows.dll",
-      "sha256": "79e514f1832ed4d7264b1456fb99be5ed8c488b975afcb293c2cb3270972b978"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/BuildingSystemsDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/BuildingSystemsDBAPI.dll",
-      "sha256": "9be4a7bc9acfb0ac4c387059c5ed0b0bc58fa7f8cbc945223fae38b505432a71"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/BuildingSystemsUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/BuildingSystemsUIAPI.dll",
-      "sha256": "a49ecba005a682aa285fca23f3718a21c662d3af767a75710d6e368a8be23fd2"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/CompositionServices.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/CompositionServices.dll",
-      "sha256": "bd0612e68de543983f5a5495eecd8607857478e9216dd74e0c8e6461ac6aca10"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/CurtainGridFamilyDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/CurtainGridFamilyDBAPI.dll",
-      "sha256": "402aec09b8912dc2cad656915d08bcbc346a01d1844de0d70eab2c760eadf67c"
-    },
-    {
       "relativePath": "Structure/Grids Dim/DataGridViewGrouper.dll",
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/DataGridViewGrouper.dll",
       "sha256": "e84b5a35bcbb412c4a1b4891b1e3f2d283ac8f94bf7bee8a227e579c9b96dd01"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/DBManagedServices.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/DBManagedServices.dll",
-      "sha256": "79e6defdfa8471f22c268676737f897cfcb68250288d67b9eafc463a8eb1687d"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/DesktopMFCAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/DesktopMFCAPI.dll",
-      "sha256": "4807985264719f7a7c615f62f6732e59ca2c017c7252dcbc5f07d117a381c272"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/DetailDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/DetailDBAPI.dll",
-      "sha256": "8b2af8cf46cbd40ad84e3a329e1031bcab001804b6030e54f205d289ac0b5b5b"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/DetailUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/DetailUIAPI.dll",
-      "sha256": "40be9538f54d28de8b6be2a6e748fe6e2dd673128561225c103e542421ed1f8e"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/DPartDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/DPartDBAPI.dll",
-      "sha256": "ada5add0d73ab46cf9b0c019d31b703caeacd5432cf8b44ea041c9bf7fda3cca"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/ElementGroupDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/ElementGroupDBAPI.dll",
-      "sha256": "f0251e3cc76c2684123b7aba370abc6c689e2274977608636914728f05ccde5f"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/EnergyAnalysisDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/EnergyAnalysisDBAPI.dll",
-      "sha256": "d710f932e3f04197475cfef5556072afd229ea5f0ac99f43c72df0114290046a"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/EssentialsDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/EssentialsDBAPI.dll",
-      "sha256": "7997e326c63e10cdad084cf29ed0e1c5fd77e5f22ed2c1f5caf6d47d1f016bfe"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/EssentialsUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/EssentialsUIAPI.dll",
-      "sha256": "4fe8fba3d56af9cdfc24c2fbb3b4ad8248130bbc1251cbec7bf39ecd2720c1fa"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/FamilyDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/FamilyDBAPI.dll",
-      "sha256": "d1ee544e7924a61f289f2fcb56f590f2bab651d9d94c79ebc4b230710dec1fb6"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/GeomUtilAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/GeomUtilAPI.dll",
-      "sha256": "a6c460e12a037243a65feeb6bd9d6de9adec0f969baf0d413cf507bd652783a6"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/GraphicsAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/GraphicsAPI.dll",
-      "sha256": "f380ff36eaaeb2a16724e1084dc6236a66781b38a2b6b16f079766cb3be0528e"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/HostObjDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/HostObjDBAPI.dll",
-      "sha256": "5177791fc6552cd67fd1c530bdac5348043761cad9bb79b90a685cb8496fdb06"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/InfrastructureDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/InfrastructureDBAPI.dll",
-      "sha256": "b5c5a2cfd2febcc5f5cededc520f2de0db09a78e18ac931a6d08076d4c26cd7b"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/InterfaceAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/InterfaceAPI.dll",
-      "sha256": "646f80f2c18da2492a57ec1a7b994fe732e563edaa0a978e5ef529ab99fa19cf"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/InterfaceUtilAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/InterfaceUtilAPI.dll",
-      "sha256": "93dcee85be16bc940693cfdc634df09280d9cb4567e97d5cf90d8207ef2095e8"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/IntfATFAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/IntfATFAPI.dll",
-      "sha256": "5ac38ca416dd6e9970939b3bef733350dd8d7bac54ea6ee68d57d814c6f65a44"
     },
     {
       "relativePath": "Structure/Grids Dim/LiteDB.dll",
@@ -1502,40 +434,10 @@
       "sha256": "0b9e3cc3ea2b4632d693bfde558af8b0e5c8388c7fa58a1ad52150cce58037ea"
     },
     {
-      "relativePath": "Structure/Grids Dim/MassingDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/MassingDBAPI.dll",
-      "sha256": "cd7977c8a0b16159d79875426d38139a112700c4bda9547d96639a960270bcf5"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/MaterialDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/MaterialDBAPI.dll",
-      "sha256": "9f7d7efcd25b774a602a2d2e9d03e543836d78597d2e3d4b7811ff264b26e18d"
-    },
-    {
       "relativePath": "Structure/Grids Dim/Newtonsoft.Json.dll",
       "version": "13.0.3.27908",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/Newtonsoft.Json.dll",
       "sha256": "e1e27af7b07eeedf5ce71a9255f0422816a6fc5849a483c6714e1b472044fa9d"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/NumberingDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/NumberingDBAPI.dll",
-      "sha256": "7147112918bce07bcdfcdc00d99b942b9e30bd99688f6420ae592e3a9ca0c579"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/PersistenceDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/PersistenceDBAPI.dll",
-      "sha256": "7f0249f072216c23666623f701e30889225405e71326248dddfe9d0d0639b8f4"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/PointCloudAccessAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/PointCloudAccessAPI.dll",
-      "sha256": "180a3465cea13ad9af4eb4dd0f5e5022a3ce70f711a16f143253746454b6b3a8"
     },
     {
       "relativePath": "Structure/Grids Dim/RCN.DimGrids.dll",
@@ -1544,124 +446,10 @@
       "sha256": "a35c740e4cfa6b978801a782f54dec7c92249774ece558904d3e23ad16570aee"
     },
     {
-      "relativePath": "Structure/Grids Dim/RebarDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/RebarDBAPI.dll",
-      "sha256": "c6c7fcb4e31a78ce4cabceac51afaaba0e60b19daa5ddeb4fecc74c61250c7a7"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/RevitAddInUtility.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/RevitAddInUtility.dll",
-      "sha256": "18eec6641b371cb34c05cda03636800106403f6aa0e27ba85bed1244a93a6828"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/RevitAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/RevitAPI.dll",
-      "sha256": "82423eb2660f72d3708d135953ba9eb7923856477673ff7ee729bbfda6309fb1"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/RevitAPIFoundation.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/RevitAPIFoundation.dll",
-      "sha256": "bbe2bf21752e1e52a1b49c83d86e99b7a1cb6166ff7254f2e0a8a8fe20c04419"
-    },
-    {
       "relativePath": "Structure/Grids Dim/RevitAPIHelper.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/RevitAPIHelper.dll",
       "sha256": "70b071f7f8c5e3f5b310c616313f999d964f5978df686baf58adfdd97ca9fd5c"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/RevitAPIUI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/RevitAPIUI.dll",
-      "sha256": "1945ecf270ea35c72909daf5000efa5ac3a140781b040b3374e44a3e6915d97f"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/RevitDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/RevitDBAPI.dll",
-      "sha256": "6a7ad448e07103580091ca585ecd737968cf2fa59155e1779d6da0704c3be20e"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/RevitDBCoreAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/RevitDBCoreAPI.dll",
-      "sha256": "d6d72ba60e6d155fd2c1febd1de6c39bf4327f468dc05337595c40e8e2317aa4"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/RevitMFCAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/RevitMFCAPI.dll",
-      "sha256": "7cec1866a9ad854d629b39aaa08a18161e74a3e8eff42cbcc1c2dca9cb20803e"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/RevitUIAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/RevitUIAPI.dll",
-      "sha256": "3cd489bfe5a93368c01bffdbe4c370414f59dbb5bb28772dfe34416c1c3712d1"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/RoomAreaPlanDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/RoomAreaPlanDBAPI.dll",
-      "sha256": "533b5b91257d7c33111b4c0a29ee9fb720c98d147ff17990ec8cb49069079f0d"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/SculptingDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/SculptingDBAPI.dll",
-      "sha256": "cb7bd92f81c3afc3bd5b4f4ccb34d8b8bdba09c1a75108e6b1ea14fdc83e65b1"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/SiteDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/SiteDBAPI.dll",
-      "sha256": "64a7ad0db40f664f74712f8051158311366187e2dcd0e7019a8ed65f316c7509"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/StairRampDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/StairRampDBAPI.dll",
-      "sha256": "ed46ed76ccf230bbb72bc8ba35d9dbdebd502a13b6cc7deb517be7f64eb336f3"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/StructuralAnalysisDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/StructuralAnalysisDBAPI.dll",
-      "sha256": "848e01227c6c3449095abfbddc85c7c3c0564eb27742fff46729292b194fae1e"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/StructuralDBAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/StructuralDBAPI.dll",
-      "sha256": "487c8955edaa8e291a95fc652e55c8f634c59a435a29ecf02fd4c0f0603dd236"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/TextEngineAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/TextEngineAPI.dll",
-      "sha256": "dae6a58b73ad85c36c28bdfb1eb8b64174ecc56e0ba3f8a0cf07041095271546"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/UIFramework.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/UIFramework.dll",
-      "sha256": "e707bbc3a616da60f9e9a532e6e3c6c87d6965073b1113582a67c63cfaae48b2"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/UIFrameworkServices.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/UIFrameworkServices.dll",
-      "sha256": "856719bdb6d8f04cfcc11a3ba480433c1271cff01c579b2d359e6450ea8cecf7"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/UtilityAPI.dll",
-      "version": "23.1.80.30",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/UtilityAPI.dll",
-      "sha256": "cbf5277f6a65a1ff1386b9f001a86ccf69269a8f6216081d57d967fd7b90995e"
     },
     {
       "relativePath": "Structure/Grids Dim/Xceed.Wpf.AvalonDock.dll",
@@ -1670,100 +458,16 @@
       "sha256": "a06052d9b4852da1321fb72e993d8c26682f5724a8d30d5e23723388b3955646"
     },
     {
-      "relativePath": "Structure/Grids Dim/cs-CZ/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/cs-CZ/AdWindows.resources.dll",
-      "sha256": "3b6ca6536f7369d42336678ed7de290a0d2fbe120b5f1b1c4ef6776813261e00"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/de-DE/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/de-DE/AdWindows.resources.dll",
-      "sha256": "a5eed4a51da0b03f4d061d54956dba3d4e0fddca85d9f16c27b75b8cd1b8a578"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/en-GB/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/en-GB/AdWindows.resources.dll",
-      "sha256": "af23f0dc2b094f86192d58678ce6954fba3ba2d5bdb8ebce7daf5e7f7cf55165"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/en-US/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/en-US/AdWindows.resources.dll",
-      "sha256": "af23f0dc2b094f86192d58678ce6954fba3ba2d5bdb8ebce7daf5e7f7cf55165"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/es-ES/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/es-ES/AdWindows.resources.dll",
-      "sha256": "ef0f834898ed45a191f6cf910b4a368f1b8868a348467e16363a888f8ca46b48"
-    },
-    {
       "relativePath": "Structure/Grids Dim/fr/AdvancedDataGridView.resources.dll",
       "version": "0.1.0.10",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/fr/AdvancedDataGridView.resources.dll",
       "sha256": "7064aff6cde5488ed87636c165ea89ba44b309fe8e5f454de63cde37dde7d7b6"
     },
     {
-      "relativePath": "Structure/Grids Dim/fr-FR/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/fr-FR/AdWindows.resources.dll",
-      "sha256": "feb3d76bc06248eb05b90429a7dd615ed39b4c53bb55945b7540e8b8401a7a12"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/it-IT/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/it-IT/AdWindows.resources.dll",
-      "sha256": "96e4b5417ce83eb53a69178c931b0d0649255683a1250b8b271e786ca54ce51b"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/ja-JP/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/ja-JP/AdWindows.resources.dll",
-      "sha256": "2ad00e3b30496a14d04cc5b166ff3368a32ab8e6fbbb13c4c9ac5125bedd2cb2"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/ko-KR/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/ko-KR/AdWindows.resources.dll",
-      "sha256": "b8d55657750a43fb3df4639870ba677d82d3f81a29d36370d79a85e8ac9d3ba9"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/pl-PL/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/pl-PL/AdWindows.resources.dll",
-      "sha256": "1f64c61803933945fef56e3d41905d409cbc1803cbedbc8cde1c1c3321ce53b5"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/pt-BR/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/pt-BR/AdWindows.resources.dll",
-      "sha256": "6f862c4745bb119b1cfdc0e6cbaccf6e047b609b2791289a4a2934e9e31cb35e"
-    },
-    {
       "relativePath": "Structure/Grids Dim/ru/AdvancedDataGridView.resources.dll",
       "version": "0.1.0.10",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/ru/AdvancedDataGridView.resources.dll",
       "sha256": "2c5e590e22da66857ee392c4d3a5d6c04c80c50901b1521d9f089d3b40466a63"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/ru-RU/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/ru-RU/AdWindows.resources.dll",
-      "sha256": "d5cdc435a2eec7670a1cf496f5abd2c78f8c00401e5e928a44bdab43c459fd0e"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/zh-CN/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/zh-CN/AdWindows.resources.dll",
-      "sha256": "ab04b5be41b4fb6bd2692bda0d6a7c5472ea97900ee7862bddb62ed2a980c2e0"
-    },
-    {
-      "relativePath": "Structure/Grids Dim/zh-TW/AdWindows.resources.dll",
-      "version": "4.0.0.6",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/zh-TW/AdWindows.resources.dll",
-      "sha256": "171177f10829d9d34075ee5320a13fd5e4cf0a242730f23ef8f81f74d43f01fe"
     },
     {
       "relativePath": "Structure/Loading Plan/LoadingPlan.dll",
