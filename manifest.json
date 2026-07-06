@@ -5,25 +5,25 @@
       "relativePath": "Coordination/ClashDetection/ClashDetection.Core.dll",
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashDetection/ClashDetection.Core.dll",
-      "sha256": "ae7e8b0595163886cbfed42fc3a4de325cdb93bc951ec49fdb36cf2e0e43d7c6"
+      "sha256": "57a21a4eeeb9f05654cf127ee7a87ded9638fb8c59d94c86707691d05a9e14cb"
     },
     {
       "relativePath": "Coordination/ClashDetection/ClashDetection.Data.dll",
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashDetection/ClashDetection.Data.dll",
-      "sha256": "0f97693eb1cba54680930b7eb1470096197ab0b3733cfa41182a36a35dbd779d"
+      "sha256": "8f1b240be096f148ef416caf7be9611c40c33b053462826e42aa5e9f15da9e95"
     },
     {
       "relativePath": "Coordination/ClashDetection/ClashDetection.Revit.dll",
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashDetection/ClashDetection.Revit.dll",
-      "sha256": "8689e4774c8b46abf1a79085e51188bb6929bd3d33ba6b7475779867298d8fcc"
+      "sha256": "6320acb40c75fb3cfee0bed3aed3f564371ff4ffaca87015d5490ebd5ff26126"
     },
     {
       "relativePath": "Coordination/ClashDetection/ClashDetection.Sync.dll",
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashDetection/ClashDetection.Sync.dll",
-      "sha256": "aed478bd6a0b89d4bc572f0aa2f0c0738ad594892f12e45dd225fb75c42cc0f8"
+      "sha256": "ceace0f672880fa3ab4f95df8bc54aeb68588b394550f90bdf3a2ae7f0ed5b83"
     },
     {
       "relativePath": "Coordination/ClashDetection/e_sqlite3.dll",
