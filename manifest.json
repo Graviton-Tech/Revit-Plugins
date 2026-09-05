@@ -446,6 +446,72 @@
       "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
     },
     {
+      "relativePath": "Structure/Columns Alignment/AdvancedDataGridView.dll",
+      "version": "0.1.0.10",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Alignment/AdvancedDataGridView.dll",
+      "sha256": "7f350fa2d030e04a31800176f53205d37e86e83edc588a5574184234da5c3d45"
+    },
+    {
+      "relativePath": "Structure/Columns Alignment/DataGridViewGrouper.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Alignment/DataGridViewGrouper.dll",
+      "sha256": "e84b5a35bcbb412c4a1b4891b1e3f2d283ac8f94bf7bee8a227e579c9b96dd01"
+    },
+    {
+      "relativePath": "Structure/Columns Alignment/GravitonLicensing.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Alignment/GravitonLicensing.dll",
+      "sha256": "d8bc3647fdd07845f0a240fa663f77d0fe053536ca5a473d6989f59fb46b3e2b"
+    },
+    {
+      "relativePath": "Structure/Columns Alignment/LiteDB.dll",
+      "version": "5.0.21",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Alignment/LiteDB.dll",
+      "sha256": "c0058a52eb8914c98092525803d0560531f2d3bf5ab0c06c4ebd60da4518256d"
+    },
+    {
+      "relativePath": "Structure/Columns Alignment/Newtonsoft.Json.dll",
+      "version": "13.0.3.27908",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Alignment/Newtonsoft.Json.dll",
+      "sha256": "e1e27af7b07eeedf5ce71a9255f0422816a6fc5849a483c6714e1b472044fa9d"
+    },
+    {
+      "relativePath": "Structure/Columns Alignment/RCN.ColumnsAlignment.dll",
+      "version": "0.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Alignment/RCN.ColumnsAlignment.dll",
+      "sha256": "39359fb122b397893fd9dddfda29b152e445093e5c00643f990176e16733fffd"
+    },
+    {
+      "relativePath": "Structure/Columns Alignment/RevitAPIHelper.dll",
+      "version": "26.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Alignment/RevitAPIHelper.dll",
+      "sha256": "70b071f7f8c5e3f5b310c616313f999d964f5978df686baf58adfdd97ca9fd5c"
+    },
+    {
+      "relativePath": "Structure/Columns Alignment/System.Security.Cryptography.ProtectedData.dll",
+      "version": "8.0.23.53103",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Alignment/System.Security.Cryptography.ProtectedData.dll",
+      "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
+    },
+    {
+      "relativePath": "Structure/Columns Alignment/Xceed.Wpf.AvalonDock.dll",
+      "version": "2.1.5",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Alignment/Xceed.Wpf.AvalonDock.dll",
+      "sha256": "a06052d9b4852da1321fb72e993d8c26682f5724a8d30d5e23723388b3955646"
+    },
+    {
+      "relativePath": "Structure/Columns Alignment/fr/AdvancedDataGridView.resources.dll",
+      "version": "0.1.0.10",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Alignment/fr/AdvancedDataGridView.resources.dll",
+      "sha256": "7064aff6cde5488ed87636c165ea89ba44b309fe8e5f454de63cde37dde7d7b6"
+    },
+    {
+      "relativePath": "Structure/Columns Alignment/ru/AdvancedDataGridView.resources.dll",
+      "version": "0.1.0.10",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Alignment/ru/AdvancedDataGridView.resources.dll",
+      "sha256": "2c5e590e22da66857ee392c4d3a5d6c04c80c50901b1521d9f089d3b40466a63"
+    },
+    {
       "relativePath": "Structure/Columns Dim/AdvancedDataGridView.dll",
       "version": "0.1.0.10",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/AdvancedDataGridView.dll",
@@ -509,6 +575,72 @@
       "relativePath": "Structure/Columns Dim/ru/AdvancedDataGridView.resources.dll",
       "version": "0.1.0.10",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/ru/AdvancedDataGridView.resources.dll",
+      "sha256": "2c5e590e22da66857ee392c4d3a5d6c04c80c50901b1521d9f089d3b40466a63"
+    },
+    {
+      "relativePath": "Structure/Columns From CAD/AdvancedDataGridView.dll",
+      "version": "0.1.0.10",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20From%20CAD/AdvancedDataGridView.dll",
+      "sha256": "7f350fa2d030e04a31800176f53205d37e86e83edc588a5574184234da5c3d45"
+    },
+    {
+      "relativePath": "Structure/Columns From CAD/DataGridViewGrouper.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20From%20CAD/DataGridViewGrouper.dll",
+      "sha256": "e84b5a35bcbb412c4a1b4891b1e3f2d283ac8f94bf7bee8a227e579c9b96dd01"
+    },
+    {
+      "relativePath": "Structure/Columns From CAD/GravitonLicensing.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20From%20CAD/GravitonLicensing.dll",
+      "sha256": "d8bc3647fdd07845f0a240fa663f77d0fe053536ca5a473d6989f59fb46b3e2b"
+    },
+    {
+      "relativePath": "Structure/Columns From CAD/LiteDB.dll",
+      "version": "5.0.21",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20From%20CAD/LiteDB.dll",
+      "sha256": "c0058a52eb8914c98092525803d0560531f2d3bf5ab0c06c4ebd60da4518256d"
+    },
+    {
+      "relativePath": "Structure/Columns From CAD/Newtonsoft.Json.dll",
+      "version": "13.0.3.27908",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20From%20CAD/Newtonsoft.Json.dll",
+      "sha256": "e1e27af7b07eeedf5ce71a9255f0422816a6fc5849a483c6714e1b472044fa9d"
+    },
+    {
+      "relativePath": "Structure/Columns From CAD/RCN.CreateColumnsFromCAD.dll",
+      "version": "0.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20From%20CAD/RCN.CreateColumnsFromCAD.dll",
+      "sha256": "c99c8e67fb576d26d149a8c2569a100ae0d202b0992d0d8f573f5094f44878d5"
+    },
+    {
+      "relativePath": "Structure/Columns From CAD/RevitAPIHelper.dll",
+      "version": "26.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20From%20CAD/RevitAPIHelper.dll",
+      "sha256": "70b071f7f8c5e3f5b310c616313f999d964f5978df686baf58adfdd97ca9fd5c"
+    },
+    {
+      "relativePath": "Structure/Columns From CAD/System.Security.Cryptography.ProtectedData.dll",
+      "version": "8.0.23.53103",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20From%20CAD/System.Security.Cryptography.ProtectedData.dll",
+      "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
+    },
+    {
+      "relativePath": "Structure/Columns From CAD/Xceed.Wpf.AvalonDock.dll",
+      "version": "2.1.5",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20From%20CAD/Xceed.Wpf.AvalonDock.dll",
+      "sha256": "a06052d9b4852da1321fb72e993d8c26682f5724a8d30d5e23723388b3955646"
+    },
+    {
+      "relativePath": "Structure/Columns From CAD/fr/AdvancedDataGridView.resources.dll",
+      "version": "0.1.0.10",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20From%20CAD/fr/AdvancedDataGridView.resources.dll",
+      "sha256": "7064aff6cde5488ed87636c165ea89ba44b309fe8e5f454de63cde37dde7d7b6"
+    },
+    {
+      "relativePath": "Structure/Columns From CAD/ru/AdvancedDataGridView.resources.dll",
+      "version": "0.1.0.10",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20From%20CAD/ru/AdvancedDataGridView.resources.dll",
       "sha256": "2c5e590e22da66857ee392c4d3a5d6c04c80c50901b1521d9f089d3b40466a63"
     },
     {
@@ -578,6 +710,72 @@
       "sha256": "2c5e590e22da66857ee392c4d3a5d6c04c80c50901b1521d9f089d3b40466a63"
     },
     {
+      "relativePath": "Structure/Foundations Tag/AdvancedDataGridView.dll",
+      "version": "0.1.0.10",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Foundations%20Tag/AdvancedDataGridView.dll",
+      "sha256": "7f350fa2d030e04a31800176f53205d37e86e83edc588a5574184234da5c3d45"
+    },
+    {
+      "relativePath": "Structure/Foundations Tag/DataGridViewGrouper.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Foundations%20Tag/DataGridViewGrouper.dll",
+      "sha256": "e84b5a35bcbb412c4a1b4891b1e3f2d283ac8f94bf7bee8a227e579c9b96dd01"
+    },
+    {
+      "relativePath": "Structure/Foundations Tag/GravitonLicensing.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Foundations%20Tag/GravitonLicensing.dll",
+      "sha256": "d8bc3647fdd07845f0a240fa663f77d0fe053536ca5a473d6989f59fb46b3e2b"
+    },
+    {
+      "relativePath": "Structure/Foundations Tag/LiteDB.dll",
+      "version": "5.0.21",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Foundations%20Tag/LiteDB.dll",
+      "sha256": "c0058a52eb8914c98092525803d0560531f2d3bf5ab0c06c4ebd60da4518256d"
+    },
+    {
+      "relativePath": "Structure/Foundations Tag/Newtonsoft.Json.dll",
+      "version": "13.0.3.27908",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Foundations%20Tag/Newtonsoft.Json.dll",
+      "sha256": "e1e27af7b07eeedf5ce71a9255f0422816a6fc5849a483c6714e1b472044fa9d"
+    },
+    {
+      "relativePath": "Structure/Foundations Tag/RCN.AnnotateFoundations.dll",
+      "version": "0.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Foundations%20Tag/RCN.AnnotateFoundations.dll",
+      "sha256": "c5af19681c8a056013a7e46e2d17d407b8f857ffa86e11d9739bd96cc6ff55c7"
+    },
+    {
+      "relativePath": "Structure/Foundations Tag/RevitAPIHelper.dll",
+      "version": "26.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Foundations%20Tag/RevitAPIHelper.dll",
+      "sha256": "70b071f7f8c5e3f5b310c616313f999d964f5978df686baf58adfdd97ca9fd5c"
+    },
+    {
+      "relativePath": "Structure/Foundations Tag/System.Security.Cryptography.ProtectedData.dll",
+      "version": "8.0.23.53103",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Foundations%20Tag/System.Security.Cryptography.ProtectedData.dll",
+      "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
+    },
+    {
+      "relativePath": "Structure/Foundations Tag/Xceed.Wpf.AvalonDock.dll",
+      "version": "2.1.5",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Foundations%20Tag/Xceed.Wpf.AvalonDock.dll",
+      "sha256": "a06052d9b4852da1321fb72e993d8c26682f5724a8d30d5e23723388b3955646"
+    },
+    {
+      "relativePath": "Structure/Foundations Tag/fr/AdvancedDataGridView.resources.dll",
+      "version": "0.1.0.10",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Foundations%20Tag/fr/AdvancedDataGridView.resources.dll",
+      "sha256": "7064aff6cde5488ed87636c165ea89ba44b309fe8e5f454de63cde37dde7d7b6"
+    },
+    {
+      "relativePath": "Structure/Foundations Tag/ru/AdvancedDataGridView.resources.dll",
+      "version": "0.1.0.10",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Foundations%20Tag/ru/AdvancedDataGridView.resources.dll",
+      "sha256": "2c5e590e22da66857ee392c4d3a5d6c04c80c50901b1521d9f089d3b40466a63"
+    },
+    {
       "relativePath": "Structure/Grids Dim/AdvancedDataGridView.dll",
       "version": "0.1.0.10",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/AdvancedDataGridView.dll",
@@ -641,6 +839,72 @@
       "relativePath": "Structure/Grids Dim/ru/AdvancedDataGridView.resources.dll",
       "version": "0.1.0.10",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/ru/AdvancedDataGridView.resources.dll",
+      "sha256": "2c5e590e22da66857ee392c4d3a5d6c04c80c50901b1521d9f089d3b40466a63"
+    },
+    {
+      "relativePath": "Structure/Grids From CAD/AdvancedDataGridView.dll",
+      "version": "0.1.0.10",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20From%20CAD/AdvancedDataGridView.dll",
+      "sha256": "7f350fa2d030e04a31800176f53205d37e86e83edc588a5574184234da5c3d45"
+    },
+    {
+      "relativePath": "Structure/Grids From CAD/DataGridViewGrouper.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20From%20CAD/DataGridViewGrouper.dll",
+      "sha256": "e84b5a35bcbb412c4a1b4891b1e3f2d283ac8f94bf7bee8a227e579c9b96dd01"
+    },
+    {
+      "relativePath": "Structure/Grids From CAD/GravitonLicensing.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20From%20CAD/GravitonLicensing.dll",
+      "sha256": "d8bc3647fdd07845f0a240fa663f77d0fe053536ca5a473d6989f59fb46b3e2b"
+    },
+    {
+      "relativePath": "Structure/Grids From CAD/LiteDB.dll",
+      "version": "5.0.21",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20From%20CAD/LiteDB.dll",
+      "sha256": "c0058a52eb8914c98092525803d0560531f2d3bf5ab0c06c4ebd60da4518256d"
+    },
+    {
+      "relativePath": "Structure/Grids From CAD/Newtonsoft.Json.dll",
+      "version": "13.0.3.27908",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20From%20CAD/Newtonsoft.Json.dll",
+      "sha256": "e1e27af7b07eeedf5ce71a9255f0422816a6fc5849a483c6714e1b472044fa9d"
+    },
+    {
+      "relativePath": "Structure/Grids From CAD/RCN.CreateGridsFromCAD.dll",
+      "version": "0.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20From%20CAD/RCN.CreateGridsFromCAD.dll",
+      "sha256": "7bfd2080958616a7ebf5730136ed988de4a611cec3500130fb3fb912b6df4190"
+    },
+    {
+      "relativePath": "Structure/Grids From CAD/RevitAPIHelper.dll",
+      "version": "26.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20From%20CAD/RevitAPIHelper.dll",
+      "sha256": "70b071f7f8c5e3f5b310c616313f999d964f5978df686baf58adfdd97ca9fd5c"
+    },
+    {
+      "relativePath": "Structure/Grids From CAD/System.Security.Cryptography.ProtectedData.dll",
+      "version": "8.0.23.53103",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20From%20CAD/System.Security.Cryptography.ProtectedData.dll",
+      "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
+    },
+    {
+      "relativePath": "Structure/Grids From CAD/Xceed.Wpf.AvalonDock.dll",
+      "version": "2.1.5",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20From%20CAD/Xceed.Wpf.AvalonDock.dll",
+      "sha256": "a06052d9b4852da1321fb72e993d8c26682f5724a8d30d5e23723388b3955646"
+    },
+    {
+      "relativePath": "Structure/Grids From CAD/fr/AdvancedDataGridView.resources.dll",
+      "version": "0.1.0.10",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20From%20CAD/fr/AdvancedDataGridView.resources.dll",
+      "sha256": "7064aff6cde5488ed87636c165ea89ba44b309fe8e5f454de63cde37dde7d7b6"
+    },
+    {
+      "relativePath": "Structure/Grids From CAD/ru/AdvancedDataGridView.resources.dll",
+      "version": "0.1.0.10",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20From%20CAD/ru/AdvancedDataGridView.resources.dll",
       "sha256": "2c5e590e22da66857ee392c4d3a5d6c04c80c50901b1521d9f089d3b40466a63"
     },
     {
