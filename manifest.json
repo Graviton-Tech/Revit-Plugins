@@ -428,24 +428,6 @@
       "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
     },
     {
-      "relativePath": "Modify/ZAutoJoin/AutoJoin.dll",
-      "version": "26.0.0.0",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/ZAutoJoin/AutoJoin.dll",
-      "sha256": "52ce188bce71c5438af2347dcf11858efcfb64034f44d39d74cac4fb29d6104a"
-    },
-    {
-      "relativePath": "Modify/ZAutoJoin/GravitonLicensing.dll",
-      "version": "1.0.0.0",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/ZAutoJoin/GravitonLicensing.dll",
-      "sha256": "d8bc3647fdd07845f0a240fa663f77d0fe053536ca5a473d6989f59fb46b3e2b"
-    },
-    {
-      "relativePath": "Modify/ZAutoJoin/System.Security.Cryptography.ProtectedData.dll",
-      "version": "8.0.23.53103",
-      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/ZAutoJoin/System.Security.Cryptography.ProtectedData.dll",
-      "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
-    },
-    {
       "relativePath": "Structure/Columns Alignment/AdvancedDataGridView.dll",
       "version": "0.1.0.10",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Alignment/AdvancedDataGridView.dll",
