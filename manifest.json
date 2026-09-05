@@ -95,7 +95,7 @@
       "relativePath": "Coordination/ClashNavigator/ClashNavigator.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/ClashNavigator.dll",
-      "sha256": "ab9f465d9355cf03d1df6075a7518f5eb373766cb6d7400b5e9fc86fd564b294"
+      "sha256": "026043b7341b2454c6e3d6418a5592c70149452ffa68b75fb869c0b5cb524fc0"
     },
     {
       "relativePath": "Coordination/ClashNavigator/GravitonLicensing.dll",
@@ -155,7 +155,7 @@
       "relativePath": "Coordination/RunInterfernceCheck/RunInterfernceCheck.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/RunInterfernceCheck.dll",
-      "sha256": "f9b241a6c8d7a1c2faa80ad00cc07368e8153fc63fcca8d10308f9af0c3e25e2"
+      "sha256": "a24a5a9cdbcac891c8f66f350855dd7ec4e1ec2f8b433a0fb39d40c0ee977d66"
     },
     {
       "relativePath": "Coordination/RunInterfernceCheck/RunInterfernceCheck.dll.config",
@@ -197,7 +197,7 @@
       "relativePath": "Manage/Autojoin/AutoJoin.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Autojoin/AutoJoin.dll",
-      "sha256": "9ffca317f695c8b21231036b331ff81526a9f7d4931bb0f6e8be03623e3a392d"
+      "sha256": "52ce188bce71c5438af2347dcf11858efcfb64034f44d39d74cac4fb29d6104a"
     },
     {
       "relativePath": "Manage/Autojoin/GravitonLicensing.dll",
@@ -215,7 +215,7 @@
       "relativePath": "Manage/DataLink/DataLink.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/DataLink/DataLink.dll",
-      "sha256": "33f4037314fecef31dc9ecd59e662db609f55ca0f233fa912fb4f6aad803a4af"
+      "sha256": "03cbb7848dc3185d654682ed73dd0c83d66b039d6497bf2f262f5634292358c2"
     },
     {
       "relativePath": "Manage/DataLink/GravitonLicensing.dll",
@@ -257,13 +257,13 @@
       "relativePath": "Manage/Warning Review/Warning.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Warning%20Review/Warning.dll",
-      "sha256": "b122535235a25127d6586648e12a4b23c12e9f0d3c1b97f20669a2aa7bf7201f"
+      "sha256": "4d1c6f928bdcbca6e3d084a486b49a67279bb43670316177c76bc42c0cf72d88"
     },
     {
       "relativePath": "Modify/CopyCompare/CopyCompare.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CopyCompare/CopyCompare.dll",
-      "sha256": "16aa867ebc902c4abc77637697c41f1b739e80c1831a6726ecd3a4b7078ba809"
+      "sha256": "9898b5b169b6b4cb8b9b4aeec24746025ef2c82f9785ec9c74a3f1467edc02ab"
     },
     {
       "relativePath": "Modify/CopyCompare/CopyCompareManifest.addin",
@@ -419,7 +419,7 @@
       "relativePath": "Modify/Split/Split.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/Split/Split.dll",
-      "sha256": "6875f80284c6aadfbfde9d151696074fbc34223def145ca472592dd01b4b9087"
+      "sha256": "06b1f343750014c7a76e37517ad4b92aa8143c0a39a7d156edb2f9d26064f652"
     },
     {
       "relativePath": "Modify/Split/System.Security.Cryptography.ProtectedData.dll",
@@ -431,7 +431,7 @@
       "relativePath": "Modify/ZAutoJoin/AutoJoin.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/ZAutoJoin/AutoJoin.dll",
-      "sha256": "9ffca317f695c8b21231036b331ff81526a9f7d4931bb0f6e8be03623e3a392d"
+      "sha256": "52ce188bce71c5438af2347dcf11858efcfb64034f44d39d74cac4fb29d6104a"
     },
     {
       "relativePath": "Modify/ZAutoJoin/GravitonLicensing.dll",
@@ -671,7 +671,7 @@
       "relativePath": "Structure/RampToFloor/RampToFloor.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/RampToFloor/RampToFloor.dll",
-      "sha256": "f52c782bc6e3e0777feb98763bf5c757905b248b8a1edd083ebcc7ece484629c"
+      "sha256": "d1356f46eb83d3185b3a8bd0d8e31a9ee1e0424bd6862d41e8605c860e2e25ef"
     },
     {
       "relativePath": "Structure/RampToFloor/RevitAPIHelper.dll",
@@ -707,7 +707,7 @@
       "relativePath": "Structure/Split/Split.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Split/Split.dll",
-      "sha256": "6875f80284c6aadfbfde9d151696074fbc34223def145ca472592dd01b4b9087"
+      "sha256": "06b1f343750014c7a76e37517ad4b92aa8143c0a39a7d156edb2f9d26064f652"
     },
     {
       "relativePath": "Structure/Split/System.Security.Cryptography.ProtectedData.dll",
@@ -719,7 +719,7 @@
       "relativePath": "TransferData/DataLink/DataLink.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/TransferData/DataLink/DataLink.dll",
-      "sha256": "33f4037314fecef31dc9ecd59e662db609f55ca0f233fa912fb4f6aad803a4af"
+      "sha256": "03cbb7848dc3185d654682ed73dd0c83d66b039d6497bf2f262f5634292358c2"
     },
     {
       "relativePath": "TransferData/DataLink/GravitonLicensing.dll",
