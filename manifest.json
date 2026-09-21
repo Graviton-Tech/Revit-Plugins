@@ -125,7 +125,7 @@
       "relativePath": "Manage/DataLink/DataLink.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/DataLink/DataLink.dll",
-      "sha256": "61e86b55f4da4fe21f2dae631762d71ceb8a4d087c39a3e74b035ccbda1846a3"
+      "sha256": "15a3c870174693061fe1509d379722d832795ed7bf389e9a95044416f499c17b"
     },
     {
       "relativePath": "Manage/DataLink/GravitonLicensing.dll",
@@ -875,7 +875,7 @@
       "relativePath": "TransferData/DataLink/DataLink.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/TransferData/DataLink/DataLink.dll",
-      "sha256": "61e86b55f4da4fe21f2dae631762d71ceb8a4d087c39a3e74b035ccbda1846a3"
+      "sha256": "15a3c870174693061fe1509d379722d832795ed7bf389e9a95044416f499c17b"
     },
     {
       "relativePath": "TransferData/DataLink/GravitonLicensing.dll",
