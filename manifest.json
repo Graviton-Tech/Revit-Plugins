@@ -807,9 +807,9 @@
     },
     {
       "relativePath": "Structure/Loading Plan/LoadingPlan.dll",
-      "version": "26.0.1.0",
+      "version": "26.0.2.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Loading%20Plan/LoadingPlan.dll",
-      "sha256": "be2460797f987e6e9958df316e07e2e2abe7d4b770d26bf51431f902dbc6a65c"
+      "sha256": "a544ffac5ffa956dad57f00e920ef2374187d1a278bedea13d1a65faa4afc171"
     },
     {
       "relativePath": "Structure/Loading Plan/Lumora.dll",
