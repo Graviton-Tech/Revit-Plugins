@@ -20,6 +20,12 @@
       "sha256": "37e643b9ef95d1fb21de79ad0b19825fc15aaaf43232c15e030e4c3bdba07714"
     },
     {
+      "relativePath": "Coordination/ClashNavigator/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/Lumora.dll",
+      "sha256": "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
+    },
+    {
       "relativePath": "Coordination/ClashNavigator/Manifest.addin",
       "version": "0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/Manifest.addin",
@@ -48,6 +54,12 @@
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/GravitonLicensing.dll",
       "sha256": "d8bc3647fdd07845f0a240fa663f77d0fe053536ca5a473d6989f59fb46b3e2b"
+    },
+    {
+      "relativePath": "Coordination/RunInterfernceCheck/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/Lumora.dll",
+      "sha256": "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
     },
     {
       "relativePath": "Coordination/RunInterfernceCheck/Manifest.addin",
@@ -116,6 +128,12 @@
       "sha256": "d8bc3647fdd07845f0a240fa663f77d0fe053536ca5a473d6989f59fb46b3e2b"
     },
     {
+      "relativePath": "Manage/Autojoin/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Autojoin/Lumora.dll",
+      "sha256": "7509bb7fa2bd72a38dbd671b6ff7f7540c846ca60ff36f193ac5441e77a87a45"
+    },
+    {
       "relativePath": "Manage/Autojoin/System.Security.Cryptography.ProtectedData.dll",
       "version": "8.0.23.53103",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Autojoin/System.Security.Cryptography.ProtectedData.dll",
@@ -134,6 +152,12 @@
       "sha256": "d8bc3647fdd07845f0a240fa663f77d0fe053536ca5a473d6989f59fb46b3e2b"
     },
     {
+      "relativePath": "Manage/DataLink/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/DataLink/Lumora.dll",
+      "sha256": "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
+    },
+    {
       "relativePath": "Manage/DataLink/System.Security.Cryptography.ProtectedData.dll",
       "version": "8.0.23.53103",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/DataLink/System.Security.Cryptography.ProtectedData.dll",
@@ -144,6 +168,12 @@
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Warning%20Review/GravitonLicensing.dll",
       "sha256": "d8bc3647fdd07845f0a240fa663f77d0fe053536ca5a473d6989f59fb46b3e2b"
+    },
+    {
+      "relativePath": "Manage/Warning Review/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Warning%20Review/Lumora.dll",
+      "sha256": "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
     },
     {
       "relativePath": "Manage/Warning Review/Manifest.addin",
@@ -428,6 +458,12 @@
       "sha256": "c0058a52eb8914c98092525803d0560531f2d3bf5ab0c06c4ebd60da4518256d"
     },
     {
+      "relativePath": "Structure/Columns Dim/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/Lumora.dll",
+      "sha256": "0b9e3cc3ea2b4632d693bfde558af8b0e5c8388c7fa58a1ad52150cce58037ea"
+    },
+    {
       "relativePath": "Structure/Columns Dim/Newtonsoft.Json.dll",
       "version": "13.0.3.27908",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Dim/Newtonsoft.Json.dll",
@@ -558,6 +594,12 @@
       "version": "5.0.21",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/LiteDB.dll",
       "sha256": "c0058a52eb8914c98092525803d0560531f2d3bf5ab0c06c4ebd60da4518256d"
+    },
+    {
+      "relativePath": "Structure/Columns Tag/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Columns%20Tag/Lumora.dll",
+      "sha256": "0b9e3cc3ea2b4632d693bfde558af8b0e5c8388c7fa58a1ad52150cce58037ea"
     },
     {
       "relativePath": "Structure/Columns Tag/Newtonsoft.Json.dll",
@@ -692,6 +734,12 @@
       "sha256": "c0058a52eb8914c98092525803d0560531f2d3bf5ab0c06c4ebd60da4518256d"
     },
     {
+      "relativePath": "Structure/Grids Dim/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/Lumora.dll",
+      "sha256": "0b9e3cc3ea2b4632d693bfde558af8b0e5c8388c7fa58a1ad52150cce58037ea"
+    },
+    {
       "relativePath": "Structure/Grids Dim/Newtonsoft.Json.dll",
       "version": "13.0.3.27908",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Grids%20Dim/Newtonsoft.Json.dll",
@@ -807,9 +855,9 @@
     },
     {
       "relativePath": "Structure/Loading Plan/LoadingPlan.dll",
-      "version": "26.0.2.0",
+      "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Loading%20Plan/LoadingPlan.dll",
-      "sha256": "a544ffac5ffa956dad57f00e920ef2374187d1a278bedea13d1a65faa4afc171"
+      "sha256": "5856f1f574990849ba2502420932f22d29066c778f9e021fa7731b082796cb86"
     },
     {
       "relativePath": "Structure/Loading Plan/Lumora.dll",
@@ -858,6 +906,12 @@
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Split/GravitonLicensing.dll",
       "sha256": "d8bc3647fdd07845f0a240fa663f77d0fe053536ca5a473d6989f59fb46b3e2b"
+    },
+    {
+      "relativePath": "Structure/Split/Lumora.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Split/Lumora.dll",
+      "sha256": "bd735fa6ad619f5dee2eeadfff57adbc3b03bcca2ebbece75010d2dbbab69263"
     },
     {
       "relativePath": "Structure/Split/Manifest.addin",
