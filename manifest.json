@@ -203,7 +203,7 @@
       "relativePath": "Modify/CopyCompare/CopyCompare.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CopyCompare/CopyCompare.dll",
-      "sha256": "1df5da610e4fcd706a104f616c9b9821d27a9ff7a6c7c40e4703aa55fb8c6063"
+      "sha256": "5707b2cbe1b62779668390f838dd97c84a9078900fd175e307ec2805d48961c2"
     },
     {
       "relativePath": "Modify/CopyCompare/CopyCompareManifest.addin",
