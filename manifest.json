@@ -917,7 +917,7 @@
       "relativePath": "Structure/Split/Manifest.addin",
       "version": "0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Split/Manifest.addin",
-      "sha256": "dfaba6d469e9e4a92311a3bdd7e2e1ea827f3519cb4c6cdecbb6783f9359b457"
+      "sha256": "5a91ba50d18ac91ae49f27c62c91cc9ce5247c74e62879d6035d1f4402039156"
     },
     {
       "relativePath": "Structure/Split/RevitAPIHelper.dll",
@@ -927,9 +927,9 @@
     },
     {
       "relativePath": "Structure/Split/Split.dll",
-      "version": "26.0.0.0",
+      "version": "26.1.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Split/Split.dll",
-      "sha256": "47bcd85fd6fa14d189b0e40699155b895e320a3e3d12473baa33917d5e7cf06d"
+      "sha256": "4319d824dc444b340ba3ed5f5ac549f14d9e039f74cd256660c07776f341c0b4"
     },
     {
       "relativePath": "Structure/Split/System.Security.Cryptography.ProtectedData.dll",
