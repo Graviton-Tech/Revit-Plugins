@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Template: copy to %AppData%\Autodesk\Revit\Addins\<year>\DataLink.addin and point Assembly at the
+     installed DataLink.dll (absolute path, or relative to this .addin file). -->
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>DataLink</Name>
+		<Assembly>DataLink.dll</Assembly>
+		<FullClassName>DataLink.ExternalApplication</FullClassName>
+		<Text>DataLink</Text>
+		<Description>Export Revit parameters to Excel, edit them there, and import the changes back.</Description>
+		<VisibilityMode>AlwaysVisible</VisibilityMode>
+		<AddInId>C6540704-2296-4550-BF93-8F625D4E3924</AddInId>
+		<VendorId>Lumora</VendorId>
+		<VendorDescription>Graviton Tech</VendorDescription>
+	</AddIn>
+</RevitAddIns>
