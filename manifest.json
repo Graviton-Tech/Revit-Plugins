@@ -206,6 +206,36 @@
       "sha256": "dc3141cef7963f1e50c855a7be31ea5a5ba8609ddac9d3e5a2ae99a84a337341"
     },
     {
+      "relativePath": "Modify/CleanOpening/CleanOpening.dll",
+      "version": "26.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CleanOpening/CleanOpening.dll",
+      "sha256": "f6b7ce310dcec141a689739778de59cdcfac95388cbfc0d442858fa33ec7cd55"
+    },
+    {
+      "relativePath": "Modify/CleanOpening/GravitonLicensing.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CleanOpening/GravitonLicensing.dll",
+      "sha256": "d8bc3647fdd07845f0a240fa663f77d0fe053536ca5a473d6989f59fb46b3e2b"
+    },
+    {
+      "relativePath": "Modify/CleanOpening/Manifest_CleanOpening.addin",
+      "version": "0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CleanOpening/Manifest_CleanOpening.addin",
+      "sha256": "10dc362c97b5856a34da0dbcc5fbb23b511859759e129e93165fdd5c3f89bca0"
+    },
+    {
+      "relativePath": "Modify/CleanOpening/RevitAPIHelper.dll",
+      "version": "26.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CleanOpening/RevitAPIHelper.dll",
+      "sha256": "70b071f7f8c5e3f5b310c616313f999d964f5978df686baf58adfdd97ca9fd5c"
+    },
+    {
+      "relativePath": "Modify/CleanOpening/System.Security.Cryptography.ProtectedData.dll",
+      "version": "8.0.23.53103",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CleanOpening/System.Security.Cryptography.ProtectedData.dll",
+      "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
+    },
+    {
       "relativePath": "Modify/CopyCompare/CopyCompare.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Modify/CopyCompare/CopyCompare.dll",
