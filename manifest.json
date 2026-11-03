@@ -680,6 +680,30 @@
       "sha256": "2c5e590e22da66857ee392c4d3a5d6c04c80c50901b1521d9f089d3b40466a63"
     },
     {
+      "relativePath": "Structure/FilledRegionRoomName/FilledRegionRoomName.addin",
+      "version": "0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/FilledRegionRoomName/FilledRegionRoomName.addin",
+      "sha256": "e7730c47944b193659b67ad07b56f5ea3cfbad24444cfb34ce9e3d79acbdca30"
+    },
+    {
+      "relativePath": "Structure/FilledRegionRoomName/FilledRegionRoomName.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/FilledRegionRoomName/FilledRegionRoomName.dll",
+      "sha256": "c4f48200525870ceff8dfa6ed6f4e7f229e0fe3b54080286408e1cb964354e00"
+    },
+    {
+      "relativePath": "Structure/FilledRegionRoomName/GravitonLicensing.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/FilledRegionRoomName/GravitonLicensing.dll",
+      "sha256": "d8bc3647fdd07845f0a240fa663f77d0fe053536ca5a473d6989f59fb46b3e2b"
+    },
+    {
+      "relativePath": "Structure/FilledRegionRoomName/System.Security.Cryptography.ProtectedData.dll",
+      "version": "8.0.23.53103",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/FilledRegionRoomName/System.Security.Cryptography.ProtectedData.dll",
+      "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
+    },
+    {
       "relativePath": "Structure/Foundations Tag/AdvancedDataGridView.dll",
       "version": "0.1.0.10",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/Foundations%20Tag/AdvancedDataGridView.dll",
