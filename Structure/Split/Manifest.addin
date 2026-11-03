@@ -4,21 +4,21 @@
 	
 	<AddIn Type="Application">
 		
-		<Name>BIMSpaceAddins</Name>
+		<Name>Lumora Split Tools</Name>
 		
 		<Assembly>Split.dll</Assembly>
 		<FullClassName>Split.ExternalApplication</FullClassName>
-		<Text>BIM Space Revit 2019 Addins</Text>
+		<Text>Split Columns and Walls</Text>
 		
-		<Description>BIM Space Revit 2019 Addins</Description>
+		<Description>Split structural columns and walls at selected levels (Lumora / Graviton Tech)</Description>
 		
 		<VisibilityMode>AlwaysVisible</VisibilityMode>
 		
 		<AddInId>
-			41DD15CD-75D3-4861-846B-0057C961E529
+			B74F50D9-4A0B-40D2-B7A9-453EDBC791FC
 		</AddInId>
 		
-		<VendorId>BIM Space</VendorId>
+		<VendorId>GravitonTech</VendorId>
 		
 		<VendorDescription>Islam Heakal, Structural BIM Engineer, Revit Developer</VendorDescription>
 	</AddIn>
