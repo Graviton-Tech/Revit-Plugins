@@ -5,7 +5,7 @@
       "relativePath": "Coordination/ClashNavigator/ClashNavigator.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/ClashNavigator/ClashNavigator.dll",
-      "sha256": "efbc7ed74d10314fb4ddadec8efd01f6d6304c1904c4803291e7aa7b0f7af66e"
+      "sha256": "09322143d921f1d248a07778b978923f8e3fed3356ff95bfe7bda30b479496b0"
     },
     {
       "relativePath": "Coordination/ClashNavigator/GravitonLicensing.dll",
@@ -947,7 +947,7 @@
       "relativePath": "Structure/RampToFloor/RampToFloor.dll",
       "version": "26.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Structure/RampToFloor/RampToFloor.dll",
-      "sha256": "423fce71f121c1356b637a3c32aa69ecdda9480102ab26e06b8d144fb222b6b3"
+      "sha256": "0b0a868ed8e79438d0833420c7175742bebde92c6d274cabf6e0f38de72b16ff"
     },
     {
       "relativePath": "Structure/RampToFloor/RevitAPIHelper.dll",
