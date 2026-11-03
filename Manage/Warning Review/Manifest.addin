@@ -1,6 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <RevitAddIns>
+	<AddIn Type="Application">
+		<Name>Warnings Review</Name>
+		<Assembly>Warning.dll</Assembly>
+		<FullClassName>Warning.ExternalApplication</FullClassName>
+		<AddInId>A27B52E1-F980-4FA3-9244-59F0C17DDA1F</AddInId>
+		<VendorId>BIM Space</VendorId>
+		<VendorDescription>Islam Heakal, Structural BIM Engineer, Revit Developer</VendorDescription>
+	</AddIn>
+
 	<AddIn Type="Command">
 		<Name>Warnings</Name>
 		<Assembly>Warning.dll</Assembly>
