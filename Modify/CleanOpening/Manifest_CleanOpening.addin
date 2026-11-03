@@ -1,26 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <RevitAddIns>
-	
-	<AddIn Type="Application">
-		
-		<Name>BIMSpaceAddins</Name>
-		
-		<Assembly>Template.dll</Assembly>
-		<FullClassName>Template.Template</FullClassName>
-		<Text>BIM Space Revit 2019 Addins</Text>
-		
-		<Description>BIM Space Revit 2019 Addins</Description>
-		
-		<VisibilityMode>AlwaysVisible</VisibilityMode>
-		
-		<AddInId>
-			41DD15CD-75D3-4861-846B-0057C961E529
-		</AddInId>
-		
-		<VendorId>BIM Space</VendorId>
-		
-		<VendorDescription>Islam Heakal, Structural BIM Engineer, Revit Developer</VendorDescription>
-	</AddIn>
-
+  <AddIn Type="Application">
+    <Name>CleanOpening</Name>
+    <Assembly>CleanOpening.dll</Assembly>
+    <FullClassName>CleanOpening.ExternalApplication</FullClassName>
+    <AddInId>40A86A04-DFD1-44AC-B7F4-18AFF47DA065</AddInId>
+    <VendorId>GRAVITON</VendorId>
+    <VendorDescription>GRAVITON TECH</VendorDescription>
+  </AddIn>
 </RevitAddIns>
