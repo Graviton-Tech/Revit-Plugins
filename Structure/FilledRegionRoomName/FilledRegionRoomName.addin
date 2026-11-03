@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Name>Filled Region Room Name</Name>
+    <FullClassName>FilledRegionRoomName.Commands.RoomNameCommand</FullClassName>
+    <ClientId>A1B2C3D4-E5F6-7890-ABCD-EF1234567890</ClientId>
+    <Assembly>FilledRegionRoomName.dll</Assembly>
+    <VendorId>GravitonTech</VendorId>
+    <VendorDescription>Graviton Tech / Lumora</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Filled Region Room Name App</Name>
+    <FullClassName>FilledRegionRoomName.ExternalApplication</FullClassName>
+    <ClientId>B2C3D4E5-F6A7-8901-BCDE-F12345678901</ClientId>
+    <Assembly>FilledRegionRoomName.dll</Assembly>
+    <VendorId>GravitonTech</VendorId>
+    <VendorDescription>Graviton Tech / Lumora</VendorDescription>
+  </AddIn>
+</RevitAddIns>
