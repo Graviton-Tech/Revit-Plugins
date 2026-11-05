@@ -1,0 +1,3 @@
+# Skill files are published exactly as Galaxy saved them: the SHA-256 hashes inside each
+# skill.json are checked at install, so git must never convert their line endings.
+* -text

@@ -1,12 +1,14 @@
 name: Build update manifest
 
 # Runs automatically whenever plugin files change on main.
-# Regenerates manifest.json (versions + SHA-256 + download URLs) and commits it.
+# Regenerates manifest.json (versions + SHA-256 + download URLs) and skills.json (the index of
+# the Skills/<folder>/ packages Galaxy's Shared skills window lists) and commits them.
 on:
   push:
     branches: [ main ]
     paths-ignore:
       - 'manifest.json'
+      - 'skills.json'
   workflow_dispatch:   # lets you also run it manually from the Actions tab
 
 permissions:
@@ -53,15 +55,52 @@ jobs:
           $manifest | ConvertTo-Json -Depth 5 | Out-File -FilePath (Join-Path $root "manifest.json") -Encoding utf8
           Write-Host "Wrote $($plugins.Count) entries to manifest.json"
 
-      - name: Commit manifest if it changed
+      # Skills are shared the same way as DLLs: Galaxy's "Publish to GitHub folder…" copies a
+      # skill folder (skill.json, SKILL.md, script.cs) into Skills/, and this index tells every
+      # Galaxy what is there. The hashes Galaxy verifies at install are the ones inside each
+      # skill.json, so the files must stay byte-for-byte as saved (Skills/.gitattributes).
+      - name: Generate skills.json
+        shell: pwsh
+        run: |
+          $owner   = "${{ github.repository_owner }}"
+          $repo    = "${{ github.event.repository.name }}"
+          $branch  = "${{ github.ref_name }}"
+          $rawBase = "https://raw.githubusercontent.com/$owner/$repo/$branch"
+          $root    = (Get-Location).Path.TrimEnd('\')
+          $skillsDir = Join-Path $root "Skills"
+
+          $skills = @()
+          if (Test-Path $skillsDir) {
+              Get-ChildItem -Path $skillsDir -Directory | Sort-Object Name | ForEach-Object {
+                  $manifestPath = Join-Path $_.FullName "skill.json"
+                  if (-not (Test-Path $manifestPath)) { return }
+                  try { $manifest = Get-Content -Raw -Path $manifestPath -Encoding utf8 | ConvertFrom-Json }
+                  catch { Write-Warning "Skills/$($_.Name)/skill.json is not valid JSON; skipped"; return }
+                  if (-not $manifest.id -or -not $manifest.name) { Write-Warning "Skills/$($_.Name)/skill.json has no id or name; skipped"; return }
+                  if (-not (Test-Path (Join-Path $_.FullName "script.cs"))) { Write-Warning "Skills/$($_.Name) has no script.cs; skipped"; return }
+                  $rel = "Skills/" + $_.Name
+                  $urlPath = ($rel -split '/' | ForEach-Object { [Uri]::EscapeDataString($_) }) -join '/'
+                  $files = [ordered]@{}
+                  Get-ChildItem -Path $_.FullName -File | Sort-Object Name | ForEach-Object {
+                      $files[$_.Name] = (Get-FileHash -Path $_.FullName -Algorithm SHA256).Hash.ToLower()
+                  }
+                  $skills += [ordered]@{ folder = $rel; url = "$rawBase/$urlPath"; manifest = $manifest; files = $files }
+              }
+          }
+
+          $index = [ordered]@{ skillsVersion = 1; generatedUtc = (Get-Date).ToUniversalTime().ToString("o"); skills = $skills }
+          $index | ConvertTo-Json -Depth 12 | Out-File -FilePath (Join-Path $root "skills.json") -Encoding utf8
+          Write-Host "Wrote $($skills.Count) skills to skills.json"
+
+      - name: Commit manifest and skills index if they changed
         shell: pwsh
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add manifest.json
-          if (git status --porcelain manifest.json) {
+          git add manifest.json skills.json
+          if (git status --porcelain manifest.json skills.json) {
               git commit -m "Auto-update manifest [skip ci]"
               git push
           } else {
-              Write-Host "manifest.json already up to date."
+              Write-Host "manifest.json and skills.json already up to date."
           }
