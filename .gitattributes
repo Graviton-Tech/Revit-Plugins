@@ -1,0 +1,3 @@
+# Every file is published as-is: no line-ending conversion on checkout or commit, so the
+# SHA-256 in manifest.json is the hash of exactly the bytes a user downloads.
+* -text

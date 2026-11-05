@@ -16,6 +16,14 @@ jobs:
   manifest:
     runs-on: windows-latest
     steps:
+      # The hashes must be of the bytes raw.githubusercontent.com serves, which are the bytes
+      # in the repository. Git on the Windows runner would otherwise check .addin/.config
+      # files out with CRLF line endings and every one of them would hash differently
+      # from what users download (Galaxy then reports 'checksum mismatch' for each).
+      - name: Keep line endings as committed
+        shell: pwsh
+        run: git config --global core.autocrlf false
+
       - name: Check out repo
         uses: actions/checkout@v4
 
