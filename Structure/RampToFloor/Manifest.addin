@@ -1,26 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
-	
-	<AddIn Type="Application">
-		
-		<Name>BIMSpaceAddins</Name>
-		
-		<Assembly>Template.dll</Assembly>
-		<FullClassName>Template.Template</FullClassName>
-		<Text>BIM Space Revit 2019 Addins</Text>
-		
-		<Description>BIM Space Revit 2019 Addins</Description>
-		
-		<VisibilityMode>AlwaysVisible</VisibilityMode>
-		
-		<AddInId>
-			41DD15CD-75D3-4861-846B-0057C961E529
-		</AddInId>
-		
-		<VendorId>BIM Space</VendorId>
-		
-		<VendorDescription>Islam Heakal, Structural BIM Engineer, Revit Developer</VendorDescription>
-	</AddIn>
-
+  <AddIn Type="Application">
+    <Name>Ramp To Floor</Name>
+    <Assembly>RampToFloor.dll</Assembly>
+    <FullClassName>RampToFloor.ExternalApplication</FullClassName>
+    <Text>Ramp To Floor</Text>
+    <Description>Ramp To Floor by Graviton Tech</Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <AddInId>33d880d3-5b6e-a57a-6786-eeb077d6f38c</AddInId>
+    <VendorId>GravitonTech</VendorId>
+    <VendorDescription>Graviton Tech, gravitontech.net</VendorDescription>
+  </AddIn>
 </RevitAddIns>

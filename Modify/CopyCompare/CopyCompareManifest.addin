@@ -1,26 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
-	
-	<AddIn Type="Application">
-		
-		<Name>BIMSpaceAddins</Name>
-		
-		<Assembly>CopyCompare.dll</Assembly>
-		<FullClassName>CopyCompare.CopyCompareEA</FullClassName>
-		<Text>BIM Space Revit 2022 Addins</Text>
-		
-		<Description>BIM Space Revit 2022 Addins</Description>
-		
-		<VisibilityMode>AlwaysVisible</VisibilityMode>
-		
-		<AddInId>
-			E1F35D88-A291-43E3-930E-7E8C49D9C711
-		</AddInId>
-		
-		<VendorId>BIM Space</VendorId>
-		
-		<VendorDescription>Islam Heakal, Structural BIM Engineer, Revit Developer</VendorDescription>
-	</AddIn>
-
+  <AddIn Type="Application">
+    <Name>CopyCompare</Name>
+    <Assembly>CopyCompare.dll</Assembly>
+    <FullClassName>CopyCompare.CopyCompareEA</FullClassName>
+    <Text>CopyCompare</Text>
+    <Description>CopyCompare by Graviton Tech</Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <AddInId>98bc06dd-ff85-5e1d-f869-36b0ba37338e</AddInId>
+    <VendorId>GravitonTech</VendorId>
+    <VendorDescription>Graviton Tech, gravitontech.net</VendorDescription>
+  </AddIn>
 </RevitAddIns>

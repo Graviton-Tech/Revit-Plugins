@@ -1,26 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
-	
-	<AddIn Type="Application">
-		
-		<Name>BIMSpaceAddins</Name>
-		
-		<Assembly>RunInterfernceCheck.dll</Assembly>
-		<FullClassName>RunInterfernceCheck.RIC_Command</FullClassName>
-		<Text>BIM Space Revit 2019 Addins</Text>
-		
-		<Description>BIM Space Revit 2019 Addins</Description>
-		
-		<VisibilityMode>AlwaysVisible</VisibilityMode>
-		
-		<AddInId>
-			41DD15CD-75D3-4861-846B-0057C961E529
-		</AddInId>
-		
-		<VendorId>BIM Space</VendorId>
-		
-		<VendorDescription>Islam Heakal, Structural BIM Engineer, Revit Developer</VendorDescription>
-	</AddIn>
-
+  <AddIn Type="Application">
+    <Name>Run Interference Check</Name>
+    <Assembly>RunInterfernceCheck.dll</Assembly>
+    <FullClassName>RunInterfernceCheck.ExternalApplication</FullClassName>
+    <Text>Run Interference Check</Text>
+    <Description>Run Interference Check by Graviton Tech</Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <AddInId>6b28104f-75b1-7776-dcb6-a843627d399b</AddInId>
+    <VendorId>GravitonTech</VendorId>
+    <VendorDescription>Graviton Tech, gravitontech.net</VendorDescription>
+  </AddIn>
 </RevitAddIns>

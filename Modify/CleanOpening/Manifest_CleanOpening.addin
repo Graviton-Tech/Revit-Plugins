@@ -1,11 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
   <AddIn Type="Application">
-    <Name>CleanOpening</Name>
+    <Name>Clean Opening</Name>
     <Assembly>CleanOpening.dll</Assembly>
     <FullClassName>CleanOpening.ExternalApplication</FullClassName>
-    <AddInId>40A86A04-DFD1-44AC-B7F4-18AFF47DA065</AddInId>
-    <VendorId>GRAVITON</VendorId>
-    <VendorDescription>GRAVITON TECH</VendorDescription>
+    <Text>Clean Opening</Text>
+    <Description>Clean Opening by Graviton Tech</Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <AddInId>58befb2d-7dab-e53a-9cde-5583f96ef705</AddInId>
+    <VendorId>GravitonTech</VendorId>
+    <VendorDescription>Graviton Tech, gravitontech.net</VendorDescription>
   </AddIn>
 </RevitAddIns>

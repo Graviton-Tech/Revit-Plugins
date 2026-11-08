@@ -1,26 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
-	
-	<AddIn Type="Application">
-		
-		<Name>BIMSpaceAddins</Name>
-		
-		<Assembly>ClashNavigator.dll</Assembly>
-		<FullClassName>ClashNavigator.ExternalApplication</FullClassName>
-		<Text>BIM Space Revit 2019 Addins</Text>
-		
-		<Description>BIM Space Revit 2019 Addins</Description>
-		
-		<VisibilityMode>AlwaysVisible</VisibilityMode>
-		
-		<AddInId>
-			41DD15CD-75D3-4861-846B-0057C961E529
-		</AddInId>
-		
-		<VendorId>BIM Space</VendorId>
-		
-		<VendorDescription>Islam Heakal, Structural BIM Engineer, Revit Developer</VendorDescription>
-	</AddIn>
-
+  <AddIn Type="Application">
+    <Name>Clash Navigator</Name>
+    <Assembly>ClashNavigator.dll</Assembly>
+    <FullClassName>ClashNavigator.ExternalApplication</FullClassName>
+    <Text>Clash Navigator</Text>
+    <Description>Clash Navigator by Graviton Tech</Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <AddInId>e824bf5e-d08b-d695-c871-252b830dacb3</AddInId>
+    <VendorId>GravitonTech</VendorId>
+    <VendorDescription>Graviton Tech, gravitontech.net</VendorDescription>
+  </AddIn>
 </RevitAddIns>

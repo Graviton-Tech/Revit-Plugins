@@ -1,24 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
-	<AddIn Type="Application">
-		<Name>Warnings Review</Name>
-		<Assembly>Warning.dll</Assembly>
-		<FullClassName>Warning.ExternalApplication</FullClassName>
-		<AddInId>A27B52E1-F980-4FA3-9244-59F0C17DDA1F</AddInId>
-		<VendorId>BIM Space</VendorId>
-		<VendorDescription>Islam Heakal, Structural BIM Engineer, Revit Developer</VendorDescription>
-	</AddIn>
-
-	<AddIn Type="Command">
-		<Name>Warnings</Name>
-		<Assembly>Warning.dll</Assembly>
-		<FullClassName>Warning.WarningCommand</FullClassName>
-		<Text>Show Warnings</Text>
-		<VisibilityMode>AlwaysVisible</VisibilityMode>
-		<AddInId>8D83E555-30A8-4F9C-B6F3-1D5A1A57B9B6</AddInId>
-		<VendorId>BIM Space</VendorId>
-		<VendorDescription>Islam Heakal, Structural BIM Engineer, Revit Developer</VendorDescription>
-	</AddIn>
-
+  <AddIn Type="Application">
+    <Name>Warning Review</Name>
+    <Assembly>Warning.dll</Assembly>
+    <FullClassName>Warning.ExternalApplication</FullClassName>
+    <Text>Warning Review</Text>
+    <Description>Warning Review by Graviton Tech</Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <AddInId>26358607-730f-43af-de6e-1b953c3f696d</AddInId>
+    <VendorId>GravitonTech</VendorId>
+    <VendorDescription>Graviton Tech, gravitontech.net</VendorDescription>
+  </AddIn>
 </RevitAddIns>
