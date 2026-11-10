@@ -233,7 +233,7 @@
       "relativePath": "Manage/Site Control/SiteControl.dll",
       "version": "27.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Site%20Control/SiteControl.dll",
-      "sha256": "2829f5439218540466b0c4eb46f0feafd885cdc32ccffcd304ebe479a3a59339"
+      "sha256": "7b752295b4d9e48b2909d6555acb03069d0473842ba388c3a32f627879bf4ac0"
     },
     {
       "relativePath": "Manage/Site Control/System.Security.Cryptography.ProtectedData.dll",
@@ -251,7 +251,7 @@
       "relativePath": "Manage/Site Control/net8/SiteControl.dll",
       "version": "27.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Site%20Control/net8/SiteControl.dll",
-      "sha256": "8caa821aa60857bf5c717d24c6acec633b18914214c01a91617b2f9ae38d6d51"
+      "sha256": "bc9311c964c40b86a4913ae67eac38f989e7381c309088867223c7f1d20c1289"
     },
     {
       "relativePath": "Manage/Warning Review/GravitonLicensing.dll",
