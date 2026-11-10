@@ -218,6 +218,42 @@
       "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
     },
     {
+      "relativePath": "Manage/Site Control/GravitonLicensing.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Site%20Control/GravitonLicensing.dll",
+      "sha256": "c168855864fc5ceef069edcae3ecc03d1fa7d94a5f94075bf443c851ad7708ab"
+    },
+    {
+      "relativePath": "Manage/Site Control/SiteControl.addin",
+      "version": "0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Site%20Control/SiteControl.addin",
+      "sha256": "b7ffe7f47a9c734fd3525efe2a1b75de2e0bf44f83ef20dd7056406cd9ea8890"
+    },
+    {
+      "relativePath": "Manage/Site Control/SiteControl.dll",
+      "version": "27.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Site%20Control/SiteControl.dll",
+      "sha256": "2829f5439218540466b0c4eb46f0feafd885cdc32ccffcd304ebe479a3a59339"
+    },
+    {
+      "relativePath": "Manage/Site Control/System.Security.Cryptography.ProtectedData.dll",
+      "version": "8.0.23.53103",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Site%20Control/System.Security.Cryptography.ProtectedData.dll",
+      "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
+    },
+    {
+      "relativePath": "Manage/Site Control/net8/GravitonLicensing.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Site%20Control/net8/GravitonLicensing.dll",
+      "sha256": "fa934c1e51f36704243937cea1c1cfdb58f7ae76097d8861d0748c4a69f322d7"
+    },
+    {
+      "relativePath": "Manage/Site Control/net8/SiteControl.dll",
+      "version": "27.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Site%20Control/net8/SiteControl.dll",
+      "sha256": "8caa821aa60857bf5c717d24c6acec633b18914214c01a91617b2f9ae38d6d51"
+    },
+    {
       "relativePath": "Manage/Warning Review/GravitonLicensing.dll",
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Warning%20Review/GravitonLicensing.dll",
