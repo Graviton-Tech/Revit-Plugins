@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Site Control</Name>
+    <Assembly>SiteControl.dll</Assembly>
+    <FullClassName>SiteControl.App</FullClassName>
+    <Text>Site Control</Text>
+    <Description>Site Control by Graviton Tech</Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <AddInId>bafca756-5b65-4b02-b0e7-e1f7584c8c52</AddInId>
+    <VendorId>GravitonTech</VendorId>
+    <VendorDescription>Graviton Tech, gravitontech.net</VendorDescription>
+  </AddIn>
+</RevitAddIns>
