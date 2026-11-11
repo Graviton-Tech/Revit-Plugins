@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>LumoraExporter</Name>
+    <Assembly>LumoraExporter.dll</Assembly>
+    <FullClassName>LumoraExporter.App</FullClassName>
+    <Text>Lumora Exporter</Text>
+    <Description>Batch export sheets and views (PDF, DWG, DGN, DWF, NWC, IFC, images) by Graviton Tech</Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <AddInId>a380bda9-120b-4d35-b90f-3812f003322d</AddInId>
+    <VendorId>GravitonTech</VendorId>
+    <VendorDescription>Graviton Tech, gravitontech.net</VendorDescription>
+  </AddIn>
+</RevitAddIns>
