@@ -218,6 +218,54 @@
       "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
     },
     {
+      "relativePath": "Manage/Lumora Exporter/GravitonLicensing.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Lumora%20Exporter/GravitonLicensing.dll",
+      "sha256": "c168855864fc5ceef069edcae3ecc03d1fa7d94a5f94075bf443c851ad7708ab"
+    },
+    {
+      "relativePath": "Manage/Lumora Exporter/LumoraExporter.addin",
+      "version": "0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Lumora%20Exporter/LumoraExporter.addin",
+      "sha256": "ac8d78d7c844a1a17c0e29009c6dbf7b2700c95d051f4a6a72b5b52998076567"
+    },
+    {
+      "relativePath": "Manage/Lumora Exporter/LumoraExporter.Core.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Lumora%20Exporter/LumoraExporter.Core.dll",
+      "sha256": "afd0b70da337b78f0131ca1ecf790240fe6d94799261038b2866f3599325e2b6"
+    },
+    {
+      "relativePath": "Manage/Lumora Exporter/LumoraExporter.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Lumora%20Exporter/LumoraExporter.dll",
+      "sha256": "a3e7481f47fc79ced94754ec309a9681eab6bce279272146baa89a7a3f95feaa"
+    },
+    {
+      "relativePath": "Manage/Lumora Exporter/System.Security.Cryptography.ProtectedData.dll",
+      "version": "8.0.23.53103",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Lumora%20Exporter/System.Security.Cryptography.ProtectedData.dll",
+      "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
+    },
+    {
+      "relativePath": "Manage/Lumora Exporter/net8/GravitonLicensing.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Lumora%20Exporter/net8/GravitonLicensing.dll",
+      "sha256": "fa934c1e51f36704243937cea1c1cfdb58f7ae76097d8861d0748c4a69f322d7"
+    },
+    {
+      "relativePath": "Manage/Lumora Exporter/net8/LumoraExporter.Core.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Lumora%20Exporter/net8/LumoraExporter.Core.dll",
+      "sha256": "afd0b70da337b78f0131ca1ecf790240fe6d94799261038b2866f3599325e2b6"
+    },
+    {
+      "relativePath": "Manage/Lumora Exporter/net8/LumoraExporter.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Lumora%20Exporter/net8/LumoraExporter.dll",
+      "sha256": "6b4cddb9c951501e615d0c6b8f51639852039d78f12118edda8ae7b5f2832ddb"
+    },
+    {
       "relativePath": "Manage/Site Control/GravitonLicensing.dll",
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Manage/Site%20Control/GravitonLicensing.dll",
