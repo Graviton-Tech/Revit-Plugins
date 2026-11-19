@@ -62,6 +62,36 @@
       "sha256": "afeb8a4ce21886420e84c1298463148ee7238eb9f9c39d7e825086b350c838c8"
     },
     {
+      "relativePath": "Coordination/Galaxy Walk/GalaxyWalk.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/Galaxy%20Walk/GalaxyWalk.dll",
+      "sha256": "eacde64f3c41c04c6541f154ecb19d56a1a15d1b637d7d75c8b8344eb229db0d"
+    },
+    {
+      "relativePath": "Coordination/Galaxy Walk/GravitonLicensing.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/Galaxy%20Walk/GravitonLicensing.dll",
+      "sha256": "c168855864fc5ceef069edcae3ecc03d1fa7d94a5f94075bf443c851ad7708ab"
+    },
+    {
+      "relativePath": "Coordination/Galaxy Walk/System.Security.Cryptography.ProtectedData.dll",
+      "version": "8.0.23.53103",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/Galaxy%20Walk/System.Security.Cryptography.ProtectedData.dll",
+      "sha256": "37fa9beebb4f6613a635378a7e145f9187e093471ba2aed5cdf9ae14874a5f7b"
+    },
+    {
+      "relativePath": "Coordination/Galaxy Walk/net8/GalaxyWalk.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/Galaxy%20Walk/net8/GalaxyWalk.dll",
+      "sha256": "2f5d00f91fc48a92c89cc62d2c6e0ad872b1d6a34e410ec173dddfb712fcb99e"
+    },
+    {
+      "relativePath": "Coordination/Galaxy Walk/net8/GravitonLicensing.dll",
+      "version": "1.0.0.0",
+      "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/Galaxy%20Walk/net8/GravitonLicensing.dll",
+      "sha256": "fa934c1e51f36704243937cea1c1cfdb58f7ae76097d8861d0748c4a69f322d7"
+    },
+    {
       "relativePath": "Coordination/RunInterfernceCheck/EPPlus.dll",
       "version": "5.8.14.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/RunInterfernceCheck/EPPlus.dll",
