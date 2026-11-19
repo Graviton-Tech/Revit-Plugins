@@ -273,7 +273,7 @@ impl Default for VisualSettings {
             lens_flare: 50.0,
             bloom: 15.0,
             vignette: 30.0,
-            chromatic_aberration: 25.0,
+            chromatic_aberration: 0.0,
             fog_intensity: 10.0,
             fog_height: 70.0,
             sun_brightness: 80.0,

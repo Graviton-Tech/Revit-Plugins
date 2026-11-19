@@ -37,6 +37,15 @@ struct GwsMaterial {
     emissive: [f32; 3],
     #[serde(default)]
     luminance: f32,
+    /// Diffuse bitmap from the Revit appearance asset, with its real-world size in metres.
+    #[serde(default)]
+    texture: String,
+    #[serde(default)]
+    tex_size: Option<[f32; 2]>,
+    #[serde(default)]
+    tex_rot: f32,
+    #[serde(default = "one")]
+    tex_amount: f32,
 }
 
 #[derive(Deserialize)]
@@ -105,6 +114,15 @@ pub fn load_gws(scene: &mut Scene, path: &Path) -> Result<String, String> {
         mat.opacity = m.opacity.clamp(0.0, 1.0);
         if mat.opacity < 0.999 {
             mat.double_sided = true;
+        }
+        if !m.texture.is_empty() && std::path::Path::new(&m.texture).exists() {
+            mat.texture = m.texture.clone();
+            let [w, h] = m.tex_size.unwrap_or([1.0, 1.0]);
+            mat.tex_width = w.max(0.01);
+            mat.tex_height = h.max(0.01);
+            mat.tex_rotation = m.tex_rot;
+            mat.image_fade = m.tex_amount.clamp(0.0, 1.0);
+            mat.tint = [1.0, 1.0, 1.0];
         }
         if m.luminance > 0.0 {
             mat.emissive_color = m.emissive;

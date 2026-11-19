@@ -49,6 +49,9 @@ pub struct DrawList {
     pub bounds: (Vec3, Vec3),
 }
 
+/// Radius (m) of the sharp shadow cascade that follows the camera.
+const NEAR_CASCADE_RADIUS: f32 = 30.0;
+
 #[derive(Clone)]
 pub struct FrameParams {
     pub view: Mat4,
@@ -403,7 +406,7 @@ impl Renderer {
             gl.bind_framebuffer(glow::FRAMEBUFFER, Some(fbo));
             let t = gl.create_texture().unwrap();
             gl.bind_texture(glow::TEXTURE_2D, Some(t));
-            gl.tex_image_2d(glow::TEXTURE_2D, 0, glow::DEPTH_COMPONENT24 as i32, size, size, 0, glow::DEPTH_COMPONENT, glow::UNSIGNED_INT, glow::PixelUnpackData::Slice(None));
+            gl.tex_image_2d(glow::TEXTURE_2D, 0, glow::DEPTH_COMPONENT24 as i32, size * 2, size, 0, glow::DEPTH_COMPONENT, glow::UNSIGNED_INT, glow::PixelUnpackData::Slice(None));
             gl.tex_parameter_i32(glow::TEXTURE_2D, glow::TEXTURE_MIN_FILTER, glow::LINEAR as i32);
             gl.tex_parameter_i32(glow::TEXTURE_2D, glow::TEXTURE_MAG_FILTER, glow::LINEAR as i32);
             gl.tex_parameter_i32(glow::TEXTURE_2D, glow::TEXTURE_WRAP_S, glow::CLAMP_TO_EDGE as i32);
@@ -417,22 +420,40 @@ impl Renderer {
         }
     }
 
-    fn light_matrix(draw: &DrawList, sun: Vec3) -> Mat4 {
-        let (mn, mx) = draw.bounds;
-        let center = (mn + mx) * 0.5;
-        let radius = ((mx - mn).length() * 0.5).clamp(5.0, 400.0) + 4.0;
+    /// Sun shadow matrix for a sphere (centre, radius). `snap` is the shadow map size: the centre is
+    /// snapped to whole texels so the near cascade does not shimmer while walking.
+    fn light_matrix_for(center: Vec3, radius: f32, sun: Vec3, snap: i32) -> Mat4 {
         let sun = if sun.y < 0.05 { Vec3::new(sun.x, 0.05, sun.z).normalize() } else { sun };
         let up = if sun.y.abs() > 0.98 { Vec3::Z } else { Vec3::Y };
-        let view = Mat4::look_at_rh(center + sun * radius * 2.0, center, up);
-        let proj = Mat4::orthographic_rh_gl(-radius, radius, -radius, radius, 0.1, radius * 4.0);
-        proj * view
+        let view0 = Mat4::look_at_rh(sun * radius * 2.0, Vec3::ZERO, up);
+        let mut c = view0.transform_point3(center);
+        let texel = 2.0 * radius / snap.max(1) as f32;
+        c.x = (c.x / texel).round() * texel;
+        c.y = (c.y / texel).round() * texel;
+        let proj = Mat4::orthographic_rh_gl(c.x - radius, c.x + radius, c.y - radius, c.y + radius, -c.z - radius * 4.0, -c.z + radius * 4.0);
+        proj * view0
+    }
+
+    /// Two cascades: [0] a sharp one around the camera, [1] the whole model.
+    fn light_matrices(draw: &DrawList, sun: Vec3, cam: Vec3, size: i32) -> ([Mat4; 2], [f32; 2]) {
+        let (mn, mx) = draw.bounds;
+        let center = (mn + mx) * 0.5;
+        let far_r = ((mx - mn).length() * 0.5).clamp(5.0, 600.0) + 4.0;
+        let near_r = NEAR_CASCADE_RADIUS.min(far_r);
+        let near_c = cam.clamp(mn - Vec3::splat(near_r), mx + Vec3::splat(near_r));
+        (
+            [Self::light_matrix_for(near_c, near_r, sun, size), Self::light_matrix_for(center, far_r, sun, size)],
+            [2.0 * near_r / size as f32, 2.0 * far_r / size as f32],
+        )
     }
 
     /// Shadow + HDR scene pass into the internal HDR target of size w x h.
     fn render_hdr(&mut self, gl: &glow::Context, draw: &DrawList, p: &FrameParams, w: i32, h: i32, shared: &SharedRef) {
         let vs = &p.vs;
         let atm = atmosphere(p.sun_dir, vs);
-        let light_vp = Self::light_matrix(draw, p.sun_dir);
+        let size = vs.quality.shadow_size();
+        let (cascades, texels) = Self::light_matrices(draw, p.sun_dir, p.cam_pos, size);
+        let light_vp = cascades[1];
         unsafe {
             gl.disable(glow::SCISSOR_TEST);
             gl.disable(glow::BLEND);
@@ -442,26 +463,32 @@ impl Renderer {
             gl.depth_mask(true);
             gl.color_mask(true, true, true, true);
 
-            // ---- shadow map
-            let size = vs.quality.shadow_size();
+            // ---- shadow map: two cascades side by side in one atlas
             self.ensure_shadow(gl, size);
             let (sfbo, stex, _) = self.shadow_map.unwrap();
             gl.bind_framebuffer(glow::FRAMEBUFFER, Some(sfbo));
-            gl.viewport(0, 0, size, size);
+            gl.viewport(0, 0, size * 2, size);
             gl.clear(glow::DEPTH_BUFFER_BIT);
             gl.use_program(Some(self.shadow.p));
-            self.shadow.m4(gl, "uLightVP", &light_vp);
             gl.enable(glow::POLYGON_OFFSET_FILL);
-            gl.polygon_offset(1.5, 3.0);
-            for it in &draw.items {
-                let mat = &draw.materials[it.material.min(draw.materials.len() - 1)];
-                if mat.is_transparent() && mat.mtype != crate::scene::MaterialType::Foliage {
-                    continue;
-                }
-                if let Some((vao, count)) = self.mesh(gl, &it.mesh) {
-                    self.shadow.m4(gl, "uModel", &it.model);
-                    gl.bind_vertex_array(Some(vao));
-                    gl.draw_elements(glow::TRIANGLES, count, glow::UNSIGNED_INT, 0);
+            gl.polygon_offset(2.0, 4.0);
+            for (ci, cvp) in cascades.iter().enumerate() {
+                gl.viewport(ci as i32 * size, 0, size, size);
+                self.shadow.m4(gl, "uLightVP", cvp);
+                let planes = frustum_planes(*cvp);
+                for it in &draw.items {
+                    let mat = &draw.materials[it.material.min(draw.materials.len() - 1)];
+                    if mat.is_transparent() && mat.mtype != crate::scene::MaterialType::Foliage {
+                        continue;
+                    }
+                    if !sphere_visible(&planes, it.center, it.radius) {
+                        continue;
+                    }
+                    if let Some((vao, count)) = self.mesh(gl, &it.mesh) {
+                        self.shadow.m4(gl, "uModel", &it.model);
+                        gl.bind_vertex_array(Some(vao));
+                        gl.draw_elements(glow::TRIANGLES, count, glow::UNSIGNED_INT, 0);
+                    }
                 }
             }
             gl.disable(glow::POLYGON_OFFSET_FILL);
@@ -532,6 +559,9 @@ impl Renderer {
             set_common(&self.scene, gl);
             self.scene.m4(gl, "uViewProj", &vp);
             self.scene.m4(gl, "uLightVP", &light_vp);
+            self.scene.m4(gl, "uCascade0", &cascades[0]);
+            self.scene.m4(gl, "uCascade1", &cascades[1]);
+            self.scene.f2(gl, "uCascadeTexel", texels[0], texels[1]);
             self.scene.i1(gl, "uShadow", 1);
             self.scene.i1(gl, "uTex", 0);
             gl.active_texture(glow::TEXTURE1);
@@ -690,6 +720,8 @@ impl Renderer {
             s.i1(gl, "uRawOutput", (p.output != 0) as i32);
             s.i1(gl, "uFlipY", flip as i32);
             s.i1(gl, "uKeepAlpha", p.keep_alpha as i32);
+            s.f1(gl, "uAo", if vs.quality == crate::settings::Quality::Draft { 0.0 } else { 0.85 });
+            s.f1(gl, "uProjY", p.proj.y_axis.y);
             gl.bind_vertex_array(Some(self.empty_vao));
             gl.draw_arrays(glow::TRIANGLES, 0, 3);
             gl.bind_vertex_array(None);
