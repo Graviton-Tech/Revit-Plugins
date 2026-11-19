@@ -1,0 +1,45 @@
+name: Build Galaxy Walk viewer
+
+# Builds the Galaxy Walk viewer (Rust) and saves galaxy_walk.exe in
+# _src/galaxy-walk-viewer/dist. Not part of manifest.json (that lists only dll/addin/config);
+# the exe is embedded into GalaxyWalk.dll so it reaches users through the normal update.
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '_src/galaxy-walk-viewer/**'
+      - '!_src/galaxy-walk-viewer/dist/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        shell: pwsh
+        working-directory: _src/galaxy-walk-viewer
+        run: cargo build --release --locked
+      - name: Save exe
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force _src/galaxy-walk-viewer/dist | Out-Null
+          Copy-Item _src/galaxy-walk-viewer/target/release/galaxy_walk.exe _src/galaxy-walk-viewer/dist/galaxy_walk.exe -Force
+      - uses: actions/upload-artifact@v4
+        with:
+          name: galaxy_walk
+          path: _src/galaxy-walk-viewer/dist/galaxy_walk.exe
+      - name: Commit exe
+        shell: pwsh
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -f _src/galaxy-walk-viewer/dist/galaxy_walk.exe
+          if (git diff --cached --name-only) {
+            git commit -m "Build Galaxy Walk viewer [skip ci]"
+            git pull --rebase
+            git push
+          }
