@@ -49,7 +49,7 @@ impl Quality {
         match self {
             Quality::Draft => 1024,
             Quality::Medium => 2048,
-            Quality::High => 2048,
+            Quality::High => 3072,
             Quality::Ultra => 4096,
         }
     }
@@ -192,6 +192,8 @@ pub struct VisualSettings {
     pub quality: Quality,
     pub auto_resolution: bool,
     pub grass_rendering: bool,
+    /// Ground plane under the model at project elevation 0, receiving shadows.
+    pub ground_plane: bool,
     // ---- Image
     pub auto_contrast: bool,
     pub highlights: f32, // -100..100
@@ -264,6 +266,7 @@ impl Default for VisualSettings {
             quality: Quality::High,
             auto_resolution: true,
             grass_rendering: true,
+            ground_plane: true,
             auto_contrast: false,
             highlights: 0.0,
             shadows: 0.0,
@@ -294,7 +297,7 @@ impl Default for VisualSettings {
             cloud_density: 50.0,
             cloud_variety: 50.0,
             cloud_cirrus: 50.0,
-            cloud_contrails: 2,
+            cloud_contrails: 0,
             cloud_x: 5000.0,
             cloud_y: 5000.0,
             capture_resolution: CaptureResolution::FullHd,

@@ -259,6 +259,24 @@ uniform float uTimeV;
 uniform mat4 uCascade0;
 uniform mat4 uCascade1;
 uniform vec2 uCascadeTexel;   // world size of one shadow texel per cascade
+uniform mat4 uSkyView;        // top-down view of the model (third atlas slot)
+uniform float uSkyTexel;
+
+// How much open sky is above this point: ~1 outdoors, low under roofs, slabs and canopies.
+float skyVisibility(vec3 n){
+  vec3 wp = vWorld + n * 0.35 + vec3(0.0, 0.05, 0.0);
+  vec4 c = uSkyView * vec4(wp, 1.0);
+  vec3 p = c.xyz / c.w * 0.5 + 0.5;
+  if (p.x < 0.0 || p.x > 1.0 || p.y < 0.0 || p.y > 1.0) return 1.0;
+  float sz = float(textureSize(uShadow, 0).y);
+  float stepUv = 0.6 / max(uSkyTexel * sz, 1e-3);   // ~0.6 m between taps
+  float sum = 0.0;
+  for (int x = -2; x <= 2; x++) for (int y = -2; y <= 2; y++) {
+    vec2 q = clamp(p.xy + vec2(x, y) * stepUv, vec2(0.0), vec2(1.0));
+    sum += texture(uShadow, vec3((q.x + 2.0) / 3.0, q.y, p.z - 0.0005));
+  }
+  return sum / 25.0;
+}
 
 // One cascade of the side-by-side atlas; returns -1 when the point is outside it.
 float cascadeShadow(mat4 m, int ci, vec3 n, float ndl, float texelW){
@@ -274,9 +292,9 @@ float cascadeShadow(mat4 m, int ci, vec3 n, float ndl, float texelW){
   int r = uShadowTaps;
   for (int x = -4; x <= 4; x++) for (int y = -4; y <= 4; y++) {
     if (abs(x) > r || abs(y) > r) continue;
-    vec2 q = p.xy + vec2(x, y) * atlasTexel * vec2(2.0, 1.0) * uShadowSoft;
+    vec2 q = p.xy + vec2(x, y) * atlasTexel * vec2(3.0, 1.0) * uShadowSoft;
     q = clamp(q, vec2(0.0), vec2(1.0));
-    sum += texture(uShadow, vec3((q.x + float(ci)) * 0.5, q.y, p.z - 0.00005));
+    sum += texture(uShadow, vec3((q.x + float(ci)) / 3.0, q.y, p.z - 0.00005));
     cnt += 1.0;
   }
   return sum / max(cnt, 1.0);
@@ -381,10 +399,20 @@ void main(){
   float sh = (uSunDir.y > -0.05) ? shadowAt(n) : 0.0;
   if (uStyle == 2) sh = mix(sh, 1.0, uTransmission * 0.5);
   vec3 sunE = uSunColor * sh;
-  vec3 skyUp = atmosphere(vec3(0.0, 1.0, 0.0)) * PI * 1.3;
-  vec3 skyHz = atmosphere(normalize(vec3(uSunDir.x, 0.05, uSunDir.z) * -1.0 + vec3(0,0.05,0)));
-  vec3 groundE = vec3(0.18, 0.17, 0.15) * (lum(uSunColor) * max(uSunDir.y, 0.0) * 0.5 + lum(skyUp) * 0.3);
-  vec3 ambE = mix(groundE, skyUp, n.y * 0.5 + 0.5) * uAmbient;
+  // sky irradiance: zenith plus the brighter band near the horizon, seen from the side of n
+  vec3 nhz = normalize(vec3(n.x, 0.0, n.z) + vec3(1e-4, 0.0, 0.0));
+  vec3 skyUp = (atmosphere(vec3(0.0, 1.0, 0.0)) * 0.45 + atmosphere(normalize(nhz + vec3(0.0, 0.25, 0.0))) * 0.55) * PI;
+  // the sky is brighter on the side of the sun
+  skyUp *= 1.0 + 0.35 * max(dot(nhz, normalize(vec3(uSunDir.x, 0.0, uSunDir.z) + 1e-4)), 0.0) * uDay;
+  // light bounced off the ground (albedo ~0.2) from sun + sky
+  vec3 groundE = vec3(0.21, 0.20, 0.17) * (uSunColor * max(uSunDir.y, 0.0) + vec3(lum(skyUp)));
+  // the sky dome is far less saturated in irradiance than the zenith colour suggests
+  skyUp = mix(vec3(lum(skyUp)), skyUp, 0.6);
+  float up = n.y * 0.5 + 0.5;
+  // indoors and under overhangs most of the sky is hidden; keep some light coming in through openings
+  float skyVis = (uOutput == 0) ? skyVisibility(n) : 1.0;
+  float open = mix(0.12, 1.0, skyVis);
+  vec3 ambE = (skyUp * up + groundE * (1.0 - up)) * uAmbient * open;
   ambE *= (uStyle == 1 || uStyle == 2) ? 1.1 : 1.0;
 
   vec3 lightsE = vec3(0.0);
@@ -485,6 +513,7 @@ uniform int uFlipY;
 uniform int uKeepAlpha;
 uniform float uAo;            // ambient occlusion strength 0..1
 uniform float uProjY;         // proj[1][1], for metres -> pixels
+uniform float uProjX;         // proj[0][0]
 
 float linDepth(float z){
   if (uOrtho == 1) return mix(uNear, uFar, z);
@@ -492,27 +521,37 @@ float linDepth(float z){
   return 2.0 * n * f / (f + n - (z * 2.0 - 1.0) * (f - n));
 }
 
-// Screen-space ambient occlusion from the depth buffer: darkens creases, corners and contact
-// areas that the sky light cannot reach. Radius is ~0.6 m in the world.
+// View-space position of a pixel from its linear depth.
+vec3 viewPos(vec2 uv, float ld){ return vec3((uv * 2.0 - 1.0) * ld / vec2(uProjX, uProjY), -ld); }
+
+// Screen-space ambient occlusion: darkens creases, corners and contact areas the sky cannot
+// reach. Samples are tested against the surface normal rebuilt from depth, so flat walls seen
+// at a grazing angle stay clean. Radius ~0.7 m in the world.
 float ssao(vec2 uv, float ld){
   if (uAo <= 0.0 || uOrtho == 1 || ld > 250.0) return 1.0;
   vec2 res = vec2(textureSize(uDepth, 0));
-  float worldR = 0.6;
-  float pxR = clamp(worldR * uProjY * 0.5 * res.y / max(ld, 0.05), 3.0, 90.0);
-  float ang0 = fract(sin(dot(floor(uv * res), vec2(12.9898, 78.233))) * 43758.5453) * 6.2831853;
+  vec3 P = viewPos(uv, ld);
+  vec3 N = normalize(cross(dFdx(P), dFdy(P)));
+  if (dot(N, P) > 0.0) N = -N;
+  float worldR = 0.7;
+  float pxR = clamp(worldR * uProjY * 0.5 * res.y / max(ld, 0.05), 3.0, 120.0);
+  // 4x4 interleaved rotation: a regular pattern instead of white noise
+  vec2 ip = mod(floor(uv * res), 4.0);
+  float ang0 = (ip.x * 4.0 + ip.y) * (6.2831853 / 16.0) + fract(ip.y * 0.37) * 0.4;
   float occ = 0.0;
-  const int N = 12;
-  for (int i = 0; i < N; i++) {
-    float t = (float(i) + 0.5) / float(N);
+  const int NS = 16;
+  for (int i = 0; i < NS; i++) {
+    float t = (float(i) + 0.5) / float(NS);
     float a = ang0 + float(i) * 2.399963;
-    vec2 o = vec2(cos(a), sin(a)) * sqrt(t) * pxR / res;
-    float sd = linDepth(texture(uDepth, uv + o).r);
-    float diff = ld - sd;                       // > 0: sample is in front of this pixel
-    float range = smoothstep(0.0, 1.0, worldR * 1.5 / max(abs(diff), 1e-3));
-    occ += step(0.03 + ld * 0.004, diff) * range;
+    vec2 suv = uv + vec2(cos(a), sin(a)) * t * pxR / res;
+    vec3 S = viewPos(suv, linDepth(texture(uDepth, suv).r));
+    vec3 v = S - P;
+    float d2 = dot(v, v);
+    float fall = max(1.0 - d2 / (worldR * worldR * 4.0), 0.0);
+    occ += max(dot(v, N) * inversesqrt(d2 + 1e-6) - 0.15, 0.0) * fall;
   }
-  float ao = 1.0 - occ / float(N);
-  return mix(1.0, ao * ao, uAo);
+  float ao = clamp(1.0 - occ / float(NS) * 1.8, 0.0, 1.0);
+  return mix(1.0, ao, uAo);
 }
 
 vec3 aces(vec3 x){ return clamp((x * (2.51 * x + 0.03)) / (x * (2.43 * x + 0.59) + 0.14), 0.0, 1.0); }
@@ -561,7 +600,8 @@ void main(){
   }
   // exposure
   float avgL = lum(textureLod(uHdr, vec2(0.5), uMaxLod).rgb);
-  float exposure = uAutoExposure == 1 ? 0.22 / max(avgL, 1e-4) : uExposure;
+  // auto exposure, held inside a camera-like range (EV 7..15.5) so a bright sky cannot blow out the model
+  float exposure = uAutoExposure == 1 ? clamp(0.14 / max(avgL, 1e-4), 1.0 / (1.2 * 46341.0), 1.0 / (1.2 * 128.0)) : uExposure;
   exposure *= exp2(uBrightness);
   // bloom
   if (uBloom > 0.0) {

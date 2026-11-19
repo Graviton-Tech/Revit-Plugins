@@ -171,6 +171,15 @@ impl Mesh {
         self.indices.extend_from_slice(&[base, base + 1, base + 2, base, base + 2, base + 3]);
     }
 
+    /// Unit ground quad, facing up, with UVs equal to local x/z.
+    pub fn ground_quad() -> Mesh {
+        let mut m = Mesh::default();
+        let p = [Vec3::new(-0.5, 0.0, 0.5), Vec3::new(0.5, 0.0, 0.5), Vec3::new(0.5, 0.0, -0.5), Vec3::new(-0.5, 0.0, -0.5)];
+        let uv = [Vec2::new(0.0, 0.0), Vec2::new(1.0, 0.0), Vec2::new(1.0, 1.0), Vec2::new(0.0, 1.0)];
+        m.quad(p, Vec3::Y, uv);
+        m
+    }
+
     /// Axis-aligned box with world-space (metre) UVs.
     pub fn cuboid(min: Vec3, max: Vec3) -> Mesh {
         let mut m = Mesh::default();

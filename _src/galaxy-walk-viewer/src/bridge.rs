@@ -94,6 +94,42 @@ fn one() -> f32 {
     1.0
 }
 
+/// Material type and roughness from the Revit material name, where Revit gave no better hint.
+/// `exported_rough` is what the plug-in wrote (0.5 when the appearance had no glossiness).
+fn classify(mat: &mut Material, exported_rough: f32) {
+    let n = mat.name.to_lowercase();
+    let has = |k: &[&str]| k.iter().any(|w| n.contains(w));
+    use crate::scene::MaterialType as T;
+    if has(&["grass", "turf", "lawn"]) {
+        mat.mtype = T::Grass;
+    } else if has(&["water", "pool"]) && !has(&["pipe", "heater", "proof"]) {
+        mat.mtype = T::Water;
+    } else if has(&["leaf", "leaves", "foliage", "hedge", "shrub"]) {
+        mat.mtype = T::Foliage;
+        mat.double_sided = true;
+    } else if has(&["carpet", "rug"]) {
+        mat.mtype = T::Carpet;
+    }
+    if (exported_rough - 0.5).abs() > 1e-3 {
+        return; // the appearance asset set it
+    }
+    mat.roughness = if mat.opacity < 0.999 || has(&["glass", "glazing", "mirror"]) {
+        0.04
+    } else if has(&["chrome", "polished", "stainless"]) {
+        0.15
+    } else if has(&["metal", "steel", "alumin", "copper", "zinc"]) {
+        0.35
+    } else if has(&["marble", "granite", "porcelain", "ceramic", "tile", "lacquer", "gloss"]) {
+        0.3
+    } else if has(&["paint", "plaster", "gypsum", "wood", "oak", "walnut", "laminate", "vinyl", "plastic"]) {
+        0.6
+    } else if has(&["concrete", "brick", "masonry", "stone", "cmu", "block", "render", "stucco", "asphalt", "paving", "gravel", "soil", "earth", "mulch", "insulation", "membrane", "roof"]) {
+        0.9
+    } else {
+        0.65
+    };
+}
+
 /// Replace the scene with the contents of a `.gws` file. Returns the project name.
 pub fn load_gws(scene: &mut Scene, path: &Path) -> Result<String, String> {
     let data = std::fs::read(path).map_err(|e| format!("Could not read {}: {e}", path.display()))?;
@@ -128,12 +164,18 @@ pub fn load_gws(scene: &mut Scene, path: &Path) -> Result<String, String> {
             mat.emissive_color = m.emissive;
             mat.luminance = m.luminance;
         }
+        classify(&mut mat, m.roughness);
         fresh.materials.push(mat);
     }
     if fresh.materials.is_empty() {
         fresh.materials.push(Material::new("Default", grey(), 0.6));
     }
     let g = fresh.add_group(if header.project.is_empty() { "Revit model" } else { &header.project }, GroupKind::Imported);
+
+    // Revit planting and entourage families often carry no material: give them a foliage look
+    // instead of plain grey cards.
+    let default_mat = fresh.materials.iter().position(|m| m.name == "Default");
+    let mut foliage_mat: Option<usize> = None;
 
     let mut at = 0usize;
     for o in &header.objects {
@@ -162,7 +204,16 @@ pub fn load_gws(scene: &mut Scene, path: &Path) -> Result<String, String> {
         if mesh.indices.len() < 3 {
             continue;
         }
-        let mi = o.material.min(fresh.materials.len() - 1);
+        let mut mi = o.material.min(fresh.materials.len() - 1);
+        if Some(mi) == default_mat && o.name.starts_with("Planting") {
+            mi = *foliage_mat.get_or_insert_with(|| {
+                let mut f = Material::new("Planting foliage", [0.22, 0.31, 0.13], 0.8);
+                f.mtype = crate::scene::MaterialType::Foliage;
+                f.double_sided = true;
+                fresh.materials.push(f);
+                fresh.materials.len() - 1
+            });
+        }
         if o.instances == 0 {
             fresh.add_object(g, &o.name, mi, mesh);
         } else {

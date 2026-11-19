@@ -73,7 +73,12 @@ pub struct Project {
     pub walk_mode: bool,
 }
 
+/// Object id of the ground plane draw item (not a scene object, never casts shadows).
+pub const GROUND_ID: u32 = u32::MAX;
+
 pub struct App {
+    /// Unit quad (-0.5..0.5 in x/z) used for the ground plane.
+    pub ground_mesh: Arc<crate::scene::Mesh>,
     pub scene: Scene,
     pub camera: Camera,
     pub sun: SunState,
@@ -150,6 +155,7 @@ impl App {
             video: VideoPath::default(),
             issues: Vec::new(),
             shared: Arc::new(Mutex::new(Shared::default())),
+            ground_mesh: Arc::new(crate::scene::Mesh::ground_quad()),
             renderer: Arc::new(Mutex::new(None)),
             mode: Mode::Walkthrough,
             show_visual: false,
@@ -271,7 +277,20 @@ impl App {
             let radius = half.length() * scale + 0.01;
             items.push(DrawItem { mesh: o.mesh.clone(), model, material: o.material, object_id: i as u32 + 1, center, radius });
         }
-        DrawList { items, materials: self.scene.materials.clone(), lights: self.scene.world_lights(), bounds: self.scene.world_bounds() }
+        let bounds = self.scene.world_bounds();
+        let mut materials = self.scene.materials.clone();
+        if self.vs.ground_plane && !items.is_empty() {
+            // Project elevation 0 is the usual ground level; fall back to the lowest point of the model.
+            let gy = if bounds.0.y <= 0.0 && bounds.1.y >= 0.0 { 0.0 } else { bounds.0.y } - 0.03;
+            let mut g = Material::new("Ground", [0.37, 0.41, 0.27], 0.95);
+            g.mtype = crate::scene::MaterialType::Grass;
+            materials.push(g);
+            let c = self.camera.pose.pos;
+            let size = 4000.0;
+            let model = Mat4::from_translation(Vec3::new(c.x, gy, c.z)) * Mat4::from_scale(Vec3::new(size, 1.0, size));
+            items.push(DrawItem { mesh: self.ground_mesh.clone(), model, material: materials.len() - 1, object_id: GROUND_ID, center: Vec3::new(c.x, gy, c.z), radius: size * 0.75 });
+        }
+        DrawList { items, materials, lights: self.scene.world_lights(), bounds }
     }
 
     pub fn sun_dir(&self) -> Vec3 {
@@ -1018,6 +1037,10 @@ impl eframe::App for App {
                 ui.heading("The 3D view could not start");
                 ui.label(e);
             });
+            if self.screenshot.is_some() {
+                eprintln!("3D view could not start");
+                ctx.send_viewport_cmd(egui::ViewportCommand::Close);
+            }
             return;
         }
 
@@ -1037,7 +1060,7 @@ impl eframe::App for App {
 
         // --screenshot: draw ~120 frames, save the window picture and quit
         if let Some(path) = self.screenshot.clone() {
-            if self.frames >= 120 && !self.screenshot_requested {
+            if self.frames >= std::env::var("GW_FRAMES").ok().and_then(|v| v.parse().ok()).unwrap_or(120) && !self.screenshot_requested {
                 self.screenshot_requested = true;
                 ctx.send_viewport_cmd(egui::ViewportCommand::Screenshot(egui::UserData::default()));
             }

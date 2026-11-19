@@ -50,7 +50,7 @@ pub struct DrawList {
 }
 
 /// Radius (m) of the sharp shadow cascade that follows the camera.
-const NEAR_CASCADE_RADIUS: f32 = 30.0;
+const NEAR_CASCADE_RADIUS: f32 = 35.0;
 
 #[derive(Clone)]
 pub struct FrameParams {
@@ -202,7 +202,7 @@ pub fn atmosphere(sun: Vec3, vs: &VisualSettings) -> Atmos {
     let above = smoothstep(-0.03, 0.04, sun.y);
     let sun_color = trans * 115_000.0 * (vs.sun_brightness / 80.0) * above;
     let day = smoothstep(-0.18, 0.12, sun.y);
-    let sky_lum = 2600.0 * day.powf(1.6) * (vs.sun_brightness / 80.0).sqrt() + 0.015 * (vs.night_sky_brightness / 100.0);
+    let sky_lum = 6500.0 * day.powf(1.6) * (vs.sun_brightness / 80.0).sqrt() + 0.015 * (vs.night_sky_brightness / 100.0);
     Atmos { sun_color, day, sky_lum }
 }
 
@@ -406,7 +406,7 @@ impl Renderer {
             gl.bind_framebuffer(glow::FRAMEBUFFER, Some(fbo));
             let t = gl.create_texture().unwrap();
             gl.bind_texture(glow::TEXTURE_2D, Some(t));
-            gl.tex_image_2d(glow::TEXTURE_2D, 0, glow::DEPTH_COMPONENT24 as i32, size * 2, size, 0, glow::DEPTH_COMPONENT, glow::UNSIGNED_INT, glow::PixelUnpackData::Slice(None));
+            gl.tex_image_2d(glow::TEXTURE_2D, 0, glow::DEPTH_COMPONENT24 as i32, size * 3, size, 0, glow::DEPTH_COMPONENT, glow::UNSIGNED_INT, glow::PixelUnpackData::Slice(None));
             gl.tex_parameter_i32(glow::TEXTURE_2D, glow::TEXTURE_MIN_FILTER, glow::LINEAR as i32);
             gl.tex_parameter_i32(glow::TEXTURE_2D, glow::TEXTURE_MAG_FILTER, glow::LINEAR as i32);
             gl.tex_parameter_i32(glow::TEXTURE_2D, glow::TEXTURE_WRAP_S, glow::CLAMP_TO_EDGE as i32);
@@ -435,12 +435,16 @@ impl Renderer {
     }
 
     /// Two cascades: [0] a sharp one around the camera, [1] the whole model.
-    fn light_matrices(draw: &DrawList, sun: Vec3, cam: Vec3, size: i32) -> ([Mat4; 2], [f32; 2]) {
+    fn light_matrices(draw: &DrawList, sun: Vec3, cam: Vec3, fwd: Vec3, size: i32) -> ([Mat4; 2], [f32; 2]) {
         let (mn, mx) = draw.bounds;
         let center = (mn + mx) * 0.5;
-        let far_r = ((mx - mn).length() * 0.5).clamp(5.0, 600.0) + 4.0;
+        // the far cascade also has to hold the shadow the model throws on the ground
+        let elev = sun.y.clamp(0.08, 1.0);
+        let throw = (mx.y - mn.y) * (1.0 - elev * elev).sqrt() / elev;
+        let far_r = ((mx - mn).length() * 0.5 + throw.min(150.0) * 0.5).clamp(5.0, 600.0) + 4.0;
         let near_r = NEAR_CASCADE_RADIUS.min(far_r);
-        let near_c = cam.clamp(mn - Vec3::splat(near_r), mx + Vec3::splat(near_r));
+        // centre the sharp cascade on what the camera looks at, not on the camera itself
+        let near_c = (cam + fwd * near_r * 0.7).clamp(mn - Vec3::splat(near_r), mx + Vec3::splat(near_r));
         (
             [Self::light_matrix_for(near_c, near_r, sun, size), Self::light_matrix_for(center, far_r, sun, size)],
             [2.0 * near_r / size as f32, 2.0 * far_r / size as f32],
@@ -452,7 +456,13 @@ impl Renderer {
         let vs = &p.vs;
         let atm = atmosphere(p.sun_dir, vs);
         let size = vs.quality.shadow_size();
-        let (cascades, texels) = Self::light_matrices(draw, p.sun_dir, p.cam_pos, size);
+        let fwd = (-p.view.inverse().z_axis.truncate()).normalize_or_zero();
+        let (cascades, texels) = Self::light_matrices(draw, p.sun_dir, p.cam_pos, fwd, size);
+        // third slot: the model seen from straight above, for sky occlusion under roofs and floors
+        let (bmn, bmx) = draw.bounds;
+        let top_r = ((Vec3::new(bmx.x - bmn.x, 0.0, bmx.z - bmn.z)).length() * 0.5).max(5.0) + 5.0;
+        let top = Self::light_matrix_for((bmn + bmx) * 0.5, top_r.max((bmx.y - bmn.y) * 0.5), Vec3::Y, size);
+        let slots = [cascades[0], cascades[1], top];
         let light_vp = cascades[1];
         unsafe {
             gl.disable(glow::SCISSOR_TEST);
@@ -463,20 +473,23 @@ impl Renderer {
             gl.depth_mask(true);
             gl.color_mask(true, true, true, true);
 
-            // ---- shadow map: two cascades side by side in one atlas
+            // ---- shadow map: two sun cascades and the top-down sky view side by side in one atlas
             self.ensure_shadow(gl, size);
             let (sfbo, stex, _) = self.shadow_map.unwrap();
             gl.bind_framebuffer(glow::FRAMEBUFFER, Some(sfbo));
-            gl.viewport(0, 0, size * 2, size);
+            gl.viewport(0, 0, size * 3, size);
             gl.clear(glow::DEPTH_BUFFER_BIT);
             gl.use_program(Some(self.shadow.p));
             gl.enable(glow::POLYGON_OFFSET_FILL);
             gl.polygon_offset(2.0, 4.0);
-            for (ci, cvp) in cascades.iter().enumerate() {
+            for (ci, cvp) in slots.iter().enumerate() {
                 gl.viewport(ci as i32 * size, 0, size, size);
                 self.shadow.m4(gl, "uLightVP", cvp);
                 let planes = frustum_planes(*cvp);
                 for it in &draw.items {
+                    if it.object_id == crate::app::GROUND_ID {
+                        continue;
+                    }
                     let mat = &draw.materials[it.material.min(draw.materials.len() - 1)];
                     if mat.is_transparent() && mat.mtype != crate::scene::MaterialType::Foliage {
                         continue;
@@ -561,6 +574,8 @@ impl Renderer {
             self.scene.m4(gl, "uLightVP", &light_vp);
             self.scene.m4(gl, "uCascade0", &cascades[0]);
             self.scene.m4(gl, "uCascade1", &cascades[1]);
+            self.scene.m4(gl, "uSkyView", &top);
+            self.scene.f1(gl, "uSkyTexel", 2.0 * top_r.max((bmx.y - bmn.y) * 0.5) / size as f32);
             self.scene.f2(gl, "uCascadeTexel", texels[0], texels[1]);
             self.scene.i1(gl, "uShadow", 1);
             self.scene.i1(gl, "uTex", 0);
@@ -722,6 +737,7 @@ impl Renderer {
             s.i1(gl, "uKeepAlpha", p.keep_alpha as i32);
             s.f1(gl, "uAo", if vs.quality == crate::settings::Quality::Draft { 0.0 } else { 0.85 });
             s.f1(gl, "uProjY", p.proj.y_axis.y);
+            s.f1(gl, "uProjX", p.proj.x_axis.x);
             gl.bind_vertex_array(Some(self.empty_vao));
             gl.draw_arrays(glow::TRIANGLES, 0, 3);
             gl.bind_vertex_array(None);

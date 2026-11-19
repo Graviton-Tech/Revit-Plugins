@@ -1011,6 +1011,7 @@ fn tab_main(ui: &mut Ui, vs: &mut VisualSettings) {
         ui.end_row();
         check(ui, "Auto resolution while moving", &mut vs.auto_resolution);
         check(ui, "Grass rendering", &mut vs.grass_rendering);
+        check(ui, "Ground plane", &mut vs.ground_plane);
     });
 }
 
