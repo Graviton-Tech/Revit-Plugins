@@ -285,15 +285,17 @@ pub fn status_bar(app: &mut App, ctx: &egui::Context) {
             ui.separator();
             ui.label(RichText::new(format!("☀ {}  {:02}.{:02}.{}", app.sun.time_string(), app.sun.day, app.sun.month, app.sun.year)).color(TEXT_DIM));
             ui.separator();
+            let bridged = app.bridge.is_some();
             if let Some(b) = app.bridge.as_mut() {
-                ui.separator();
                 ui.label(RichText::new("Revit").color(ACCENT).strong());
                 ui.checkbox(&mut b.follow, "Follow view").on_hover_text("Move to the Revit camera and sun whenever they change");
                 ui.checkbox(&mut b.send_back, "Send camera").on_hover_text("Write the walkthrough camera so Revit can match it");
                 ui.label(RichText::new(b.status.clone()).color(TEXT_DIM));
             }
-            ui.label(RichText::new(format!("Quality: {}", app.vs.quality.name())).color(TEXT_DIM));
-            ui.label(RichText::new(format!("Preset: {}{}", app.presets.get(app.active_preset).map(|p| p.name.as_str()).unwrap_or(""), if app.preset_modified() { " *" } else { "" })).color(TEXT_DIM));
+            if !bridged {
+                ui.label(RichText::new(format!("Quality: {}", app.vs.quality.name())).color(TEXT_DIM));
+                ui.label(RichText::new(format!("Preset: {}{}", app.presets.get(app.active_preset).map(|p| p.name.as_str()).unwrap_or(""), if app.preset_modified() { " *" } else { "" })).color(TEXT_DIM));
+            }
             if let Some(ve) = &app.video_export {
                 ui.separator();
                 ui.label(RichText::new(format!("Exporting video frame {} / {}", ve.frame, ve.total)).color(ACCENT));
@@ -305,14 +307,13 @@ pub fn status_bar(app: &mut App, ctx: &egui::Context) {
             ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
                 let dt = ctx.input(|i| i.stable_dt).max(1e-4);
                 let dir = crate::export::output_dir(&app.vs.default_folder);
-                if ui.small_button("📂 Open").on_hover_text("Open the folder where images, panoramas, videos and projects are saved").clicked() {
-                    crate::export::reveal(app.last_saved.as_deref().unwrap_or(&dir));
-                }
                 let shown = match &app.last_saved {
                     Some(p) => format!("Last saved: {}", p.display()),
                     None => format!("Saves to: {}", dir.display()),
                 };
-                ui.label(RichText::new(shown).color(TEXT_DIM));
+                if ui.small_button("📂 Output").on_hover_text(format!("{shown}\nOpen the folder where images, panoramas, videos and projects are saved")).clicked() {
+                    crate::export::reveal(app.last_saved.as_deref().unwrap_or(&dir));
+                }
                 ui.separator();
                 ui.label(RichText::new(format!("{:.0} fps", 1.0 / dt)).color(TEXT_DIM));
                 ui.label(RichText::new(format!("{} objects", app.scene.objects.len())).color(TEXT_DIM));

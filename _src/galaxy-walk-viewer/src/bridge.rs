@@ -174,6 +174,8 @@ struct LiveCamera {
     eye: [f32; 3],
     yaw: f32,
     pitch: f32,
+    /// Orthographic Revit view: the eye point is arbitrary, so frame the model instead.
+    ortho: bool,
 }
 
 #[derive(Deserialize, Default)]
@@ -216,6 +218,22 @@ struct WalkCamera {
     pitch: f32,
 }
 
+/// Place the camera so the whole model fits on screen, looking along (yaw, pitch).
+/// Used for orthographic Revit views, whose eye point is not a usable viewpoint.
+fn frame_model(app: &mut App, yaw: f32, pitch: f32) -> CameraPose {
+    let (mn, mx) = app.scene.world_bounds();
+    let centre = (mn + mx) * 0.5;
+    let radius = ((mx - mn).length() * 0.5).max(1.0);
+    let vfov = crate::camera::vertical_fov(app.vs.field_of_view, 16.0 / 9.0).clamp(0.2, 2.5);
+    let dist = radius / (vfov * 0.5).sin() * 1.05;
+    let mut pose = CameraPose { pos: centre, yaw, pitch };
+    pose.pos = centre - pose.forward() * dist;
+    app.camera.transition = None;
+    app.camera.walk_mode = false;
+    app.camera.pose = pose;
+    pose
+}
+
 pub struct Bridge {
     pub dir: PathBuf,
     /// Follow the Revit camera and sun whenever they change.
@@ -230,6 +248,9 @@ pub struct Bridge {
     last_sent: Option<CameraPose>,
     last_send_time: f64,
     send_rev: u64,
+    /// Direction (yaw, pitch) of the last orthographic Revit view, kept so the model can be
+    /// framed again once more of it has loaded.
+    ortho_dir: Option<(f32, f32)>,
 }
 
 impl Bridge {
@@ -246,6 +267,7 @@ impl Bridge {
             last_sent: None,
             last_send_time: 0.0,
             send_rev: 0,
+            ortho_dir: None,
         }
     }
 
@@ -280,6 +302,9 @@ impl Bridge {
                         self.status = format!("Linked: {} ({} objects)", name, app.scene.objects.len());
                     }
                     app.toast = Some((format!("Model updated from Revit ({} objects)", app.scene.objects.len()), now + 2.5));
+                    if let (true, Some((yaw, pitch))) = (self.follow, self.ortho_dir) {
+                        self.last_sent = Some(frame_model(app, yaw, pitch));
+                    }
                 }
                 Err(e) => self.status = e,
             }
@@ -305,10 +330,17 @@ impl Bridge {
             return;
         }
         if let Some(c) = live.camera {
-            let pose = CameraPose { pos: Vec3::from(c.eye), yaw: c.yaw, pitch: c.pitch.clamp(-89.0, 89.0) };
-            app.camera.transition = None;
-            app.camera.pose = pose;
-            self.last_sent = Some(pose);
+            let pitch = c.pitch.clamp(-89.0, 89.0);
+            if c.ortho {
+                self.ortho_dir = Some((c.yaw, pitch));
+                self.last_sent = Some(frame_model(app, c.yaw, pitch));
+            } else {
+                self.ortho_dir = None;
+                let pose = CameraPose { pos: Vec3::from(c.eye), yaw: c.yaw, pitch };
+                app.camera.transition = None;
+                app.camera.pose = pose;
+                self.last_sent = Some(pose);
+            }
         }
         if let Some(s) = live.sun {
             if s.month >= 1 && s.day >= 1 {
