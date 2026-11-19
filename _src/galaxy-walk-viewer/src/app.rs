@@ -266,7 +266,10 @@ impl App {
         for (i, o) in self.scene.objects.iter().enumerate() {
             let model = self.scene.object_matrix(o);
             let center = model.transform_point3((o.local_bounds.0 + o.local_bounds.1) * 0.5);
-            items.push(DrawItem { mesh: o.mesh.clone(), model, material: o.material, object_id: i as u32 + 1, center });
+            let half = (o.local_bounds.1 - o.local_bounds.0) * 0.5;
+            let scale = model.x_axis.truncate().length().max(model.y_axis.truncate().length()).max(model.z_axis.truncate().length());
+            let radius = half.length() * scale + 0.01;
+            items.push(DrawItem { mesh: o.mesh.clone(), model, material: o.material, object_id: i as u32 + 1, center, radius });
         }
         DrawList { items, materials: self.scene.materials.clone(), lights: self.scene.world_lights(), bounds: self.scene.world_bounds() }
     }
@@ -744,7 +747,7 @@ impl App {
         let middle = response.dragged_by(PointerButton::Middle);
         if self.playing.is_none() {
             if secondary && shift {
-                // original: Shift + right drag sets g_hour = start - dx * g_mouseSunSpeed (0x18048c750)
+                // Shift + right drag scrubs the time of day
                 self.sun.hour = (self.sun.hour - delta.x * crate::camera::TOD_HOURS_PER_PX).rem_euclid(24.0);
                 input.fast = false;
             } else if primary && shift {

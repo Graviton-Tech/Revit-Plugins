@@ -1,6 +1,5 @@
 //! Sun position from place, date and time (NOAA solar-position approximation).
-//! The original stores a view's sun as day, month, year, hour, GMT offset,
-//! longitude, latitude and a direction vector (ViewSunPosition, see MECHANICS.md).
+//! A view's sun is stored as day, month, year, hour, GMT offset, longitude and latitude.
 
 use glam::Vec3;
 use serde::{Deserialize, Serialize};

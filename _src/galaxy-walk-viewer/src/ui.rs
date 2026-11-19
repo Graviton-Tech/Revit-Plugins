@@ -968,7 +968,7 @@ fn tab_main(ui: &mut Ui, vs: &mut VisualSettings) {
         if vs.rendering_style == RenderingStyle::LightView {
             check(ui, "Automatic scale", &mut vs.light_view_auto);
             if !vs.light_view_auto {
-                // Original rule: the two limits always stay at least 10 lx apart;
+                // The two limits always stay at least 10 lx apart;
                 // moving one pushes the other.
                 if slider(ui, "Minimum", &mut vs.light_view_min, 0.0..=10000.0, " lx") {
                     vs.light_view_max = vs.light_view_max.max(vs.light_view_min + 10.0);

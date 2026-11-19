@@ -339,6 +339,8 @@ pub struct Object {
     pub material: usize,
     pub mesh: Arc<Mesh>,
     pub local_bounds: (Vec3, Vec3),
+    /// Placement inside its group (identity except for instanced family geometry).
+    pub transform: Mat4,
 }
 
 #[derive(Clone, Debug)]
@@ -394,7 +396,13 @@ impl Scene {
 
     pub fn add_object(&mut self, group: u32, name: &str, material: usize, mesh: Mesh) {
         let local_bounds = mesh.bounds();
-        self.objects.push(Object { name: name.into(), group, material, mesh: Arc::new(mesh), local_bounds });
+        self.objects.push(Object { name: name.into(), group, material, mesh: Arc::new(mesh), local_bounds, transform: Mat4::IDENTITY });
+        self.geometry_rev += 1;
+    }
+
+    /// Add one more placement of a mesh that is already uploaded (instancing): the GPU keeps one copy.
+    pub fn add_instance(&mut self, group: u32, name: &str, material: usize, mesh: Arc<Mesh>, local_bounds: (Vec3, Vec3), transform: Mat4) {
+        self.objects.push(Object { name: name.into(), group, material, mesh, local_bounds, transform });
         self.geometry_rev += 1;
     }
 
@@ -406,7 +414,7 @@ impl Scene {
     }
 
     pub fn object_matrix(&self, o: &Object) -> Mat4 {
-        self.group(o.group).map(|g| g.matrix()).unwrap_or(Mat4::IDENTITY)
+        self.group(o.group).map(|g| g.matrix()).unwrap_or(Mat4::IDENTITY) * o.transform
     }
 
     pub fn world_lights(&self) -> Vec<(Vec3, [f32; 3], f32)> {

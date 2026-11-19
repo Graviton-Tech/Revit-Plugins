@@ -16,6 +16,29 @@ pub struct DrawItem {
     pub material: usize,
     pub object_id: u32,
     pub center: Vec3,
+    /// Bounding-sphere radius in world units, for frustum culling.
+    pub radius: f32,
+}
+
+/// Six planes of a view-projection matrix (Gribb/Hartmann), normalised; a sphere is outside when it is
+/// fully behind any plane.
+pub fn frustum_planes(vp: Mat4) -> [Vec4; 6] {
+    let r0 = vp.row(0);
+    let r1 = vp.row(1);
+    let r2 = vp.row(2);
+    let r3 = vp.row(3);
+    let mut pl = [r3 + r0, r3 - r0, r3 + r1, r3 - r1, r3 + r2, r3 - r2];
+    for p in pl.iter_mut() {
+        let l = p.truncate().length();
+        if l > 1e-6 {
+            *p /= l;
+        }
+    }
+    pl
+}
+
+pub fn sphere_visible(planes: &[Vec4; 6], c: Vec3, r: f32) -> bool {
+    planes.iter().all(|p| p.truncate().dot(c) + p.w >= -r)
 }
 
 #[derive(Default)]
@@ -559,8 +582,12 @@ impl Renderer {
             });
             opaque.extend(trans.iter().copied());
             let mut blending = false;
+            let planes = frustum_planes(p.proj * p.view);
             for idx in opaque {
                 let it = &draw.items[idx];
+                if !sphere_visible(&planes, it.center, it.radius) {
+                    continue;
+                }
                 let mat = &draw.materials[it.material.min(draw.materials.len() - 1)];
                 let is_t = mat.is_transparent() && p.output == 0 && vs.rendering_style != RenderingStyle::LightView;
                 if is_t && !blending {

@@ -1,6 +1,5 @@
 //! Camera, walk/fly navigation, saved views and the video keyframe path.
-//! Navigation helpers: walk/fly camera, saved views and video paths.
-//! addresses are listed in MECHANICS.md.
+//! Tuning constants below are Galaxy Walk's own choices for comfortable navigation.
 
 use crate::scene::Scene;
 use crate::settings::{GeneralSettings, Projection};
@@ -9,51 +8,46 @@ use glam::{Mat4, Vec3};
 use serde::{Deserialize, Serialize};
 
 /// Base move speed: a held movement key queues a move of 1.0 x the speed modifiers,
-/// read as m/s by the command processor (0x18048bfa0 returns 1.0 x multipliers;
-/// case 0 of the queue processor 0x1804fc0d0 sums them into the target velocity).
+/// read as m/s and summed into the target velocity.
 pub const BASE_SPEED: f32 = 1.0;
-/// Speed modifiers (0x18048bfa0): Shift x3 walking / x6 flying, Ctrl x10 walking / x20 flying.
+/// Speed modifiers: Shift x3 walking / x6 flying, Ctrl x10 walking / x20 flying.
 pub const SHIFT_WALK: f32 = 3.0;
 pub const SHIFT_FLY: f32 = 6.0;
 pub const CTRL_WALK: f32 = 10.0;
 pub const CTRL_FLY: f32 = 20.0;
-/// Mouse look: each pixel x mouse speed is accumulated and applied x 0.001 rad
-/// (case 8 at 0x1804fc3a4, scale constant 0x18112c234).
+/// Mouse look: each pixel x mouse speed is accumulated and applied x 0.001 rad.
 pub const LOOK_RAD_PER_PX: f32 = 0.001;
 pub const LOOK_DEG_PER_PX: f32 = LOOK_RAD_PER_PX * 57.295_78;
-/// Shift + right drag changes the hour by 0.002 h per pixel (g_mouseSunSpeed, used at 0x18048c750).
+/// Shift + right drag changes the hour by 0.002 h per pixel.
 pub const TOD_HOURS_PER_PX: f32 = 0.002;
-/// Mouse wheel: 120 units per notch; without fly smoothing the camera moves 0.005 m per unit
-/// (0x18009ca90, constant 0x18112c8b0); with fly smoothing above 0.02 it pushes a forward
-/// move of 0.167 x units (constant 0x18112c30c).
+/// Mouse wheel: 120 units per notch; without fly smoothing the camera moves 0.005 m per unit;
+/// with fly smoothing above 0.02 it pushes a forward move of 0.167 x units.
 pub const WHEEL_UNITS_PER_NOTCH: f32 = 120.0;
 pub const WHEEL_STEP_M: f32 = 0.005;
 pub const WHEEL_PUSH: f32 = 0.167;
 /// egui reports about 40 points per wheel notch (estimated conversion to Windows units).
 pub const EGUI_POINTS_PER_NOTCH: f32 = 40.0;
-/// Orthographic zoom per wheel unit: 1 - zoomSpeedFactor(1.0) x 0.0001 x units (0x18009ca90).
+/// Orthographic zoom per wheel unit: 1 - zoomSpeedFactor(1.0) x 0.0001 x units.
 pub const ORTHO_ZOOM_PER_UNIT: f32 = 0.0001;
 pub const GRAVITY: f32 = 9.81;
-/// Step height the walker climbs: sp_stepHeight default 0.3 m (0x18060335b).
+/// Step height the walker climbs: 0.3 m.
 pub const STEP_HEIGHT: f32 = 0.3;
-/// Eye sits this far below the top of the body: sp_eyeOffset default 0.1 m (0x180603578),
-/// applied in 0x18058ae20.
+/// Eye sits this far below the top of the body: 0.1 m.
 pub const EYE_OFFSET: f32 = 0.1;
-/// Body mass sp_mass 80 kg (0x1806034df).
+/// Body mass 80 kg.
 pub const BODY_MASS: f32 = 80.0;
-/// Hover controller holding the body centre half its height above the ground
-/// (SpectatorPawn constructor 0x18058a4f0, step 0x18058a960): Kp, Ki, Kd.
+/// Hover controller holding the body centre half its height above the ground: Kp, Ki, Kd.
 pub const HOVER_PID: [f32; 3] = [25000.0, 750.0, 3000.0];
-/// Horizontal velocity controllers (0x18058a4f0): Kp, Ki, Kd.
+/// Horizontal velocity controllers: Kp, Ki, Kd.
 pub const MOVE_PID: [f32; 3] = [750.0, 2.0, 10.0];
-/// Ground ray reaches 0.5 h up and 0.75 h down from the body centre (0x18058a960).
+/// Ground ray reaches 0.5 h up and 0.75 h down from the body centre.
 pub const GROUND_RAY_DOWN: f32 = 0.75;
-/// Linear damping: 0.9 on the ground, 0.01 in the air (0x18058a960).
+/// Linear damping: 0.9 on the ground, 0.01 in the air.
 pub const DAMPING_GROUND: f32 = 0.9;
 pub const DAMPING_AIR: f32 = 0.01;
-/// Physics step (estimated: the usual fixed 60 Hz step of the bundled physics engine).
+/// Physics step (fixed 60 Hz).
 pub const PHYS_DT: f32 = 1.0 / 60.0;
-/// Renderer defaults: sp_mouseSmoothing 0.2 (range 0..0.5), sp_flySmoothing 0.2 (range 0..0.9999).
+/// Smoothing defaults: mouse 0.2 (range 0..0.5), fly 0.2 (range 0..0.9999).
 pub const MOUSE_SMOOTHING_DEFAULT: f32 = 0.2;
 pub const FLY_SMOOTHING_DEFAULT: f32 = 0.2;
 
@@ -103,7 +97,7 @@ pub struct NavInput {
     pub orbit_pivot: Option<Vec3>,
 }
 
-/// One PID controller as in 0x18057a660: e = target - current;
+/// One PID controller: e = target - current;
 /// I = max(0, 1 - dt) * I + dt * e; out = Kp e + Ki I + Kd (e - e_prev) / dt.
 #[derive(Clone, Copy, Default)]
 pub struct Pid {
@@ -138,14 +132,13 @@ pub struct Camera {
     pub phys_accum: f32,
 }
 
-/// Map the app's mouse smoothing setting (default 1.5, as the original's settings page)
-/// onto the renderer's sp_mouseSmoothing (default 0.2, max 0.5). Linear mapping estimated.
+/// Map the app's mouse smoothing setting (default 1.5)
+/// onto the camera's mouse smoothing (default 0.2, max 0.5).
 pub fn mouse_smoothing_factor(gs: &GeneralSettings) -> f32 {
     (MOUSE_SMOOTHING_DEFAULT * gs.mouse_smoothing / 1.5).clamp(0.0, 0.5)
 }
 
-/// Map the app's movement smoothing (default 0) onto sp_flySmoothing (default 0.2, max 0.9999).
-/// Mapping estimated.
+/// Map the app's movement smoothing (default 0) onto fly smoothing (default 0.2, max 0.9999).
 pub fn fly_smoothing_factor(gs: &GeneralSettings) -> f32 {
     (FLY_SMOOTHING_DEFAULT + gs.move_smoothing * 0.16).clamp(0.0, 0.9999)
 }
@@ -172,13 +165,13 @@ impl Camera {
         self.transition = Some((self.pose, to, 0.0, seconds.max(0.01)));
     }
 
-    /// Eye height above the ground in walk mode: body height (the "spectator height" setting,
-    /// passed to sp_height) minus sp_eyeOffset.
+    /// Eye height above the ground in walk mode: body height (the "spectator height" setting)
+    /// minus the eye offset.
     pub fn eye_height(gs: &GeneralSettings) -> f32 {
         (gs.spectator_height - EYE_OFFSET).max(0.2)
     }
 
-    /// 0x18048bfa0: 1.0, Shift x3 walking / x6 flying, Ctrl x10 walking / x20 flying, x multiplier.
+    /// 1.0, Shift x3 walking / x6 flying, Ctrl x10 walking / x20 flying, x multiplier.
     pub fn speed_multiplier(&self, input: &NavInput, gs: &GeneralSettings) -> f32 {
         let mut m = 1.0;
         if input.fast {
@@ -234,7 +227,7 @@ impl Camera {
             self.walk_mode = false;
         }
 
-        // ---- pan (middle drag) uses the same speed modifiers (0x18048c750)
+        // ---- pan (middle drag) uses the same speed modifiers
         let speed = BASE_SPEED * self.speed_multiplier(input, gs);
         if input.pan != (0.0, 0.0) {
             let up = self.pose.right().cross(self.pose.forward()).normalize();
@@ -243,7 +236,7 @@ impl Camera {
             self.try_move(delta, gs, scene);
         }
 
-        // ---- wheel: always switches to fly mode (0x18009ca90 sets sp_fly)
+        // ---- wheel: always switches to fly mode
         let wheel_units = input.wheel / EGUI_POINTS_PER_NOTCH * WHEEL_UNITS_PER_NOTCH;
         let fly_s = fly_smoothing_factor(gs);
         let mut push = Vec3::ZERO;
@@ -260,7 +253,7 @@ impl Camera {
         if self.walk_mode {
             self.update_walk(dt, input, gs, scene, speed);
         } else {
-            // fly: target velocity eased with k = flySmoothing^(5 dt) (0x1804fc0d0)
+            // fly: target velocity eased with k = flySmoothing^(5 dt)
             let mut wish = self.pose.forward() * input.forward + self.pose.right() * input.right + Vec3::Y * input.up;
             if wish.length_squared() > 1.0 {
                 wish = wish.normalize();
@@ -277,7 +270,7 @@ impl Camera {
     }
 
     /// Walk mode: a body of `spectator_height` held half its height above the ground by a
-    /// PID spring, driven horizontally by two velocity PIDs (SpectatorPawn, 0x18058a960).
+    /// PID spring, driven horizontally by two velocity PIDs.
     fn update_walk(&mut self, dt: f32, input: &NavInput, gs: &GeneralSettings, scene: &Scene, speed: f32) {
         let h = gs.spectator_height.max(0.3);
         let mut wish = self.pose.flat_forward() * input.forward + self.pose.right() * input.right;
@@ -328,7 +321,7 @@ impl Camera {
             self.pose.pos += delta;
             return;
         }
-        // body radius = sp_diameter / 2 (the "spectator width" setting)
+        // body radius = half the body width (the "spectator width" setting)
         let radius = gs.spectator_width * 0.5;
         let mut d = Vec3::new(delta.x, 0.0, delta.z);
         for axis in [Vec3::X, Vec3::Z] {

@@ -1,5 +1,5 @@
 //! GLSL sources. Own implementations of a physically scaled sky, sun, clouds,
-//! fog, material shading and the image pipeline (see MECHANICS.md for the settings they read).
+//! fog, material shading and the image pipeline.
 
 pub const COMMON: &str = r#"
 #version 330 core

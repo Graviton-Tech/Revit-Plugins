@@ -14,6 +14,8 @@
 use crate::app::App;
 use crate::camera::CameraPose;
 use crate::scene::{GroupKind, Light, Material, Mesh, Scene, Vertex};
+use glam::Mat4;
+use std::sync::Arc;
 use eframe::egui;
 use glam::Vec3;
 use serde::{Deserialize, Serialize};
@@ -43,6 +45,9 @@ struct GwsObject {
     material: usize,
     vertices: usize,
     indices: usize,
+    /// Version 2: number of 4x4 placement matrices stored after the mesh (0 = draw once as is).
+    #[serde(default)]
+    instances: usize,
 }
 
 #[derive(Deserialize)]
@@ -116,31 +121,43 @@ pub fn load_gws(scene: &mut Scene, path: &Path) -> Result<String, String> {
     for o in &header.objects {
         let vbytes = o.vertices * 32;
         let ibytes = o.indices * 4;
-        if at + vbytes + ibytes > blob.len() {
+        let mbytes = o.instances * 64;
+        if at + vbytes + ibytes + mbytes > blob.len() {
             return Err("The scene file is cut short.".into());
         }
-        let f = |i: usize| f32::from_le_bytes([blob[at + i * 4], blob[at + i * 4 + 1], blob[at + i * 4 + 2], blob[at + i * 4 + 3]]);
+        let f = |at: usize, i: usize| f32::from_le_bytes([blob[at + i * 4], blob[at + i * 4 + 1], blob[at + i * 4 + 2], blob[at + i * 4 + 3]]);
         let mut mesh = Mesh::default();
         mesh.vertices.reserve(o.vertices);
         for v in 0..o.vertices {
             let b = v * 8;
-            mesh.vertices.push(Vertex { pos: [f(b), f(b + 1), f(b + 2)], normal: [f(b + 3), f(b + 4), f(b + 5)], uv: [f(b + 6), f(b + 7)] });
+            mesh.vertices.push(Vertex { pos: [f(at, b), f(at, b + 1), f(at, b + 2)], normal: [f(at, b + 3), f(at, b + 4), f(at, b + 5)], uv: [f(at, b + 6), f(at, b + 7)] });
         }
         let ioff = at + vbytes;
         mesh.indices.reserve(o.indices);
         for i in 0..o.indices {
             let p = ioff + i * 4;
             let idx = u32::from_le_bytes([blob[p], blob[p + 1], blob[p + 2], blob[p + 3]]);
-            if (idx as usize) < o.vertices {
-                mesh.indices.push(idx);
-            } else {
-                mesh.indices.push(0);
-            }
+            mesh.indices.push(if (idx as usize) < o.vertices { idx } else { 0 });
         }
-        at += vbytes + ibytes;
-        if mesh.indices.len() >= 3 {
-            let mi = o.material.min(fresh.materials.len() - 1);
+        let moff = ioff + ibytes;
+        at += vbytes + ibytes + mbytes;
+        if mesh.indices.len() < 3 {
+            continue;
+        }
+        let mi = o.material.min(fresh.materials.len() - 1);
+        if o.instances == 0 {
             fresh.add_object(g, &o.name, mi, mesh);
+        } else {
+            let bounds = mesh.bounds();
+            let shared = Arc::new(mesh);
+            for k in 0..o.instances {
+                let base = moff + k * 64;
+                let mut cols = [0f32; 16];
+                for (j, c) in cols.iter_mut().enumerate() {
+                    *c = f(base, j);
+                }
+                fresh.add_instance(g, &o.name, mi, shared.clone(), bounds, Mat4::from_cols_array(&cols));
+            }
         }
     }
     for l in &header.lights {
@@ -181,6 +198,14 @@ struct Live {
     scene: String,
     camera: Option<LiveCamera>,
     sun: Option<LiveSun>,
+    progress: Option<LiveProgress>,
+}
+
+#[derive(Deserialize, Default)]
+#[serde(default)]
+struct LiveProgress {
+    done: u64,
+    total: u64,
 }
 
 #[derive(Serialize)]
@@ -251,7 +276,9 @@ impl Bridge {
                     app.selected_object = None;
                     app.selected_group = None;
                     app.selected_material = 0;
-                    self.status = format!("Linked: {} ({} objects)", name, app.scene.objects.len());
+                    if !self.status.starts_with("Reading") {
+                        self.status = format!("Linked: {} ({} objects)", name, app.scene.objects.len());
+                    }
                     app.toast = Some((format!("Model updated from Revit ({} objects)", app.scene.objects.len()), now + 2.5));
                 }
                 Err(e) => self.status = e,
@@ -264,6 +291,16 @@ impl Bridge {
         }
         self.live_rev = live.rev;
         self.scene_rev = live.scene_rev;
+        match &live.progress {
+            Some(p) if p.total > 0 && p.done < p.total => {
+                self.status = format!("Reading model from Revit: {}%", p.done * 100 / p.total);
+            }
+            _ => {
+                if self.status.starts_with("Reading") || self.status.starts_with("Waiting") {
+                    self.status = format!("Linked ({} objects)", app.scene.objects.len());
+                }
+            }
+        }
         if !self.follow {
             return;
         }
