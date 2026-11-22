@@ -65,7 +65,7 @@
       "relativePath": "Coordination/Galaxy Walk/GalaxyWalk.dll",
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/Galaxy%20Walk/GalaxyWalk.dll",
-      "sha256": "4a69177e9c915a0bff73ce593c4faff03f6bc7b5cbb746bf8e4a2d3cd9810299"
+      "sha256": "de926757490dfbc2009931796bdd5003b48d6bf4a57baaa1b0aa6d746b8af13d"
     },
     {
       "relativePath": "Coordination/Galaxy Walk/GravitonLicensing.dll",
@@ -83,7 +83,7 @@
       "relativePath": "Coordination/Galaxy Walk/net8/GalaxyWalk.dll",
       "version": "1.0.0.0",
       "url": "https://raw.githubusercontent.com/Graviton-Tech/Revit-Plugins/main/Coordination/Galaxy%20Walk/net8/GalaxyWalk.dll",
-      "sha256": "118f065be5beea102474982a23a7f825b84d6fc55df0fce580d5f36f1940317c"
+      "sha256": "084d719324ce62f44e5d1de31e21f41d64ebd530289186e0262da651ab7ef7db"
     },
     {
       "relativePath": "Coordination/Galaxy Walk/net8/GravitonLicensing.dll",
